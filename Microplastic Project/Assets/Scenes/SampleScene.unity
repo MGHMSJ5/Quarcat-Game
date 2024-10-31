@@ -945,6 +945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawningGameObject: {fileID: 8058486806937685699, guid: ed6340e99fa813b4ca8fb1785a002215, type: 3}
+  _spawnNumber: 4
 --- !u!65 &925492957
 BoxCollider:
   m_ObjectHideFlags: 0
