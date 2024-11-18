@@ -18,7 +18,7 @@ public class Replacing : MonoBehaviour
     {   //gameobject & script reference will be assigned through SpawningManager script
         originalGameObject.SetActive(false);
         replaceGameObject.SetActive(true);
-        spawningManager.hasReplaced = true;
+        spawningManager.HasReplaced = true;
 
         recyclingScript.GrabRecycleObject(originalGameObject);
 

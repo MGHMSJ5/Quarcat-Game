@@ -20,7 +20,13 @@ public class SpawningManager : MonoBehaviour
     private float _spawnBreakMin = 1f;
 
     private bool _canSpawn = true; //added bool so that spawning only happens once
-    public bool hasReplaced = false; //use bool so that replacing button won't appear again when replaced
+    private static bool _hasReplaced = false; //use bool so that replacing button won't appear again when replaced
+
+    public bool HasReplaced
+    {
+        get { return _hasReplaced; }
+        set { _hasReplaced = value; }
+    }
 
     [Header("Replacing")]
     [SerializeField]
@@ -38,13 +44,19 @@ public class SpawningManager : MonoBehaviour
     {
         _replacing = _replaceButton.GetComponent<Replacing>();
         _replacingText = _replaceButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+
+        if (_hasReplaced)
+        {
+            _originalGameObjectParent.SetActive(false);
+            _replacngGameObjectParent.SetActive(true);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {   //make sure that the microplastics only spawn once
-            if (_canSpawn)
+            if (_canSpawn && !HasReplaced)
             {
                 StartCoroutine(SpawnMicroplastics());
                 _canSpawn = false;
@@ -54,7 +66,7 @@ public class SpawningManager : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player" && !hasReplaced)
+        if (other.gameObject.tag == "Player" && !HasReplaced)
         {
             //check for if all the microplastics are caught
             if (_spawnedMicroplastics.Count == _spawnNumber)
