@@ -29,6 +29,7 @@ public class RecyclingBin : MonoBehaviour
                 child.parent = null;
                 child.gameObject.name = "ReplacedObjectParent";
                 GrabRecycleObject(child.gameObject);
+                Destroy(child.gameObject);
             }
             Destroy(movedObject);
         }
