@@ -20,14 +20,16 @@ public class SpawningManager : MonoBehaviour
     private float _spawnBreakMin = 1f;
 
     private bool _canSpawn = true; //added bool so that spawning only happens once
+    public bool hasReplaced = false; //use bool so that replacing button won't appear again when replaced
 
     [Header("Replacing")]
     [SerializeField]
-    private GameObject _replacngGameObject;
+    private GameObject _originalGameObjectParent;
+    [SerializeField]
+    private GameObject _replacngGameObjectParent;
     [SerializeField]
     private GameObject _replaceButton;
     private Replacing _replacing;
-    [SerializeField]
     private TextMeshProUGUI _replacingText;
     [SerializeField]
     private string _textForReplacing;
@@ -35,6 +37,7 @@ public class SpawningManager : MonoBehaviour
     private void Start()
     {
         _replacing = _replaceButton.GetComponent<Replacing>();
+        _replacingText = _replaceButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -51,7 +54,7 @@ public class SpawningManager : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && !hasReplaced)
         {
             //check for if all the microplastics are caught
             if (_spawnedMicroplastics.Count == _spawnNumber)
@@ -87,9 +90,10 @@ public class SpawningManager : MonoBehaviour
 
     private void ReadyReplacing()
     {
-        _replacing.originalGameObject = transform.parent.gameObject;
-        _replacing.replaceGameObject = _replacngGameObject;
+        _replacing.originalGameObject = _originalGameObjectParent;
+        _replacing.replaceGameObject = _replacngGameObjectParent;
         _replacingText.text = _textForReplacing;
+        _replacing.spawningManager = gameObject.GetComponent<SpawningManager>(); //the replacing script will change the hasReplaced bool
         _replaceButton.SetActive(true);
     }
     private bool CheckIfAllCatched()
