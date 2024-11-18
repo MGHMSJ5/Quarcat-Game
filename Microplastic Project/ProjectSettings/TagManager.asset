@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - MP1
+  - SceneMoved
   layers:
   - Default
   - TransparentFX

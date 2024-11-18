@@ -2470,7 +2470,7 @@ MonoBehaviour:
   originalGameObject: {fileID: 0}
   replaceGameObject: {fileID: 0}
   spawningManager: {fileID: 0}
-  recyclingScript: {fileID: 0}
+  recyclingScript: {fileID: 1104857793}
 --- !u!1 &927610346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2620,6 +2620,7 @@ Transform:
   m_Children:
   - {fileID: 1875686956}
   - {fileID: 550959503}
+  - {fileID: 1489654867}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
@@ -2835,6 +2836,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022631253}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1104857792
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6248382428550239382, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6248382428550239382, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6248382428550239382, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6248382428550239382, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6248382428550239382, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6248382428550239382, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6248382428550239382, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6248382428550239382, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6248382428550239382, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6248382428550239382, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6551258993264831315, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047955995799481420, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+      propertyPath: playerHead
+      value: 
+      objectReference: {fileID: 1489654866}
+    - target: {fileID: 8953308566948727022, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+      propertyPath: m_Name
+      value: RecyclingBin
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5543402275833229926, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+--- !u!114 &1104857793 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8047955995799481420, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
+  m_PrefabInstance: {fileID: 1104857792}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 092a44a879bb7ef418abe2471b5671b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1134387613
 GameObject:
   m_ObjectHideFlags: 0
@@ -3906,6 +3984,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 2.2204459e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1489654866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1489654867}
+  m_Layer: 0
+  m_Name: RecycleObjectsPlace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1489654867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489654866}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 927610352}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1560643563
 GameObject:
   m_ObjectHideFlags: 0
@@ -4110,6 +4219,8 @@ MonoBehaviour:
   sceneName: GrayBoxHallway
   playerTag: Player
   _fadeCanvas: {fileID: 707352121}
+  playerHead: {fileID: 1489654866}
+  _moveTag: SceneMoved
 --- !u!65 &1683576459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5715,3 +5826,4 @@ SceneRoots:
   - {fileID: 1560643564}
   - {fileID: 1172002487}
   - {fileID: 1137871322}
+  - {fileID: 1104857792}

@@ -1,4 +1,6 @@
 using System.Collections;
+using Unity.Collections;
+using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,6 +16,13 @@ public class SceneChangeTrigger : MonoBehaviour
     [Header("Black Fade Reference")]
     [SerializeField]
     private FadeCanvas _fadeCanvas;
+
+    [Header("Recycle Object")]
+    [SerializeField]
+    private GameObject playerHead;
+    [SerializeField]
+    private string _moveTag = "SceneMoved";
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -35,23 +44,30 @@ public class SceneChangeTrigger : MonoBehaviour
         _fadeCanvas.StartFadeIn();
         yield return new WaitForSeconds(_fadeCanvas.defaultDuration + 0.4f); //add tiny delay to scene switching
 
+        //set current scene
+        Scene currentScene = SceneManager.GetActiveScene();
+
         //load the scene asynchronously
-        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName);
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
         asyncOperation.allowSceneActivation = false;
+
 
         //wait until the scene is fully loaded
         while (!asyncOperation.isDone)
         {
             if (asyncOperation.progress >= 0.9f)
             {
-                break;
+                //allow scene activation when loading is done
+                asyncOperation.allowSceneActivation = true;
             }
             yield return null;            
         }
-        //allow scene activation when loading is done
-        asyncOperation.allowSceneActivation = true;
+        
+        playerHead.transform.parent = null;
+        playerHead.tag = _moveTag;
+        SceneManager.MoveGameObjectToScene(playerHead, SceneManager.GetSceneByName(sceneName));
 
         //unload the current scene
-        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.UnloadSceneAsync(currentScene);
     }
 }

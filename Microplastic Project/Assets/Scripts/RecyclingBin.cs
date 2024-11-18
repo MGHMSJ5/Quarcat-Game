@@ -14,7 +14,25 @@ public class RecyclingBin : MonoBehaviour
 
     private float _offset = 0f;
 
-    
+    private void Start()
+    {
+        StartCoroutine(LateStart());
+    }
+    IEnumerator LateStart()
+    {//wait for the next frame. This all will run after Start().
+        yield return null;
+        GameObject movedObject = GameObject.FindGameObjectWithTag("SceneMoved");
+        if (movedObject != null)
+        {
+            foreach (Transform child in movedObject.transform)
+            {
+                child.parent = null;
+                child.gameObject.name = "ReplacedObjectParent";
+                GrabRecycleObject(child.gameObject);
+            }
+            Destroy(movedObject);
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
