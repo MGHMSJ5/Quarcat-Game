@@ -16,7 +16,6 @@ public class FadeCanvas : MonoBehaviour
     public Coroutine CurrentRoutine { private set; get; } = null;
 
     private CanvasGroup canvasGroup = null;
-    private float alpha = 0.0f;
 
     private float quickFadeDuration = 0.25f;
     private void Awake()
@@ -61,32 +60,34 @@ public class FadeCanvas : MonoBehaviour
         BackgroundActivate(true);
         float elapsedTime = 0.0f;
 
-        while (alpha <= 1.0f)
+        while (elapsedTime < duration)
         {
             SetAlpha(elapsedTime / duration);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+        SetAlpha(1.0f); //ensure final value
     }
 
     private IEnumerator FadeOut(float duration)
     {
+        yield return new WaitForSeconds(0.5f); //added tiny delay because fading was being weird
         BackgroundActivate(true);
         float elapsedTime = 0.0f;
 
-        while (alpha >= 0.0f)
+        while (elapsedTime < duration)
         {
             SetAlpha(1 - (elapsedTime / duration));
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+        SetAlpha(0.0f); //ensure final value
         BackgroundActivate(false);
     }
 
     private void SetAlpha(float value)
     {
-        alpha = value;
-        canvasGroup.alpha = alpha;
+        canvasGroup.alpha = Mathf.Clamp01(value);
     }
 
     private void BackgroundActivate(bool activate)
