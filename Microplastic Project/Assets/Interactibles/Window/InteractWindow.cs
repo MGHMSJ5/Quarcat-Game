@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponent(typeof(BasicInteractLayout))]
+[RequireComponent(typeof(BasicInteractLayout))] //ALSO NEEDED
 public class InteractWindow : MonoBehaviour
 {
     //NEEDED INTERACT LAYOUT for every interact script
