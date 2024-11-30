@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -17,7 +15,7 @@ public class Interact : MonoBehaviour
     private Color _canUseColor;
     [SerializeField]
     private Color _cantUseColor;
-    // Start is called before the first frame update
+
     void Awake()
     {
         _button = _interactButton.GetComponent<Button>();
@@ -29,34 +27,13 @@ public class Interact : MonoBehaviour
         CanInteract(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Interact")
-        {
-            CanInteract(true);
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "Interact")
-        {
-            CanInteract(false);
-        }
-    }
-    public void CanInteract(bool can)
+    public void CanInteract(bool can)//CanInteract will be called from BasicInteractLayout
     {
         _button.enabled = can;
         _image.color = can ? _canUseColor : _cantUseColor;
     }
 
-    public void StartInteracting()
+    public void StartInteracting()//Event will be added on through BasicInteractLayout & the unique interact script
     {
         interactEvent?.Invoke();
     }

@@ -1,26 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(BasicInteractLayout))]
 public class InteractWindow : MonoBehaviour
 {
+    //NEEDED INTERACT LAYOUT for every interact script
     private BasicInteractLayout _basicInteractLayout;
     
     void Awake()
     {
         _basicInteractLayout = GetComponent<BasicInteractLayout>();
-        _basicInteractLayout._interactAction += OpenWindow;
+        _basicInteractLayout._interactAction += OpenWindow; //Depends on function name
     }
+    //END NEEDED INTERACT LAYOUT
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    //unique function/interaction based on script/object
     void OpenWindow()
     {
         print("OpenWindow");
+
+        //interact code...
+
+
+        //_basicInteractLayout.ExitANDNotInteract(true); //in case you want to only interact once
     }
 }
