@@ -19,7 +19,7 @@ public class InteractVacuumCleaner : MonoBehaviour
     //unique function/interaction based on script/object
     void PickUpVacuumCleaner()
     {
-        //put here the things that need to happen before detroying this interactible
+        //put here the things that need to happen before destroying this interactable
         if (_vacuumPrefab != null)
         {
             Instantiate(_vacuumPrefab, _vacuumPrefab.transform);
