@@ -22,7 +22,7 @@ public class InteractVacuumCleaner : MonoBehaviour
         //put here the things that need to happen before destroying this interactable
         if (_vacuumPrefab != null)
         {
-            Instantiate(_vacuumPrefab, _vacuumPrefab.transform);
+            Instantiate(_vacuumPrefab);
         }
 
         GameObject parent = this.gameObject.transform.parent.gameObject;
