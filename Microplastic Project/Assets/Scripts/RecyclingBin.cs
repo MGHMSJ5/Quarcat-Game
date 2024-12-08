@@ -11,6 +11,9 @@ public class RecyclingBin : MonoBehaviour
         "This GameObject needs to be under the player GameObject")]
     public GameObject playerHead;
     public GameObject recycleButton;
+    [Tooltip("Only the script in the hallway needs a reference to this")]
+    [SerializeField]
+    private ProgressManager _progressManager;
 
     private float _offset = 0f;
 
@@ -59,7 +62,10 @@ public class RecyclingBin : MonoBehaviour
 
     public void RecycleObjects()
     {
-        for (int i = 0; i < recycledObjects.Count; i++)
+        int recycledObjectsCount = recycledObjects.Count;
+        _progressManager.AddToProgress(recycledObjectsCount);
+
+        for (int i = 0; i < recycledObjectsCount; i++)
         {
             Destroy(recycledObjects[i]);
             _offset = 0f;
