@@ -21,6 +21,8 @@ public class SpawningManager : MonoBehaviour
 
     private bool _canSpawn = true; //added bool so that spawning only happens once
     private static bool _hasReplaced = false; //use bool so that replacing button won't appear again when replaced
+    private static bool _isSpawning = false; //bool that will be true when microplastics have been spawned
+    //Will be used to spawn enemies again if they are not caught and player goes through different scenes
 
     public bool HasReplaced
     {
@@ -40,6 +42,11 @@ public class SpawningManager : MonoBehaviour
     [SerializeField]
     private string _textForReplacing;
 
+    [Header("Respawn")]
+    [SerializeField]
+    private float _respawnSeconds = 10f;
+    public bool _isCoroutineRunning = false;
+
     private void Start()
     {
         _replacing = _replaceButton.GetComponent<Replacing>();
@@ -49,6 +56,24 @@ public class SpawningManager : MonoBehaviour
         {
             _originalGameObjectParent.SetActive(false);
             _replacngGameObjectParent.SetActive(true);
+        }       
+    }
+
+    private void Update()
+    {
+        if (HasReplaced)
+        {
+            _isSpawning = false;
+        }
+        if (_isSpawning && _canSpawn)
+        {
+            StartCoroutine(SpawnMicroplastics());
+            _canSpawn = false;
+        }
+        
+        if (CheckIfAllCatched() && _spawnedMicroplastics.Count == _spawnNumber && !_isCoroutineRunning)
+        {
+            StartCoroutine(RespawnCounter(_respawnSeconds));
         }
     }
 
@@ -73,7 +98,7 @@ public class SpawningManager : MonoBehaviour
             {
                 if (CheckIfAllCatched())
                 {   //if all microplastics are caught, then have the replacing ready
-                    ReadyReplacing();
+                    ReadyReplacing(true);
                 }
             }
         }
@@ -91,7 +116,9 @@ public class SpawningManager : MonoBehaviour
     }
     //spawn microplastics with X time between the spawning
     IEnumerator SpawnMicroplastics()
-    {
+    {//wait for end of frame to let microplastic spawn (fixes 'Missing Object' problem)
+        yield return new WaitForEndOfFrame();
+        _isSpawning = true;
         for (int i = 0; i < _spawnNumber; i++)
         {
             GameObject microplastic = Instantiate(_spawningGameObject, transform.position, Quaternion.identity);
@@ -100,13 +127,34 @@ public class SpawningManager : MonoBehaviour
         }
     }
 
-    private void ReadyReplacing()
+    private void ReadyReplacing(bool ready)
     {
-        _replacing.originalGameObject = _originalGameObjectParent;
-        _replacing.replaceGameObject = _replacngGameObjectParent;
-        _replacingText.text = _textForReplacing;
-        _replacing.spawningManager = gameObject.GetComponent<SpawningManager>(); //the replacing script will change the hasReplaced bool
-        _replaceButton.SetActive(true);
+        if (ready)
+        {
+            _replacing.originalGameObject = _originalGameObjectParent;
+            _replacing.replaceGameObject = _replacngGameObjectParent;
+            _replacingText.text = _textForReplacing;
+            _replacing.spawningManager = gameObject.GetComponent<SpawningManager>(); //the replacing script will change the hasReplaced bool
+        }
+        else
+        {
+            _replacing.ResetVariables();
+        }
+        
+        _replaceButton.SetActive(ready);
+    }
+
+    private IEnumerator RespawnCounter(float time)
+    {
+        _isCoroutineRunning = true;
+        yield return new WaitForSeconds(time);
+        _spawnedMicroplastics.Clear(); //reset the list
+        if (!HasReplaced)
+        {//if player hasn't replaced the item, then make the microplastics respawn
+            ReadyReplacing(false);
+            StartCoroutine(SpawnMicroplastics());
+        }
+        _isCoroutineRunning = false;
     }
     private bool CheckIfAllCatched()
     {

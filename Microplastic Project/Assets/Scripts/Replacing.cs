@@ -26,7 +26,7 @@ public class Replacing : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private void ResetVariables()
+    public void ResetVariables()
     {
         originalGameObject = null;
         replaceGameObject = null;
