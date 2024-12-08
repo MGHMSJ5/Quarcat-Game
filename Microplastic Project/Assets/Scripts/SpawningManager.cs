@@ -45,7 +45,7 @@ public class SpawningManager : MonoBehaviour
     [Header("Respawn")]
     [SerializeField]
     private float _respawnSeconds = 10f;
-    public bool _isCoroutineRunning = false;
+    private bool _isCoroutineRunning = false;
 
     private void Start()
     {
