@@ -17,7 +17,7 @@ public class InteractVacuumDialogueTrigger : MonoBehaviour
         }
         else
         {
-            Debug.LogError("InteractVacuumCleaner script is not found in the scene.");
+            Debug.LogError("InteractVacuumCleaner script is not found in the scene!");
         }
     }
 
@@ -31,12 +31,12 @@ public class InteractVacuumDialogueTrigger : MonoBehaviour
             }
             else
             {
-                Debug.LogError("DialogueManager is not assigned.");
+                Debug.LogError("DialogueManager is not assigned!");
             }
         }
         else
         {
-            Debug.LogWarning("InteractVacuumCleaner object is destroyed, cannot trigger dialogue.");
+            Debug.LogWarning("InteractVacuumCleaner object is destroyed, can't trigger!");
         }
     }
 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MP1
   - SceneMoved
+  - VacuumManager
   layers:
   - Default
   - TransparentFX
