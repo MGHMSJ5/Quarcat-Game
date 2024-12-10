@@ -30,6 +30,11 @@ public class SpawningManager : MonoBehaviour
         set { _hasReplaced = value; }
     }
 
+    public bool IsSpawning
+    {
+        get { return _isSpawning; }
+    }
+
     [Header("Replacing")]
     [SerializeField]
     private GameObject _originalGameObjectParent;
@@ -156,7 +161,7 @@ public class SpawningManager : MonoBehaviour
         }
         _isCoroutineRunning = false;
     }
-    private bool CheckIfAllCatched()
+    public bool CheckIfAllCatched()
     {
         for (int i = 0; i < _spawnedMicroplastics.Count; i++)
         {
