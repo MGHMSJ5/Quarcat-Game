@@ -1,10 +1,10 @@
 using UnityEngine;
-using System.Collections; // Required for IEnumerator and coroutines
+using System.Collections;
 
 public class EnemySpawnDialogueTrigger : MonoBehaviour
 {
     [Header("Dialogue Settings")]
-    public DialogueManager dialogueManager; // Reference to the DialogueManager
+    public DialogueManager dialogueManager;
     [TextArea(3, 10)] 
     public string[] spawnDialogue; // Dialogue to trigger when enemies spawn
 
@@ -12,35 +12,32 @@ public class EnemySpawnDialogueTrigger : MonoBehaviour
 
     void Start()
     {
-        // Find the SpawningManager in the scene
         spawningManager = FindObjectOfType<SpawningManager>();
 
         if (spawningManager == null)
         {
-            Debug.LogError("SpawningManager not found in the scene.");
+            Debug.LogError("SpawningManager was not found in the scene!");
             return;
         }
 
-        // Start listening for spawning
         StartCoroutine(TriggerDialogueOnSpawn());
     }
 
     private IEnumerator TriggerDialogueOnSpawn()
     {
-        // Wait until spawning starts
         while (!spawningManager.IsSpawning)
         {
-            yield return null; // Wait for the next frame
+            yield return null;
         }
 
-        // Trigger dialogue once spawning begins
+        // Triggers dialogue when enemies spawn
         if (dialogueManager != null && spawnDialogue.Length > 0)
         {
             dialogueManager.StartDialogue(spawnDialogue);
         }
         else
         {
-            Debug.LogError("DialogueManager not assigned or spawnDialogue is empty.");
+            Debug.LogError("spawnDialogue is empty! Add dialogue!!!");
         }
     }
 }

@@ -9,15 +9,15 @@ public class EnemyRespawnDialogueTrigger : MonoBehaviour
     public string[] respawnDialogue; // Dialogue to trigger when respawn is triggered
 
     private SpawningManager spawningManager;
-    private bool _hasTriggeredRespawnDialogue = false; // Ensure dialogue triggers only once per respawn
-    private bool _hasStartedRespawn = false; // Track if the respawn process has started
+    private bool _hasTriggeredRespawnDialogue = false; // dialogue triggers only once
+    private bool _hasStartedRespawn = false;
 
     void Start()
     {
         spawningManager = FindObjectOfType<SpawningManager>();
         if (spawningManager == null)
         {
-            Debug.LogError("SpawningManager not found in the scene.");
+            Debug.LogError("SpawningManager not found!");
         }
     }
 
@@ -25,25 +25,22 @@ public class EnemyRespawnDialogueTrigger : MonoBehaviour
     {
         if (spawningManager != null)
         {
-            // Check if respawn process has started and enemies are being respawned
             if (!_hasStartedRespawn && spawningManager.IsSpawning && spawningManager.CheckIfAllCatched())
             {
-                _hasStartedRespawn = true; // Mark the respawn process as started
+                _hasStartedRespawn = true;
 
-                // Trigger the respawn dialogue only once
                 if (dialogueManager != null && respawnDialogue.Length > 0 && !_hasTriggeredRespawnDialogue)
                 {
-                    Debug.Log("Triggering respawn dialogue.");
+                    Debug.Log("Triggering respawn dialogue!");
                     dialogueManager.StartDialogue(respawnDialogue);
-                    _hasTriggeredRespawnDialogue = true; // Ensure it triggers only once
+                    _hasTriggeredRespawnDialogue = true;
                 }
             }
 
-            // Reset dialogue trigger after respawn is complete and new enemies are spawned
             if (!spawningManager.IsSpawning && _hasStartedRespawn)
             {
-                _hasTriggeredRespawnDialogue = false; // Reset flag for next respawn
-                _hasStartedRespawn = false; // Reset the respawn tracking
+                _hasTriggeredRespawnDialogue = false;
+                _hasStartedRespawn = false;
             }
         }
     }
