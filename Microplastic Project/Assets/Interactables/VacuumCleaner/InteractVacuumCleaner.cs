@@ -24,10 +24,8 @@ public class InteractVacuumCleaner : MonoBehaviour
         {
             Instantiate(_vacuumPrefab);
         }
-
+        _basicInteractLayout.ExitANDNotInteract(true); //in case you want to only interact once
         GameObject parent = this.gameObject.transform.parent.gameObject;
         Destroy(parent);
-
-        //_basicInteractLayout.ExitANDNotInteract(true); //in case you want to only interact once
     }
 }
