@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GrayBoxLiving.unity
     guid: 1bf5aa2f34efa1a4c9466be0b7b24884
+  - enabled: 1
+    path: Assets/Scenes/Hallway.unity
+    guid: 2eee02f68f31ded48a7478919d635b73
   m_configObjects: {}
