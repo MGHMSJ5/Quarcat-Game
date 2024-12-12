@@ -7,7 +7,7 @@ public class Replacing : MonoBehaviour
     public GameObject originalGameObject;
     public GameObject replaceGameObject;
 
-    public SpawningManager spawningManager;
+    public int spawnId;
 
     [Header("Recycling")]
     [Tooltip("Recicle bin that needs to be referenced manually " +
@@ -18,7 +18,7 @@ public class Replacing : MonoBehaviour
     {   //gameobject & script reference will be assigned through SpawningManager script
         originalGameObject.SetActive(false);
         replaceGameObject.SetActive(true);
-        spawningManager.HasReplaced = true;
+        SpawnBoolManager.SetHasReplaced(spawnId, true);
 
         recyclingScript.GrabRecycleObject(originalGameObject);
 
@@ -30,6 +30,6 @@ public class Replacing : MonoBehaviour
     {
         originalGameObject = null;
         replaceGameObject = null;
-        spawningManager = null;
+        spawnId = -1;
     }
 }
