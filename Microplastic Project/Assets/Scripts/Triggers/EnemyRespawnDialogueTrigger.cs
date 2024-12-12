@@ -23,9 +23,10 @@ public class EnemyRespawnDialogueTrigger : MonoBehaviour
 
     void Update()
     {
+
         if (spawningManager != null)
         {
-            if (!_hasStartedRespawn && spawningManager.IsSpawning && spawningManager.CheckIfAllCatched())
+            if (!_hasStartedRespawn && SpawnBoolManager.GetIsSpawning(spawningManager.identity) && spawningManager.CheckIfAllCatched())
             {
                 _hasStartedRespawn = true;
 
@@ -37,7 +38,7 @@ public class EnemyRespawnDialogueTrigger : MonoBehaviour
                 }
             }
 
-            if (!spawningManager.IsSpawning && _hasStartedRespawn)
+            if (!SpawnBoolManager.GetIsSpawning(spawningManager.identity) && _hasStartedRespawn)
             {
                 _hasTriggeredRespawnDialogue = false;
                 _hasStartedRespawn = false;

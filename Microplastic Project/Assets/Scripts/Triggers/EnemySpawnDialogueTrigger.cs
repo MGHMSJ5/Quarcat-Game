@@ -25,7 +25,8 @@ public class EnemySpawnDialogueTrigger : MonoBehaviour
 
     private IEnumerator TriggerDialogueOnSpawn()
     {
-        while (!spawningManager.IsSpawning)
+        
+        while (!SpawnBoolManager.GetIsSpawning(spawningManager.identity))
         {
             yield return null;
         }

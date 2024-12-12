@@ -26,7 +26,7 @@ public class ItemReplacementDialogueTrigger : MonoBehaviour
     void Update()
     {
         // Checks if item replaced
-        if (spawningManager.HasReplaced && !dialogueTriggered)
+        if (SpawnBoolManager.GetHasReplaced(spawningManager.identity) && !dialogueTriggered)
         {
             TriggerReplacementDialogue();
         }
