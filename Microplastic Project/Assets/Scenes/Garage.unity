@@ -323,6 +323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 1183422527}
   dialogueText: {fileID: 1043253034}
+  inputManager: {fileID: 1484201975}
 --- !u!4 &83307671
 Transform:
   m_ObjectHideFlags: 0
@@ -1017,7 +1018,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2912393277139772205, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
   m_PrefabInstance: {fileID: 376347680}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1484201975}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
@@ -1392,7 +1393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2431694541273328522, guid: 975b1be5f363c7544bb7a22bc1704e22, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8232270063160101445, guid: 975b1be5f363c7544bb7a22bc1704e22, type: 3}
       propertyPath: fadeOnStart
@@ -2626,6 +2627,11 @@ Transform:
   - {fileID: 238355541}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1484201975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5659368830436901442, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
+  m_PrefabInstance: {fileID: 376347680}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &1656253720
 BoxCollider:
   m_ObjectHideFlags: 0
