@@ -85,8 +85,6 @@ public class SpawningManager : MonoBehaviour
         {
             StartCoroutine(RespawnCounter(_respawnSeconds));
         }
-
-        Debug.Log(SpawnBoolManager.GetIsSpawning(GetInstanceID()));
     }
 
     private void OnTriggerEnter(Collider other)
