@@ -460,11 +460,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e93183a1651381b48ab750c6ed49eb5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vacuumNozzle: {fileID: 2842289913990887920}
-  springForce: 15
-  damping: 2
-  maxDistance: 5
-  rotationSpeed: 4
+  _vacuumNozzle: {fileID: 2842289913990887920}
+  _springForce: 10
+  _damping: 2
+  _maxDistance: 5
+  _rotationSpeed: 4
 --- !u!4 &2842289913990887920 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2749224578191311295, guid: 7707424021532064aa13257b499901cb, type: 3}
