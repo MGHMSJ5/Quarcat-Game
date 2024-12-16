@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class DragEffect : MonoBehaviour
 {
-    public Transform vacuumNozzle;
-    public float springForce = 10f;
-    public float damping = 2f;
-    public float maxDistance = 5f;
-    public float rotationSpeed = 4f;
+    [SerializeField]
+    private Transform _vacuumNozzle;
+    [SerializeField]
+    private float _springForce = 10f;
+    [SerializeField]
+    private float _damping = 2f;
+    [SerializeField]
+    private float _maxDistance = 5f;
+    [SerializeField]
+    private float _rotationSpeed = 4f;
 
     private Rigidbody _rb;
     void Start()
@@ -18,7 +23,7 @@ public class DragEffect : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector3 directionToVacuum = vacuumNozzle.position - transform.position;
+        Vector3 directionToVacuum = _vacuumNozzle.position - transform.position;
         float distanceToVacuum = directionToVacuum.magnitude;
 
         //use dot product to check if object is moving closer to nozzle
@@ -29,17 +34,17 @@ public class DragEffect : MonoBehaviour
             RotateTowardsNozzle(directionToVacuum);
         }
 
-        if (distanceToVacuum <= maxDistance)
+        if (distanceToVacuum <= _maxDistance)
         {//if within the maxdistance, calculate sprint force, and damping it, and add force
-            Vector3 spring = directionToVacuum.normalized * springForce;
-            Vector3 dampingForce = -_rb.velocity * damping;
+            Vector3 spring = directionToVacuum.normalized * _springForce;
+            Vector3 dampingForce = -_rb.velocity * _damping;
 
             _rb.AddForce(spring + dampingForce);
         }
         else
         {
             //clamp opsition to MaxDistance if it exceeds the limit
-            Vector3 clampedPosition = vacuumNozzle.position - directionToVacuum.normalized * maxDistance;
+            Vector3 clampedPosition = _vacuumNozzle.position - directionToVacuum.normalized * _maxDistance;
             transform.position = clampedPosition;
         }       
     }
@@ -50,6 +55,6 @@ public class DragEffect : MonoBehaviour
         Quaternion targetRotation = Quaternion.LookRotation(directionToVacuum, Vector3.up);
 
         // Smoothly interpolate the current rotation towards the target
-        _rb.MoveRotation(Quaternion.Slerp(_rb.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime));
+        _rb.MoveRotation(Quaternion.Slerp(_rb.rotation, targetRotation, _rotationSpeed * Time.fixedDeltaTime));
     }
 }
