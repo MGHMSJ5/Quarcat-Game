@@ -19,6 +19,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(string[] sequence)
     {
+        joystick.ResetInput();
+
         isDialogueActive = true;
         dialogueSequence = sequence;
         currentLineIndex = 0;
@@ -80,7 +82,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         // Resets joystick position
-        ResetJoystick();
+        //ResetJoystick();
 
         dialogueBox.SetActive(false);
     }
