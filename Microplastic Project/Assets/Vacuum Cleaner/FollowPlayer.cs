@@ -5,9 +5,12 @@ public class FollowPlayer : MonoBehaviour
     [SerializeField]
     private Transform target;
 
-    private void Start()
+    private void Awake()
     {//get the target by name (its in the player prefab
-        target = GameObject.Find("VacuumNozzleLocation").transform;
+        if (target == null)
+        {
+            target = GameObject.Find("VacuumNozzleLocation").transform;
+        }
     }
 
     void Update()

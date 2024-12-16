@@ -1162,6 +1162,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3907302175324094043, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
   m_PrefabInstance: {fileID: 813196018}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &813196023 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8148978164385158299, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
+  m_PrefabInstance: {fileID: 813196018}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &851889606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2229,6 +2234,10 @@ PrefabInstance:
       propertyPath: m_Positions.Array.data[7].z
       value: -9.659
       objectReference: {fileID: 0}
+    - target: {fileID: 7026363145536552258, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 813196023}
     - target: {fileID: 7582624834266404071, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Name
       value: THE_VacuumCleaner
