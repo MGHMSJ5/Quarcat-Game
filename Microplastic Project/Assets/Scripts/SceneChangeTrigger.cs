@@ -63,6 +63,7 @@ public class SceneChangeTrigger : MonoBehaviour
         
         playerHead.transform.parent = null;
         playerHead.tag = _moveTag;
+        Debug.Log(playerHead);
         SceneManager.MoveGameObjectToScene(playerHead, SceneManager.GetSceneByName(sceneName));
 
         //unload the current scene
