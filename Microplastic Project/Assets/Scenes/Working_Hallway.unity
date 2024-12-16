@@ -521,7 +521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   recycledObjects: []
-  playerHead: {fileID: 0}
+  playerHead: {fileID: 904590299}
   recycleButton: {fileID: 773894743}
   _progressManager: {fileID: 0}
 --- !u!65 &696391212
