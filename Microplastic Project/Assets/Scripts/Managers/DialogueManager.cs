@@ -13,9 +13,9 @@ public class DialogueManager : MonoBehaviour
 
     private float originalTimeScale;
 
-    // Put Joystick here
     [Header("Gameplay Input Settings")]
-    public GameObject inputManager; 
+    public GameObject inputManager; // Reference to input manager
+    public Joystick joystick;       // Reference to the joystick component
 
     public void StartDialogue(string[] sequence)
     {
@@ -23,13 +23,13 @@ public class DialogueManager : MonoBehaviour
         dialogueSequence = sequence;
         currentLineIndex = 0;
 
-        // Pauses game time when dialogue box open
+        // Pause game time when dialogue box is open
         originalTimeScale = Time.timeScale;
         Time.timeScale = 0f;
 
         if (inputManager != null)
         {
-            inputManager.SetActive(false); // Disables input systems
+            inputManager.SetActive(false); // Disable input systems
         }
 
         dialogueBox.SetActive(true);
@@ -46,7 +46,6 @@ public class DialogueManager : MonoBehaviour
 
     private bool IsScreenTapped()
     {
-        // Detect screen tap for mobile devices
         return Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began;
     }
 
@@ -72,7 +71,7 @@ public class DialogueManager : MonoBehaviour
     {
         isDialogueActive = false;
 
-        // Resume game times and re-enable gameplay input
+        // Resume game time and re-enable gameplay input
         Time.timeScale = originalTimeScale;
 
         if (inputManager != null)
@@ -80,6 +79,22 @@ public class DialogueManager : MonoBehaviour
             inputManager.SetActive(true);
         }
 
+        // Resets joystick position
+        ResetJoystick();
+
         dialogueBox.SetActive(false);
+    }
+
+    private void ResetJoystick()
+    {
+        if (joystick != null)
+        {
+            // this a reference to our Joystick Pack
+            RectTransform handle = joystick.transform.GetChild(0) as RectTransform;
+            if (handle != null)
+            {
+                handle.anchoredPosition = Vector2.zero; // Resets the joystick position prior to entering dialogue
+            }
+        }
     }
 }
