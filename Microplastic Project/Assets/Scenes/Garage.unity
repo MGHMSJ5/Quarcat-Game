@@ -1929,15 +1929,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3791,9 +3791,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 83307670}
   spawnDialogue:
-  - There should be something around here that can help me to get rid of those microplastics
+  - There should be something around here that can help me get rid of those microplastics
     around here.
-  - <color=green> To move around, use the joystick in the bottom left side of your
+  - <color=green>To move around, use the joystick in the bottom left side of your
     screen.</color>
 --- !u!1001 &2146391234
 PrefabInstance:
