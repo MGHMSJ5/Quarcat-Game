@@ -63,6 +63,10 @@ public class RecyclingBin : MonoBehaviour
     public void RecycleObjects()
     {
         int recycledObjectsCount = recycledObjects.Count;
+        if (recycledObjectsCount == 0)
+        {
+            return;
+        }
         _progressManager.AddToProgress(recycledObjectsCount);
 
         for (int i = 0; i < recycledObjectsCount; i++)
