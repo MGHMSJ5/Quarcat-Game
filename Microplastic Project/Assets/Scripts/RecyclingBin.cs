@@ -27,10 +27,16 @@ public class RecyclingBin : MonoBehaviour
         GameObject movedObject = GameObject.FindGameObjectWithTag("SceneMoved");
         if (movedObject != null)
         {
+            List<Transform> children = new List<Transform>();
             foreach (Transform child in movedObject.transform)
             {
+                children.Add(child);
+            }
+            foreach (Transform child in children)
+            {
+                print(child);
                 child.parent = null;
-                child.gameObject.name = "ReplacedObjectParent";
+                child.gameObject.name = "OriginalObjectParent";
                 GrabRecycleObject(child.gameObject);
                 Destroy(child.gameObject);
             }
