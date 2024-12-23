@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialogueBox;
     public TextMeshProUGUI dialogueText;
     public Button nextArrowButton; // Reference to the continue button
+    public Image dialogueIcon; // Reference to the icon image
 
     private string[] dialogueSequence;
     private int currentLineIndex;
@@ -22,8 +23,17 @@ public class DialogueManager : MonoBehaviour
     private Button[] allButtons; // An array to store all our buttons
     private Button[] disabledButtons; // Keeps track of temporarily disabled buttons while in dialogue
 
+    public Sprite defaultIcon; // The icon to be displayed during the dialogue
+
     private void Start()
     {
+        // Ensure the icon is visible for all dialogues.
+        if (dialogueIcon != null && defaultIcon != null)
+        {
+            dialogueIcon.sprite = defaultIcon; // Set the default icon
+            dialogueIcon.gameObject.SetActive(true); // Make sure the icon is visible
+        }
+
         if (nextArrowButton != null)
         {
             nextArrowButton.onClick.AddListener(ProgressDialogue);
@@ -101,6 +111,10 @@ public class DialogueManager : MonoBehaviour
         {
             nextArrowButton.gameObject.SetActive(false);
         }
+
+        // Optionally, hide the icon at the end (if needed)
+        // If you want the icon to disappear at the end of the dialogue, uncomment this line.
+        // dialogueIcon.gameObject.SetActive(false);
     }
 
     private void DisableAllButtonsExcept(Button exceptionButton)
