@@ -879,6 +879,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.91
       objectReference: {fileID: 0}
+    - target: {fileID: 5754537445794486851, guid: 3e18018cbd13a6e4fa38d31956d1f3e5, type: 3}
+      propertyPath: m_text
+      value: Hot water or other hot liquids can damage plastic items and increase
+        the spread of microplastics.
+      objectReference: {fileID: 0}
     - target: {fileID: 5827266886186368693, guid: 3e18018cbd13a6e4fa38d31956d1f3e5, type: 3}
       propertyPath: identity
       value: 1
