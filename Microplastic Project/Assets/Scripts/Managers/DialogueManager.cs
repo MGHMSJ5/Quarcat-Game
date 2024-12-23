@@ -7,7 +7,7 @@ public class DialogueManager : MonoBehaviour
     [Header("UI References")]
     public GameObject dialogueBox;
     public TextMeshProUGUI dialogueText;
-    public Button nextArrowButton; // Reference to the arrow button
+    public Button nextArrowButton; // Reference to the continue button
 
     private string[] dialogueSequence;
     private int currentLineIndex;
@@ -18,6 +18,9 @@ public class DialogueManager : MonoBehaviour
     [Header("Gameplay Input Settings")]
     public GameObject inputManager; // Reference to input manager
     public Joystick joystick;       // Reference to the joystick component
+
+    private Button[] allButtons; // An array to store all our buttons
+    private Button[] disabledButtons; // Keeps track of temporarily disabled buttons while in dialogue
 
     private void Start()
     {
@@ -35,19 +38,22 @@ public class DialogueManager : MonoBehaviour
         dialogueSequence = sequence;
         currentLineIndex = 0;
 
-        // Pause game time when dialogue box is open
+        // Pauses game time when dialogue box is open
         originalTimeScale = Time.timeScale;
         Time.timeScale = 0f;
 
         if (inputManager != null)
         {
-            inputManager.SetActive(false); // Disable input systems
+            inputManager.SetActive(false); // Disables input systems
         }
+
+        // Disables all buttons except the dialogue button
+        DisableAllButtonsExcept(nextArrowButton);
 
         dialogueBox.SetActive(true);
         DisplayText(dialogueSequence[currentLineIndex]);
 
-        // Enable the arrow button
+        // Enables the continue button
         if (nextArrowButton != null)
         {
             nextArrowButton.gameObject.SetActive(true);
@@ -86,11 +92,41 @@ public class DialogueManager : MonoBehaviour
             inputManager.SetActive(true);
         }
 
-        // Hide the dialogue box and arrow button
+        // Restores the interactivity of all our buttons
+        RestoreAllButtons();
+
+        // Hides the dialogue box and continue button
         dialogueBox.SetActive(false);
         if (nextArrowButton != null)
         {
             nextArrowButton.gameObject.SetActive(false);
+        }
+    }
+
+    private void DisableAllButtonsExcept(Button exceptionButton)
+    {
+        allButtons = FindObjectsOfType<Button>(); // Finds all our buttons in the scene
+        disabledButtons = new Button[allButtons.Length];
+
+        int index = 0;
+        foreach (Button button in allButtons)
+        {
+            if (button != exceptionButton && button.interactable)
+            {
+                disabledButtons[index++] = button; // Tracks disabled buttons
+                button.interactable = false; // Disables button interactivity
+            }
+        }
+    }
+
+    private void RestoreAllButtons()
+    {
+        foreach (Button button in disabledButtons)
+        {
+            if (button != null)
+            {
+                button.interactable = true; // Restores button interactivity
+            }
         }
     }
 
