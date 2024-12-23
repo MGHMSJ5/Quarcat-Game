@@ -36,7 +36,7 @@ public class SpawningManager : MonoBehaviour
     private GameObject _popUpCanvas;
     private Animator _popUpAnimator;
     [SerializeField]
-    private float _animationWaitAnimation = 6f;
+    private float _popUpWait = 6f;
 
     [Header("Respawn")]
     [SerializeField]
@@ -69,7 +69,7 @@ public class SpawningManager : MonoBehaviour
         {
             SpawnBoolManager.SetIsSpawning(identity, false);
             _popUpCanvas.SetActive(true);
-            StartCoroutine(PopUpAnimation(_animationWaitAnimation));
+            StartCoroutine(PopUpAnimation(_popUpWait));
         }
         
         if (SpawnBoolManager.GetIsSpawning(identity) && _canSpawn)
