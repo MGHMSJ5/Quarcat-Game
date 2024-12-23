@@ -20,20 +20,6 @@ public class SpawningManager : MonoBehaviour
     private float _spawnBreakMin = 1f;
 
     private bool _canSpawn = true; //added bool so that spawning only happens once
-    //private static bool _hasReplaced = false; //use bool so that replacing button won't appear again when replaced
-    //private static bool _isSpawning = false; //bool that will be true when microplastics have been spawned
-    ////Will be used to spawn enemies again if they are not caught and player goes through different scenes
-
-    //public bool HasReplaced
-    //{
-    //    get { return _hasReplaced; }
-    //    set { _hasReplaced = value; }
-    //}
-
-    //public bool IsSpawning
-    //{
-    //    get { return _isSpawning; }
-    //}
 
     [Header("Replacing")]
     [SerializeField]
@@ -46,6 +32,11 @@ public class SpawningManager : MonoBehaviour
     private TextMeshProUGUI _replacingText;
     [SerializeField]
     private string _textForReplacing;
+    [SerializeField]
+    private GameObject _popUpCanvas;
+    private Animator _popUpAnimator;
+    [SerializeField]
+    private float _animationWaitAnimation = 6f;
 
     [Header("Respawn")]
     [SerializeField]
@@ -66,13 +57,19 @@ public class SpawningManager : MonoBehaviour
             _originalGameObjectParent.SetActive(false);
             _replacngGameObjectParent.SetActive(true);
         }
+
+        //get animator from canvas's child
+        _popUpAnimator = _popUpCanvas.transform.GetChild(0).GetComponent<Animator>();
+        _popUpCanvas.SetActive(false);
     }
 
     private void Update()
     {
-        if (SpawnBoolManager.GetHasReplaced(identity))
+        if (SpawnBoolManager.GetHasReplaced(identity) && SpawnBoolManager.GetIsSpawning(identity))
         {
             SpawnBoolManager.SetIsSpawning(identity, false);
+            _popUpCanvas.SetActive(true);
+            StartCoroutine(PopUpAnimation(_animationWaitAnimation));
         }
         
         if (SpawnBoolManager.GetIsSpawning(identity) && _canSpawn)
@@ -176,6 +173,14 @@ public class SpawningManager : MonoBehaviour
             }
         }
         return true;
+    }
+
+    private IEnumerator PopUpAnimation(float waitSeconds)
+    {
+        yield return new WaitForSeconds(0.5f);
+        _popUpAnimator.SetTrigger("Enter");
+        yield return new WaitForSeconds(waitSeconds);
+        _popUpAnimator.SetTrigger("Leave");
     }
 
     private float GetRandomTime(float maxTime, float minTime)
