@@ -1,11 +1,13 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
     [Header("UI References")]
     public GameObject dialogueBox;
     public TextMeshProUGUI dialogueText;
+    public Button nextArrowButton; // Reference to the arrow button
 
     private string[] dialogueSequence;
     private int currentLineIndex;
@@ -16,6 +18,14 @@ public class DialogueManager : MonoBehaviour
     [Header("Gameplay Input Settings")]
     public GameObject inputManager; // Reference to input manager
     public Joystick joystick;       // Reference to the joystick component
+
+    private void Start()
+    {
+        if (nextArrowButton != null)
+        {
+            nextArrowButton.onClick.AddListener(ProgressDialogue);
+        }
+    }
 
     public void StartDialogue(string[] sequence)
     {
@@ -36,23 +46,18 @@ public class DialogueManager : MonoBehaviour
 
         dialogueBox.SetActive(true);
         DisplayText(dialogueSequence[currentLineIndex]);
-    }
 
-    void Update()
-    {
-        if (isDialogueActive && (Input.GetMouseButtonDown(0) || IsScreenTapped()))
+        // Enable the arrow button
+        if (nextArrowButton != null)
         {
-            ProgressDialogue();
+            nextArrowButton.gameObject.SetActive(true);
         }
-    }
-
-    private bool IsScreenTapped()
-    {
-        return Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began;
     }
 
     private void ProgressDialogue()
     {
+        if (!isDialogueActive) return;
+
         currentLineIndex++;
         if (currentLineIndex < dialogueSequence.Length)
         {
@@ -81,10 +86,12 @@ public class DialogueManager : MonoBehaviour
             inputManager.SetActive(true);
         }
 
-        // Resets joystick position
-        //ResetJoystick();
-
+        // Hide the dialogue box and arrow button
         dialogueBox.SetActive(false);
+        if (nextArrowButton != null)
+        {
+            nextArrowButton.gameObject.SetActive(false);
+        }
     }
 
     private void ResetJoystick()
