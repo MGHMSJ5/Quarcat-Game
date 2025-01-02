@@ -40,6 +40,10 @@ public static class SpawnBoolManager
 
     public static bool GetHasReplaced(int id)
     {
+        if (GetListInt(id) == -1)
+        {
+            return false;
+        }
         return BoolsList[GetListInt(id)].hasReplaced;
     }
     public static void SetIsSpawning(int id, bool spawn)
@@ -49,6 +53,10 @@ public static class SpawnBoolManager
 
     public static bool GetIsSpawning(int id)
     {
+        if (GetListInt(id) == -1)
+        {
+            return false;
+        }
         return BoolsList[GetListInt(id)].isSpawning;
     }
 
@@ -61,6 +69,6 @@ public static class SpawnBoolManager
                 return i;
             }
         }
-        return 0;
+        return -1;
     }
 }

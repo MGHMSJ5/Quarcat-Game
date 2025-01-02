@@ -11,8 +11,7 @@ public class BookContentButtons : MonoBehaviour
     private Color _notActiveColor;
     [SerializeField]
     private Color _activeColor;
-    [SerializeField]
-    private List<GameObject> _informationObjects = new List<GameObject>();
+    public List<GameObject> _informationObjects = new List<GameObject>();
 
     [SerializeField]
     private Button _enableActive; //put in which part of the book will be active
@@ -37,11 +36,11 @@ public class BookContentButtons : MonoBehaviour
         }
     }
 
-    public void DeactivateExcept(GameObject go)
+    public void DeactivateExcept(int id)
     {
         for (int i = 0; i < _informationObjects.Count; i++)
         {
-            if (go != _informationObjects[i])
+            if ((id - 1) != i)
             {
                 _informationObjects[i].SetActive(false);
             }
