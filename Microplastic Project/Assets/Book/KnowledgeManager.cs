@@ -6,18 +6,17 @@ using UnityEngine;
 public class KnowledgeManager : MonoBehaviour
 {
     [Serializable]
-    public class ButtonChanges
+    public class EntriesAndButtons
     {
+        public int id;
+        public GameObject information;
         public TextMeshProUGUI buttonText;
         public string name;
         public float size;
     }
-    [Header("Replacing")]
-    [SerializeField]
-    private List<ButtonChanges> _buttonChanges = new List<ButtonChanges>();
 
     [SerializeField]
-    private List<GameObject> _entriesWInformation = new List<GameObject>();
+    private List<EntriesAndButtons> _entriesAndButtons = new List<EntriesAndButtons>();
 
     private BookContentButtons _knowledgeBookContentButtons;
 
@@ -28,28 +27,28 @@ public class KnowledgeManager : MonoBehaviour
 
     private void OnEnable()
     {
-        for (int i = 0; i < _entriesWInformation.Count; i++)
+        for (int i = 0; i < _entriesAndButtons.Count; i++)
         {
-            ChangeEntryIfReplaced(i + 1); //add + 1 so that it matches with the Microplastic id
-            ChangeButtonName(i + 1);
+            ChangeEntryIfReplaced(_entriesAndButtons[i].id, i); //add + 1 so that it matches with the Microplastic id
+            ChangeButtonName(_entriesAndButtons[i].id, i);
         }
     }
-    private void ChangeEntryIfReplaced(int id)
+    private void ChangeEntryIfReplaced(int id, int index)
     {
-        if (SpawnBoolManager.GetHasReplaced(id))
+        if (SpawnBoolManager.GetHasReplaced(id) || NotesManager.CheckContainsId(id))
         {
-            _knowledgeBookContentButtons._informationObjects[id - 1].SetActive(false); //deactivate Entry X just to be sure
-            _knowledgeBookContentButtons._informationObjects[id - 1] = _entriesWInformation[id - 1];
+            _knowledgeBookContentButtons._informationObjects[index].SetActive(false); //deactivate Entry X just to be sure
+            _knowledgeBookContentButtons._informationObjects[index] = _entriesAndButtons[index].information;
         }
     }
 
-    private void ChangeButtonName(int id)
+    private void ChangeButtonName(int id, int index)
     {
-        if (SpawnBoolManager.GetHasReplaced(id))
+        if (SpawnBoolManager.GetHasReplaced(id) || NotesManager.CheckContainsId(id))
         {   //change the text name, and size
-            TextMeshProUGUI buttonText = _buttonChanges[id - 1].buttonText;
-            buttonText.text = _buttonChanges[id - 1].name;
-            buttonText.fontSize = _buttonChanges[id - 1].size;
+            TextMeshProUGUI buttonText = _entriesAndButtons[index].buttonText;
+            buttonText.text = _entriesAndButtons[index].name;
+            buttonText.fontSize = _entriesAndButtons[index].size;
         }
     }
 }
