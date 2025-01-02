@@ -1,6 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public static class NotesManager
 {
@@ -29,7 +27,6 @@ public static class NotesManager
                 return true;
             }
         }
-
         return false;
     }
 }
