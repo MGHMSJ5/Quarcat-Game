@@ -36,11 +36,11 @@ public class BookContentButtons : MonoBehaviour
         }
     }
 
-    public void DeactivateExcept(int id)
+    public void DeactivateExcept(int index)
     {
         for (int i = 0; i < _informationObjects.Count; i++)
         {
-            if ((id - 1) != i)
+            if ((index) != i)
             {
                 _informationObjects[i].SetActive(false);
             }
