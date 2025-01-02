@@ -29,7 +29,7 @@ public class KnowledgeManager : MonoBehaviour
     {
         for (int i = 0; i < _entriesAndButtons.Count; i++)
         {
-            ChangeEntryIfReplaced(_entriesAndButtons[i].id, i); //add + 1 so that it matches with the Microplastic id
+            ChangeEntryIfReplaced(_entriesAndButtons[i].id, i);
             ChangeButtonName(_entriesAndButtons[i].id, i);
         }
     }
