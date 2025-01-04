@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Working_Hallway.unity
     guid: 052da104f47fa814c960ad87fb0c334f
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 585ed30cd049b224190592755d36e8a2
   m_configObjects: {}
