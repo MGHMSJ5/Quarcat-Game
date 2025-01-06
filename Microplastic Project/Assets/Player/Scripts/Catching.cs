@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class Catching : MonoBehaviour
@@ -11,8 +10,7 @@ public class Catching : MonoBehaviour
     public class Beadies
     {
         public GameObject catchObject;
-        public NavMeshAgent agent;
-        public float originalSpeed;
+        public BeadieCatchingManager beadieCatchingManager;
     }
 
     [SerializeField]
@@ -30,9 +28,6 @@ public class Catching : MonoBehaviour
 
     [SerializeField]
     private float _catchSpeed = 0.4f;
-    [SerializeField]
-    private float _slowedSpeed = 2f; //subtracts from speed
-    private GameObject _bar;
     private bool _canCatch = false; 
     private bool _catching = false;
 
@@ -49,56 +44,16 @@ public class Catching : MonoBehaviour
 
     private void Update()
     {
-        if (_catching && _bar != null)
+        if (_beadies.Count > 0)
         {
-            Transform transform = _bar.GetComponent<Transform>();
-
-            float decrease = _catchSpeed * Time.deltaTime;
-            //make sure that it doesn't go below 0
-            float newScaleX = Mathf.Max(transform.localScale.x - decrease, 0);
-
-            transform.localScale = new Vector3(newScaleX, transform.localScale.y, transform.localScale.z);
-
-            if (transform.localScale.x <= 0)
+            for (int i = 0; _beadies.Count > 0; i++)
             {
-                for (int i = 0; _beadies.Count > 0; i++)
+                if (_beadies[i].catchObject == null)
                 {
-                    if (_beadies[i].catchObject = _bar.transform.parent.gameObject)
-                    {
-                        Destroy(_beadies[i].catchObject.transform.parent.parent.gameObject);
-                        _beadies.RemoveAt(i);
-                    }
-                    else
-                    {
-                        Destroy(_bar.transform.parent.parent);
-                    }
+                    _beadies.RemoveAt(i);
                 }
-                
-                CatchCheck();
             }
         }
-    }
-
-    public void CatchMicroplastic()
-    {
-        if (!_canCatch)
-        {
-            return;
-        }
-        _bar = _beadies[0].catchObject.transform.GetChild(0).gameObject;
-        NavMeshAgent agent = _beadies[0].agent;
-        agent.speed -= _slowedSpeed;
-        _catching = true;
-        CatchCheck();
-    }
-
-    public void ReleaseMicroplastic()
-    {
-        if (_canCatch)
-        {
-            _beadies[0].agent.speed = _beadies[0].originalSpeed;
-        }
-        _catching = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -109,9 +64,8 @@ public class Catching : MonoBehaviour
             Beadies toAdd = new Beadies()
             {
                 catchObject = other.gameObject,
-                agent = other.gameObject.transform.parent.GetComponent<NavMeshAgent>(),
+                beadieCatchingManager = other.GetComponent<BeadieCatchingManager>(),
             };
-            toAdd.originalSpeed = toAdd.agent.speed;
             _beadies.Add(toAdd);
             CatchCheck();
         }
@@ -131,7 +85,30 @@ public class Catching : MonoBehaviour
             }
         }
     }
-    public void CatchCheck()
+
+    public void CatchMicroplastic()
+    {
+        if (!_canCatch)
+        {
+            return;
+        }
+        _beadies[0].beadieCatchingManager.catchSpeed = _catchSpeed;
+        _beadies[0].beadieCatchingManager.Catching();
+        _catching = true;
+        CatchCheck();
+    }
+
+    public void ReleaseMicroplastic()
+    {
+        if (_canCatch)
+        {
+            _beadies[0].beadieCatchingManager.StoppedCatching();
+        }
+        _catching = false;
+    }
+
+
+    private void CatchCheck()
     {
         if (_beadies.Count <= 0)
         {
@@ -139,6 +116,8 @@ public class Catching : MonoBehaviour
         }
         else
         {
+            //run method of beadie first in the list
+            _beadies[0].beadieCatchingManager.InRangeToCatch();
             CanCatch(true);
         }
     }
@@ -175,7 +154,7 @@ public class Catching : MonoBehaviour
 
     private void BeadieEscape(int beadieIndex)
     {
-        _beadies[beadieIndex].agent.speed = _beadies[beadieIndex].originalSpeed;
+        _beadies[beadieIndex].beadieCatchingManager.OutOfRangeToCatch();
         _beadies.RemoveAt(beadieIndex);
 
         CatchCheck();
