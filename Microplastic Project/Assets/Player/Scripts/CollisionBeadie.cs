@@ -4,7 +4,7 @@ using UnityEngine;
 public class CollisionBeadie : MonoBehaviour
 {
     [SerializeField]
-    private Catching _catching;
+    private Catching _catchingScript;
     [SerializeField]
     private float _interruptDelay = 2f;
 
@@ -14,9 +14,12 @@ public class CollisionBeadie : MonoBehaviour
     {
         if (other.gameObject.tag == "Interrupt" && _canInterrupt)
         {
-            _catching.CatchingInterrupt();
-            _canInterrupt = false;
-            StartCoroutine(InterruptDelay());
+            if (_catchingScript.IsCatching)
+            {
+                _catchingScript.CatchingInterrupt();
+                _canInterrupt = false;
+                StartCoroutine(InterruptDelay());
+            }
         }
     }
 

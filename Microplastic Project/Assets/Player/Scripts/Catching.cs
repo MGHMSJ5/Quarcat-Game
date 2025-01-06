@@ -31,6 +31,11 @@ public class Catching : MonoBehaviour
     private bool _canCatch = false; 
     private bool _catching = false;
 
+    public bool IsCatching
+    {
+        get { return _canCatch; }
+    }
+
     void Awake()
     {
         _button = _catchButton.GetComponent<Button>();
@@ -135,11 +140,8 @@ public class Catching : MonoBehaviour
 
     public void CatchingInterrupt()
     {
-        if (_catching)
-        {
-            CanCatch(false);
-            _beadies[0].beadieCatchingManager.OutOfRangeToCatch();
-        }
+        CanCatch(false);
+        _beadies[0].beadieCatchingManager.OutOfRangeToCatch();
         StartCoroutine(CheckCatching());
     }
 

@@ -133,7 +133,6 @@ MonoBehaviour:
   _canUseColor: {r: 1, g: 1, b: 1, a: 1}
   _cantUseColor: {r: 0.50980395, g: 0.50980395, b: 0.50980395, a: 1}
   _catchSpeed: 0.4
-  _slowedSpeed: 1
 --- !u!1 &5247708341711173027
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17483124bcbd17b4b842812806eb060f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _catching: {fileID: 4304083636398620907}
+  _catchingScript: {fileID: 4304083636398620907}
+  _interruptDelay: 2
 --- !u!1 &6210671447167294375
 GameObject:
   m_ObjectHideFlags: 0
