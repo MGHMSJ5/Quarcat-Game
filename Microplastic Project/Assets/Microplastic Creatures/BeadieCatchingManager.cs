@@ -13,6 +13,8 @@ public class BeadieCatchingManager : MonoBehaviour
     private NavMeshAgent _agent;
     [SerializeField]
     private GameObject _canCatchIndicator;
+    [SerializeField]
+    private GameObject _interrupt;
 
     [Header("Changeable Variables")]
     [SerializeField]
@@ -75,11 +77,13 @@ public class BeadieCatchingManager : MonoBehaviour
     {
         _agent.speed = _slowedSpeed;
         _isCatching = true;
+        _interrupt.SetActive(false);
     }
 
     public void StoppedCatching()
     {
         _agent.speed = _normalSpeed;
         _isCatching = false;
+        _interrupt.SetActive(true);
     }
 }

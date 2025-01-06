@@ -6,15 +6,15 @@ public class CollisionBeadie : MonoBehaviour
     [SerializeField]
     private Catching _catching;
     [SerializeField]
-    private float _interruptDelay = 4f;
+    private float _interruptDelay = 2f;
 
     private bool _canInterrupt = true;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "MP1" && _canInterrupt)
+        if (other.gameObject.tag == "Interrupt" && _canInterrupt)
         {
-            _catching.CatchingInterrupt(other.gameObject);
+            _catching.CatchingInterrupt();
             _canInterrupt = false;
             StartCoroutine(InterruptDelay());
         }

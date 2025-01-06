@@ -133,22 +133,19 @@ public class Catching : MonoBehaviour
         }
     }
 
-    public void CatchingInterrupt(GameObject beadieInterrupt)
+    public void CatchingInterrupt()
     {
         if (_catching)
         {
-            if (_beadies[0].catchObject = beadieInterrupt)
-            {
-                return;
-            }
             CanCatch(false);
+            _beadies[0].beadieCatchingManager.OutOfRangeToCatch();
         }
         StartCoroutine(CheckCatching());
     }
 
     private IEnumerator CheckCatching()
     {//check for catching a little bit after being hit. In case beadie is still in trigger after being hit
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         CatchCheck();
     }
 

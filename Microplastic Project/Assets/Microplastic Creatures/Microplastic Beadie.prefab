@@ -35,6 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4337354218613045798}
+  - {fileID: 7376850208329573536}
   - {fileID: 513897974056949778}
   - {fileID: 3628492340707157770}
   - {fileID: 5348012219526349725}
@@ -256,6 +257,59 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &552969911827473243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7376850208329573536}
+  - component: {fileID: 6020824470257944682}
+  m_Layer: 0
+  m_Name: InteruptTrigger
+  m_TagString: Interrupt
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7376850208329573536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552969911827473243}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.05, y: 1.05, z: 1.05}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 9039452978675535810}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6020824470257944682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552969911827473243}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3390934079721866084
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,13 +409,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 882ea3370c1fc1c4c938b0220e001f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catchSpeed: 0.1
   _canvas: {fileID: 7994395408075437083}
   _healthImage: {fileID: 7280321645080549485}
   _agent: {fileID: 909319900102519303}
   _canCatchIndicator: {fileID: 3390934079721866084}
+  _interrupt: {fileID: 552969911827473243}
   _normalSpeed: 5
   _slowedSpeed: 3
+  catchSpeed: 0.1
 --- !u!1 &4658223406407956295
 GameObject:
   m_ObjectHideFlags: 0
