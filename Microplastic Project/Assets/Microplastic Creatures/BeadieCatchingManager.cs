@@ -40,14 +40,14 @@ public class BeadieCatchingManager : MonoBehaviour
     void Update()
     {
         if (_isCatching)
-        {
+        {//lower 3D health bar when catching
             float decrease = catchSpeed * Time.deltaTime;
             //make sure that it doesn't go below 0
             float newScaleX = Mathf.Max(healthbar.localScale.x - decrease, 0);
 
             healthbar.localScale = new Vector3(newScaleX, healthbar.localScale.y, healthbar.localScale.z);
         }
-
+        //change UI health bar to be the same as the 3D health bar
         Vector3 newSize = new Vector3(healthbar.localScale.x, _healthImage.rectTransform.localScale.y, _healthImage.rectTransform.localScale.z);
 
         _healthImage.rectTransform.localScale = newSize;

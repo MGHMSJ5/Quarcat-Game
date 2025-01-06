@@ -45,7 +45,7 @@ public class Catching : MonoBehaviour
     private void Update()
     {
         if (_beadies.Count > 0)
-        {
+        {//remove any rows where Beadie has been deleted
             for (int i = 0; i < _beadies.Count; i++)
             {
                 if (_beadies[i].catchObject == null)
