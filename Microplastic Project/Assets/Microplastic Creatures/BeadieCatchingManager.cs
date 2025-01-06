@@ -15,11 +15,14 @@ public class BeadieCatchingManager : MonoBehaviour
     private GameObject _canCatchIndicator;
 
     [Header("Changeable Variables")]
-    public float catchSpeed = 0.1f;
     [SerializeField]
     private float _normalSpeed = 5f;
     [SerializeField]
     private float _slowedSpeed = 3f;
+
+    [Header("")]
+    [Tooltip("This variable will be changed by the Catching script")]
+    public float catchSpeed = 0.1f;
 
     private Transform healthbar;
 
