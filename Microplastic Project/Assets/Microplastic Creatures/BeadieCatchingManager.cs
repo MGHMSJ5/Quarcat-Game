@@ -54,7 +54,7 @@ public class BeadieCatchingManager : MonoBehaviour
 
         if (healthbar.localScale.x <= 0)
         {
-            Destroy(transform.parent.parent);
+            Destroy(transform.parent.parent.gameObject);
         }
     }
 
