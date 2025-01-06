@@ -31,7 +31,7 @@ public class Catching : MonoBehaviour
     [SerializeField]
     private float _catchSpeed = 0.4f;
     [SerializeField]
-    private float _slowedSpeed = 1f; //subtracts from speed
+    private float _slowedSpeed = 2f; //subtracts from speed
     private GameObject _bar;
     private bool _canCatch = false; 
     private bool _catching = false;
@@ -61,8 +61,19 @@ public class Catching : MonoBehaviour
 
             if (transform.localScale.x <= 0)
             {
-                Destroy(_beadies[0].catchObject.transform.parent.parent.gameObject);
-                _beadies.RemoveAt(0);
+                for (int i = 0; _beadies.Count > 0; i++)
+                {
+                    if (_beadies[i].catchObject = _bar.transform.parent.gameObject)
+                    {
+                        Destroy(_beadies[i].catchObject.transform.parent.parent.gameObject);
+                        _beadies.RemoveAt(i);
+                    }
+                    else
+                    {
+                        Destroy(_bar.transform.parent.parent);
+                    }
+                }
+                
                 CatchCheck();
             }
         }
@@ -88,7 +99,6 @@ public class Catching : MonoBehaviour
             _beadies[0].agent.speed = _beadies[0].originalSpeed;
         }
         _catching = false;
-        _bar = null;
     }
 
     private void OnTriggerEnter(Collider other)
