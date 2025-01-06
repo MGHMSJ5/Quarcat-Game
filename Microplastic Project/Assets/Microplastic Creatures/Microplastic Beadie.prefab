@@ -35,8 +35,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4337354218613045798}
-  - {fileID: 7376850208329573536}
   - {fileID: 513897974056949778}
+  - {fileID: 7376850208329573536}
   - {fileID: 3628492340707157770}
   - {fileID: 5348012219526349725}
   m_Father: {fileID: 0}
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 7376850208329573536}
   - component: {fileID: 6020824470257944682}
   m_Layer: 0
-  m_Name: InteruptTrigger
+  m_Name: InterruptTrigger
   m_TagString: Interrupt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
