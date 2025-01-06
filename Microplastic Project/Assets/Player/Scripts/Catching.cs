@@ -46,7 +46,7 @@ public class Catching : MonoBehaviour
     {
         if (_beadies.Count > 0)
         {
-            for (int i = 0; _beadies.Count > 0; i++)
+            for (int i = 0; i < _beadies.Count; i++)
             {
                 if (_beadies[i].catchObject == null)
                 {
@@ -64,7 +64,7 @@ public class Catching : MonoBehaviour
             Beadies toAdd = new Beadies()
             {
                 catchObject = other.gameObject,
-                beadieCatchingManager = other.GetComponent<BeadieCatchingManager>(),
+                beadieCatchingManager = other.gameObject.GetComponent<BeadieCatchingManager>(),
             };
             _beadies.Add(toAdd);
             CatchCheck();
@@ -75,7 +75,7 @@ public class Catching : MonoBehaviour
     {
         if (other.gameObject.tag == "MP1")
         {
-            for (int i = 0; _beadies.Count > 0; i++)
+            for (int i = 0; i < _beadies.Count; i++)
             {
                 if (_beadies[i].catchObject == other.gameObject)
                 {

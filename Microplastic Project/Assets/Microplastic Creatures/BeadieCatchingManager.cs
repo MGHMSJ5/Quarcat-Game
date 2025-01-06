@@ -6,13 +6,15 @@ using UnityEngine.UI;
 
 public class BeadieCatchingManager : MonoBehaviour
 {
-    public float catchSpeed;
+    public float catchSpeed = 0.1f;
     [SerializeField]
     private GameObject _canvas;
     [SerializeField]
     private Image _healthImage;
     [SerializeField]
     private NavMeshAgent _agent;
+    [SerializeField]
+    private GameObject _canCatchIndicator;
     [SerializeField]
     private float _normalSpeed = 5f;
     [SerializeField]
@@ -26,6 +28,7 @@ public class BeadieCatchingManager : MonoBehaviour
     {
         healthbar = transform.GetChild(0);
         _canvas.SetActive(false);
+        _canCatchIndicator.SetActive(false);
         _agent.speed = _normalSpeed;
     }
 
@@ -54,11 +57,13 @@ public class BeadieCatchingManager : MonoBehaviour
     public void InRangeToCatch()
     {
         _canvas.SetActive(true);
+        _canCatchIndicator.SetActive(true);
     }
 
     public void OutOfRangeToCatch()
     {
         _canvas.SetActive(false);
+        _canCatchIndicator.SetActive(false);
         StoppedCatching();
     }
 
