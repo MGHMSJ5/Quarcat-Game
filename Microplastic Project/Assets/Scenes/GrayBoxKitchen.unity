@@ -3146,7 +3146,7 @@ PrefabInstance:
       objectReference: {fileID: 870268851}
     - target: {fileID: 5635821914740297439, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CatchMicroplastic
+      value: ReleaseMicroplastic
       objectReference: {fileID: 0}
     - target: {fileID: 7808545245344554985, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3155,6 +3155,22 @@ PrefabInstance:
     - target: {fileID: 7808545245344554985, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SpawnBlocks
+      objectReference: {fileID: 0}
+    - target: {fileID: 8246439305764878345, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 870268851}
+    - target: {fileID: 8246439305764878345, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CatchMicroplastic
+      objectReference: {fileID: 0}
+    - target: {fileID: 8246439305764878345, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Catching, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8246439305764878345, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9199859342219519632, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
