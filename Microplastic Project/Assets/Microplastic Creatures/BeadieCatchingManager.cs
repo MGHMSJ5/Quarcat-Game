@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class BeadieCatchingManager : MonoBehaviour
 {
-    public float catchSpeed = 0.1f;
+    [Header("References")]
     [SerializeField]
     private GameObject _canvas;
     [SerializeField]
@@ -15,6 +13,9 @@ public class BeadieCatchingManager : MonoBehaviour
     private NavMeshAgent _agent;
     [SerializeField]
     private GameObject _canCatchIndicator;
+
+    [Header("Changeable Variables")]
+    public float catchSpeed = 0.1f;
     [SerializeField]
     private float _normalSpeed = 5f;
     [SerializeField]
