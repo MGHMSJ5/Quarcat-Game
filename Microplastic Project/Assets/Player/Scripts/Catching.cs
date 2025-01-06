@@ -88,6 +88,7 @@ public class Catching : MonoBehaviour
 
     public void CatchMicroplastic()
     {
+        CatchCheck();
         if (!_canCatch)
         {
             return;
@@ -95,12 +96,11 @@ public class Catching : MonoBehaviour
         _beadies[0].beadieCatchingManager.catchSpeed = _catchSpeed;
         _beadies[0].beadieCatchingManager.Catching();
         _catching = true;
-        CatchCheck();
     }
 
     public void ReleaseMicroplastic()
     {
-        if (_canCatch)
+        if (_canCatch && _beadies.Count > 0)
         {
             _beadies[0].beadieCatchingManager.StoppedCatching();
         }
