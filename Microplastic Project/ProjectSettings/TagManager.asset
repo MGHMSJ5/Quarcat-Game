@@ -7,6 +7,7 @@ TagManager:
   - MP1
   - SceneMoved
   - VacuumManager
+  - Interrupt
   layers:
   - Default
   - TransparentFX
