@@ -257,17 +257,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3907302175324094043, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
   m_PrefabInstance: {fileID: 74991397}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &74991400 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4304083636398620907, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
-  m_PrefabInstance: {fileID: 74991397}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 686dbc1fef6444d45bcab23217ac6142, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &74991401 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7540543261869769790, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
@@ -1124,7 +1113,7 @@ PrefabInstance:
     - target: {fileID: 5635821914740297439, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 74991400}
+      objectReference: {fileID: 1418739229}
     - target: {fileID: 5635821914740297439, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReleaseMicroplastic
@@ -1140,7 +1129,7 @@ PrefabInstance:
     - target: {fileID: 8246439305764878345, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 74991400}
+      objectReference: {fileID: 1418739229}
     - target: {fileID: 8246439305764878345, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CatchMicroplastic
@@ -3096,6 +3085,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362143527}
   m_Mesh: {fileID: -5383979332346557193, guid: 718360b67a69b6741bc1263d8ba9203a, type: 3}
+--- !u!114 &1418739229 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3337219840926118664, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
+  m_PrefabInstance: {fileID: 74991397}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686dbc1fef6444d45bcab23217ac6142, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1428537157
 GameObject:
   m_ObjectHideFlags: 0

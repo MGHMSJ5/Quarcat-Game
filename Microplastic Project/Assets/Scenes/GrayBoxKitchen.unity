@@ -1371,7 +1371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &870268851 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4304083636398620907, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3337219840926118664, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
   m_PrefabInstance: {fileID: 870268848}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -3347,7 +3347,7 @@ PrefabInstance:
       objectReference: {fileID: 870268851}
     - target: {fileID: 8246439305764878345, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CatchMicroplastic
+      value: ReleaseMicroplastic
       objectReference: {fileID: 0}
     - target: {fileID: 8246439305764878345, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
