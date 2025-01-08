@@ -3,8 +3,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement Values")]
-    [SerializeField]
-    private float _speed = 5;
+    public float speed = 5;
     [SerializeField]
     private float _turnspeed = 360;
 
@@ -50,6 +49,6 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        _rb. MovePosition(transform.position + (transform.forward * _input.magnitude) * _speed * Time.deltaTime);
+        _rb. MovePosition(transform.position + (transform.forward * _input.magnitude) * speed * Time.deltaTime);
     }
 }

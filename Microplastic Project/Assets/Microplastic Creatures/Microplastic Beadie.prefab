@@ -415,7 +415,7 @@ MonoBehaviour:
   _canCatchIndicator: {fileID: 3390934079721866084}
   _interrupt: {fileID: 552969911827473243}
   _normalSpeed: 5
-  _slowedSpeed: 3
+  _slowedSpeed: 2
   catchSpeed: 0.1
 --- !u!1 &4658223406407956295
 GameObject:

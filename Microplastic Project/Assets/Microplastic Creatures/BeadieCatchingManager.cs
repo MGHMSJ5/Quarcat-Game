@@ -29,6 +29,11 @@ public class BeadieCatchingManager : MonoBehaviour
     private Transform healthbar;
 
     private bool _isCatching = false;
+
+    public float SlowedSpeed
+    {
+        get { return _slowedSpeed; }
+    }
     // Start is called before the first frame update
     void Start()
     {

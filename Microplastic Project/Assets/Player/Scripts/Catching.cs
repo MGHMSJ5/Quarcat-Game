@@ -25,7 +25,10 @@ public class Catching : MonoBehaviour
     private Color _canUseColor;
     [SerializeField]
     private Color _cantUseColor;
-
+    [Header("")]
+    [SerializeField]
+    private PlayerController _playerController;
+    private float _originalSpeed;
     [SerializeField]
     private float _catchSpeed = 0.4f;
     private bool _canCatch = false; 
@@ -45,6 +48,7 @@ public class Catching : MonoBehaviour
     private void Start()
     {
         CatchCheck();
+        _originalSpeed = _playerController.speed;
     }
 
     private void Update()
@@ -57,6 +61,23 @@ public class Catching : MonoBehaviour
                 {
                     _beadies.RemoveAt(i);
                 }
+            }
+        }
+
+        //change the speed of the player to be the slowed speed of the Beadie
+        if (_catching)
+        {
+            float slowedSpeed = _beadies[0].beadieCatchingManager.SlowedSpeed;
+            if (_playerController.speed != slowedSpeed)
+            {
+                _playerController.speed = slowedSpeed;
+            }
+        }
+        else
+        {
+            if (_playerController.speed != _originalSpeed)
+            {
+                _playerController.speed = _originalSpeed;
             }
         }
     }
