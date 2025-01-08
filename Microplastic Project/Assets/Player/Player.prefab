@@ -200,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17483124bcbd17b4b842812806eb060f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _catchingScript: {fileID: 4304083636398620907}
+  _catchingScript: {fileID: 3337219840926118664}
   _interruptDelay: 2
 --- !u!1 &6210671447167294375
 GameObject:
@@ -408,7 +408,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: 0, z: 0.01}
-  m_LocalScale: {x: 0.21279952, y: 0.7360086, z: 0.25707504}
+  m_LocalScale: {x: 0.21279952, y: 0.58577096, z: 0.22301774}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3907302175324094043}

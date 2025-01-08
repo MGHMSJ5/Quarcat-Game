@@ -36,7 +36,7 @@ public class Catching : MonoBehaviour
 
     public bool IsCatching
     {
-        get { return _canCatch; }
+        get { return _catching; }
     }
 
     void Awake()
@@ -60,6 +60,7 @@ public class Catching : MonoBehaviour
                 if (_beadies[i].catchObject == null)
                 {
                     _beadies.RemoveAt(i);
+                    CatchCheck();
                 }
             }
         }
@@ -114,6 +115,7 @@ public class Catching : MonoBehaviour
 
     public void CatchMicroplastic()
     {
+        _catching = true;
         CatchCheck();
         if (!_canCatch)
         {
@@ -121,16 +123,15 @@ public class Catching : MonoBehaviour
         }
         _beadies[0].beadieCatchingManager.catchSpeed = _catchSpeed;
         _beadies[0].beadieCatchingManager.Catching();
-        _catching = true;
     }
 
     public void ReleaseMicroplastic()
     {
+        _catching = false;
         if (_canCatch && _beadies.Count > 0)
         {
             _beadies[0].beadieCatchingManager.StoppedCatching();
         }
-        _catching = false;
     }
 
 
