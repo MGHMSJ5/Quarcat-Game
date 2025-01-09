@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -74,14 +75,24 @@ public class DialogueManager : MonoBehaviour
     {
         if (!isDialogueActive) return;
 
+        ButtonBounceEffect bounceEffect = nextArrowButton.GetComponent<ButtonBounceEffect>();
+        if (bounceEffect != null)
+        {
+            // If it's the last line, close the dialogue after the bounce animation finishes
+            if (currentLineIndex == dialogueSequence.Length - 1)
+            {
+                bounceEffect.PlayBounce(EndDialogue); // this will be called after the bounce
+                return;
+            }
+
+            // Play the bounce animation and continue dialogue if not
+            bounceEffect.PlayBounce();
+        }
+
         currentLineIndex++;
         if (currentLineIndex < dialogueSequence.Length)
         {
             DisplayText(dialogueSequence[currentLineIndex]);
-        }
-        else
-        {
-            EndDialogue();
         }
     }
 
@@ -111,10 +122,6 @@ public class DialogueManager : MonoBehaviour
         {
             nextArrowButton.gameObject.SetActive(false);
         }
-
-        // Optionally, hide the icon at the end (if needed)
-        // If you want the icon to disappear at the end of the dialogue, uncomment this line.
-        // dialogueIcon.gameObject.SetActive(false);
     }
 
     private void DisableAllButtonsExcept(Button exceptionButton)
