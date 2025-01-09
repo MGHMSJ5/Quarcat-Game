@@ -1180,7 +1180,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 21
   orthographic: 0
   orthographic size: 15
   m_Depth: -1
@@ -1226,7 +1226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 904590303}
-  offset: {x: 0, y: 10, z: -10}
+  offset: {x: 0, y: 33, z: -42}
   smoothSpeed: 0.125
 --- !u!1 &1184499133
 GameObject:
@@ -1913,6 +1913,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8455728280606582528, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
       propertyPath: m_Name
