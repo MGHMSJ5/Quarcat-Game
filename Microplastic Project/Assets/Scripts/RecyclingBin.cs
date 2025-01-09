@@ -83,8 +83,8 @@ public class RecyclingBin : MonoBehaviour
             Destroy(recycledObjects[i]);
             _offset = 0f;
             recycleButton.SetActive(false);
+            recycledObjects.RemoveAt(i);
         }
-        print("recycle");
         _upgradeManager.AddRemoveUpgradePoint(recycledObjectsCount);
     }
 
