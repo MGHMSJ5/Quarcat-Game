@@ -44,7 +44,7 @@ public class IntroSequence : MonoBehaviour
         else
         {
             // After last panel, load scene
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
     
     }
@@ -53,7 +53,7 @@ public class IntroSequence : MonoBehaviour
     public void SkipCutscene()
     {
         // Immediately go to next scene
-        SceneManager.LoadScene(0); 
+        SceneManager.LoadScene(2); 
     }
 
     private void PlayPanelSound(int panelIndex)
