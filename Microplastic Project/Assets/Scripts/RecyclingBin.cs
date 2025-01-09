@@ -14,6 +14,9 @@ public class RecyclingBin : MonoBehaviour
     [Tooltip("Only the script in the hallway needs a reference to this")]
     [SerializeField]
     private ProgressManager _progressManager;
+    [Tooltip("Only need the reference in the Hallway")]
+    [SerializeField]
+    private UpgradeManager _upgradeManager;
 
     private float _offset = 0f;
 
@@ -81,6 +84,8 @@ public class RecyclingBin : MonoBehaviour
             _offset = 0f;
             recycleButton.SetActive(false);
         }
+        print("recycle");
+        _upgradeManager.AddRemoveUpgradePoint(recycledObjectsCount);
     }
 
     //function that'll add the object on the player's head, and add it to list
