@@ -29,20 +29,22 @@ public class UpgradeManager : MonoBehaviour
 
     private void OnEnable()
     {
+        //add to the list only once
         if (!addedList)
         {
-            print("add");
             ButtonValue.AddToList(_upgradeButtons.Count);
             addedList = true;
         }
         CheckPoints();
     }
+    //remove/add upgrade points
     public void AddRemoveUpgradePoint(int points)
     {
         upgradePoints += points;
         _upgradeText.text = "Upgrade Points = " + upgradePoints.ToString();
     }
-
+    
+    //will be called if you want to upgrade
     public void ButtonUpgraded(GameObject go)
     {
         int index = 0;
@@ -58,12 +60,11 @@ public class UpgradeManager : MonoBehaviour
         ButtonValue.SetUpgradeButton(index, true);
         AddRemoveUpgradePoint(-_upgradeButtons[index].costValue);
 
-        CantUpgrade(go);
         HasUpgraded(go);
 
         CheckPoints();
     }
-
+    //compares the upgradepoints and sees what you can upgrade
     private void CheckPoints()
     {
         for (int i = 0; i < _upgradeButtons.Count; i++)
@@ -83,7 +84,7 @@ public class UpgradeManager : MonoBehaviour
             }
         }
     }
-
+    //changes to button if already upgraded
     private void HasUpgraded(GameObject go)
     {
         CantUpgrade(go);
@@ -91,7 +92,7 @@ public class UpgradeManager : MonoBehaviour
         text.text = "Upgraded!";
         go.transform.GetChild(1).gameObject.SetActive(false);
     }
-
+    //changes to button if you can upgrade
     private void CanUpgrade(GameObject go)
     {
         Button button = go.GetComponent<Button>();
@@ -99,7 +100,7 @@ public class UpgradeManager : MonoBehaviour
         Image image = button.GetComponent<Image>();
         image.color = _buttonUpgradeColor;
     }
-
+    //changes to button if you can't upgrade
     private void CantUpgrade(GameObject go)
     {
         Button button = go.GetComponent<Button>();
