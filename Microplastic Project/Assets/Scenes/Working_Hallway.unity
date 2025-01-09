@@ -371,7 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66ad2845be04dd54fb3a7d7c1d2e0a2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: GrayBoxKitchen
+  sceneName: Kitchen
   playerTag: Player
   _fadeCanvas: {fileID: 1461934018}
   playerHead: {fileID: 904590299}
@@ -635,7 +635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66ad2845be04dd54fb3a7d7c1d2e0a2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: GrayBoxLiving
+  sceneName: LivingRoom
   playerTag: Player
   _fadeCanvas: {fileID: 1461934018}
   playerHead: {fileID: 904590299}
