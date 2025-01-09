@@ -500,6 +500,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4580b0a4a27234c9d19908ddf1d441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &412484743 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8148978164385158299, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
+  m_PrefabInstance: {fileID: 412484739}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &455097187
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,6 +732,10 @@ PrefabInstance:
       propertyPath: m_Positions.Array.data[7].z
       value: -6.7790003
       objectReference: {fileID: 0}
+    - target: {fileID: 7026363145536552258, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 412484743}
     - target: {fileID: 7582624834266404071, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Name
       value: THE_VacuumCleaner

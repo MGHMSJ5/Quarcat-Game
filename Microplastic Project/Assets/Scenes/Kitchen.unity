@@ -1628,6 +1628,10 @@ PrefabInstance:
       propertyPath: m_Positions.Array.data[7].z
       value: -8.799
       objectReference: {fileID: 0}
+    - target: {fileID: 7026363145536552258, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2130015286}
     - target: {fileID: 7582624834266404071, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Name
       value: THE_VacuumCleaner
@@ -2470,6 +2474,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
+--- !u!4 &2130015286 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8148978164385158299, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
+  m_PrefabInstance: {fileID: 2130015285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2144317788 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8047955995799481420, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
