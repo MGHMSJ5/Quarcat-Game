@@ -1048,6 +1048,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 632289569203229836, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1da42509b27ff88488fe70b38e971922, type: 3}
     - target: {fileID: 2804178899821541151, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
       propertyPath: recyclingScript
       value: 
@@ -1144,6 +1148,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221546764490828135, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1da42509b27ff88488fe70b38e971922, type: 3}
     - target: {fileID: 5569735671848048192, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
       propertyPath: m_Name
       value: Main_Canvas
@@ -1155,6 +1163,30 @@ PrefabInstance:
     - target: {fileID: 5635821914740297439, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReleaseMicroplastic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731471516280078711, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
+    - target: {fileID: 6731471516280078711, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
+    - target: {fileID: 6731471516280078711, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211243266561859470, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
+    - target: {fileID: 7211243266561859470, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
+    - target: {fileID: 7211243266561859470, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8246439305764878345, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
