@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,6 +19,13 @@ public class RecyclingBin : MonoBehaviour
     private UpgradeManager _upgradeManager;
 
     private float _offset = 0f;
+
+    public static int recyclePoints = 0;
+    [Tooltip("To get the recyclepoints, use this variable for reference↓")]
+    public int RecyclePoitns
+    {
+        get { return recyclePoints; }
+    }
 
     private void Start()
     {
@@ -85,6 +92,7 @@ public class RecyclingBin : MonoBehaviour
             recycleButton.SetActive(false);
         }
         recycledObjects.Clear();
+        recyclePoints += recycledObjectsCount;
         _upgradeManager.AddRemoveUpgradePoint(recycledObjectsCount);
     }
 
