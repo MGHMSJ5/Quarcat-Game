@@ -19,7 +19,7 @@ public class RecyclingDialogueListener : MonoBehaviour
     {
         if (recyclingBin == null)
         {
-            Debug.LogError("RecyclingBin reference is not set!");
+            Debug.LogError("RecyclingBin reference is not set!.");
             return; // Exit early to avoid null references
         }
 
@@ -36,7 +36,6 @@ public class RecyclingDialogueListener : MonoBehaviour
     {
         if (recyclingBin == null || dialogueManager == null || recyclingDialogue.Length == 0 || hasPlayedDialogue) return;
 
-        // Checks if the recyclePoints have increased
         if (recyclingBin.RecyclePoitns > lastRecyclePoints)
         {
             lastRecyclePoints = recyclingBin.RecyclePoitns; // Updates the tracked points
@@ -49,7 +48,7 @@ public class RecyclingDialogueListener : MonoBehaviour
         dialogueManager.StartDialogue(recyclingDialogue); // Triggers the dialogue
         hasPlayedDialogue = true; // Marks the dialogue as played
 
-        Debug.Log("Recycling dialogue triggered!");
+        Debug.Log("Recycling dialogue triggered.");
     }
 
     public static bool HasDialoguePlayed()
