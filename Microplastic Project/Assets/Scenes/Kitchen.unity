@@ -991,6 +991,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6943033887700596293, guid: 956d700afb2114c49abca6377dff7e3d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e6df96179f19634408138c7aff7a3cd6, type: 2}
+    - target: {fileID: -6219406190176272253, guid: 956d700afb2114c49abca6377dff7e3d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6531e652a5e39b944bd04b1e4f70a7ae, type: 2}
+    - target: {fileID: -1067555864425602108, guid: 956d700afb2114c49abca6377dff7e3d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1bd4368c71ad64342ad139fd7fd76ffc, type: 2}
+    - target: {fileID: 677573317746506901, guid: 956d700afb2114c49abca6377dff7e3d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 977c2c96f3486344880247984d431a98, type: 2}
     - target: {fileID: 919132149155446097, guid: 956d700afb2114c49abca6377dff7e3d, type: 3}
       propertyPath: m_Name
       value: Kitchen_Final
@@ -1263,7 +1279,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 977c2c96f3486344880247984d431a98, type: 2}
+  - {fileID: 2100000, guid: 6e32f06a951d459459eeb5d3ef4e5080, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2145,6 +2161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1983952510}
   - component: {fileID: 1983952509}
+  - component: {fileID: 1983952511}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -2229,6 +2246,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1983952511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983952508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &2025998294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2542,7 +2582,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8541012373417966998, guid: c3e043624b8f92e4cbefdcbcabd5de32, type: 3}
+  - {fileID: 2100000, guid: 7a0eaddc701041f45b35547e592f4d8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

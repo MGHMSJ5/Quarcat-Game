@@ -780,6 +780,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 28.404
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8535a634c5b27194eb8e372010bfa7e3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a782836785f78f4dbb2c8930efe5552, type: 2}
     - target: {fileID: 919132149155446097, guid: 8535a634c5b27194eb8e372010bfa7e3, type: 3}
       propertyPath: m_Name
       value: Plant (1)
@@ -988,6 +992,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
+  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -1072,6 +1077,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &705507996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &720172568
 GameObject:
   m_ObjectHideFlags: 0
@@ -2309,7 +2337,7 @@ Transform:
   m_GameObject: {fileID: 1184499133}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5249411, y: 0.47374764, z: 0.47374764, w: 0.5249411}
-  m_LocalPosition: {x: -20.44, y: 6.4, z: -5.277686}
+  m_LocalPosition: {x: -20.63, y: 6.4, z: -5.3}
   m_LocalScale: {x: 325.87448, y: 10.026907, z: 550.6232}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3084,6 +3112,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StairsUpper
       objectReference: {fileID: 0}
+    - target: {fileID: -8270237889823493819, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc94d15da20840e46ba600349ff6e37b, type: 2}
     - target: {fileID: -7648502956408741331, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
       propertyPath: m_Name
       value: StairsSide
@@ -3096,10 +3128,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table_Legs2
       objectReference: {fileID: 0}
+    - target: {fileID: -5293936662160175238, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3be64a9928316b047bc06530c7f28684, type: 2}
     - target: {fileID: -4133703932355585839, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
       propertyPath: m_Name
       value: StairsMiddle
       objectReference: {fileID: 0}
+    - target: {fileID: -3838950152313394470, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9593fe596d0578f48ae5c76824127483, type: 2}
     - target: {fileID: -3797866689915996471, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3112,10 +3152,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 74a7b7f33f14d174088f12832cbca3c1, type: 2}
+    - target: {fileID: -787141429326784033, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ba6de1414c20a7247ab0729f6f33200c, type: 2}
     - target: {fileID: -652209905907201759, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
       propertyPath: m_Name
       value: StairsSide2
       objectReference: {fileID: 0}
+    - target: {fileID: -383518810844267698, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0d8987b6270652143a332e01a3c0d3a1, type: 2}
     - target: {fileID: 26844662620191305, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
       propertyPath: m_Name
       value: Railing
@@ -3132,10 +3180,22 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4c4b12f62e53e3c4a9e2f50fd5eee3b0, type: 2}
+    - target: {fileID: 976723959910379622, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 06ee1d02a9fa58948986654a01445b0d, type: 2}
+    - target: {fileID: 1738776581880846596, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 74db54d1445d4e940a1069a101878758, type: 2}
     - target: {fileID: 2596957926113402938, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
       propertyPath: m_Name
       value: Book
       objectReference: {fileID: 0}
+    - target: {fileID: 2927593092117553206, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb0dc015479aca47b6849111f544fc5, type: 2}
     - target: {fileID: 4103881766339141800, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
       propertyPath: m_Name
       value: Table
@@ -3144,6 +3204,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SideStairs3
       objectReference: {fileID: 0}
+    - target: {fileID: 4876285997155681295, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff7ddf87a00d30047ac3e8dff20693ba, type: 2}
     - target: {fileID: 5233112405309087440, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
       propertyPath: m_Name
       value: Carpet
@@ -3160,6 +3224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StairsLower
       objectReference: {fileID: 0}
+    - target: {fileID: 8442510506162454399, guid: 614cf27148382f942811b28d5d40bbb7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4bbadb800da08d344ad0340440b11a13, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -3353,7 +3421,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 979a6f8eff687874aabb574a68e764e7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3494,6 +3562,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -148.382
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8535a634c5b27194eb8e372010bfa7e3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a782836785f78f4dbb2c8930efe5552, type: 2}
     - target: {fileID: 919132149155446097, guid: 8535a634c5b27194eb8e372010bfa7e3, type: 3}
       propertyPath: m_Name
       value: Plant
@@ -4042,7 +4114,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 979a6f8eff687874aabb574a68e764e7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4163,6 +4235,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e9aab25a70b6b7847bf6d819798427fa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6db32950f59711f4c8cebedd33f74d57, type: 2}
     - target: {fileID: 919132149155446097, guid: e9aab25a70b6b7847bf6d819798427fa, type: 3}
       propertyPath: m_Name
       value: Lamp
@@ -4475,7 +4551,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 979a6f8eff687874aabb574a68e764e7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
