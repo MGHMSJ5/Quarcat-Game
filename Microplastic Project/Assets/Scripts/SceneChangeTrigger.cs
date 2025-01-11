@@ -20,12 +20,18 @@ public class SceneChangeTrigger : MonoBehaviour
     private GameObject playerHead;
     [SerializeField]
     private string _moveTag = "SceneMoved";
-    
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(playerTag))
         {
+            // Prevent scene change if dialogue hasn't been played
+            if (!RecyclingDialogueListener.HasDialoguePlayed())
+            {
+                Debug.Log("You must first complete the recycling dialogue before changing scenes.");
+                return; // Exit early if the dialogue hasn't been played
+            }
+
             if (!string.IsNullOrEmpty(sceneName))
             {
                 StartCoroutine(ChangeScene());
@@ -48,7 +54,6 @@ public class SceneChangeTrigger : MonoBehaviour
         //load the scene asynchronously
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
         asyncOperation.allowSceneActivation = false;
-
 
         //wait until the scene is fully loaded
         while (!asyncOperation.isDone)

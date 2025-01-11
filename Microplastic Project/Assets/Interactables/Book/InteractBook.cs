@@ -20,9 +20,16 @@ public class InteractBook : MonoBehaviour
     //unique function/interaction based on script/object
     void OpenBook()
     {
-        _canvasBook.SetActive(true);
+        // Check if the recycling dialogue has been completed before allowing interaction
+        if (!RecyclingDialogueListener.HasDialoguePlayed())
+        {
+            Debug.Log("You must first complete the recycling dialogue to interact with the book.");
+            return; // Exit early if the dialogue hasn't been played
+        }
 
-        //interact code...
+        _canvasBook.SetActive(true); // If the dialogue has been played, open the book
+
+        // interact code...
 
 
         //_basicInteractLayout.ExitANDNotInteract(true); //in case you want to only interact once
