@@ -22,8 +22,11 @@ public class SceneChangeTrigger : MonoBehaviour
     [SerializeField]
     private string _moveTag = "SceneMoved";
 
+    [Header("Rotation Settings")]
+    [SerializeField] private Vector3 rotationAmount;
+    [SerializeField] private float rotationDuration = 1.0f;
+
     [Header("UI Settings")]
-    [Tooltip("Button prefab to be instantiated.")]
     [SerializeField] private GameObject buttonPrefab;
 
     private GameObject instantiatedButton;
@@ -38,7 +41,7 @@ public class SceneChangeTrigger : MonoBehaviour
                 // Prevent scene change if dialogue hasn't been played
                 if (!RecyclingDialogueListener.HasDialoguePlayed())
                 {
-                    Debug.Log("You must first complete the recycling dialogue before changing scenes.");
+                    Debug.Log("You must first complete the recycling dialogue before changing scenes!");
                     return; // Exit early if the dialogue hasn't been played
                 }
             }
@@ -47,7 +50,7 @@ public class SceneChangeTrigger : MonoBehaviour
             {
                 // Instantiate the button and set it up
                 instantiatedButton = Instantiate(buttonPrefab, transform);
-                instantiatedButton.GetComponentInChildren<Button>().onClick.AddListener(() => StartCoroutine(ChangeScene()));
+                instantiatedButton.GetComponentInChildren<Button>().onClick.AddListener(() => StartCoroutine(RotateAndChangeScene()));
                 instantiatedButton.SetActive(true);
             }
         }
@@ -61,15 +64,18 @@ public class SceneChangeTrigger : MonoBehaviour
         }
     }
 
-    IEnumerator ChangeScene()
+    IEnumerator RotateAndChangeScene()
     {
+        // Perform rotation
+        yield return StartCoroutine(RotateObject());
+
+        // Fade and transition scene
         _fadeCanvas.StartFadeIn();
         yield return new WaitForSeconds(_fadeCanvas.defaultDuration + 0.4f); // Add tiny delay to scene switching
 
         // Set current scene
         Scene currentScene = SceneManager.GetActiveScene();
 
-        // Load the scene asynchronously
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
         asyncOperation.allowSceneActivation = false;
 
@@ -91,5 +97,21 @@ public class SceneChangeTrigger : MonoBehaviour
 
         // Unload the current scene
         SceneManager.UnloadSceneAsync(currentScene);
+    }
+
+    IEnumerator RotateObject()
+    {
+        Quaternion startRotation = transform.rotation;
+        Quaternion endRotation = startRotation * Quaternion.Euler(rotationAmount);
+        float elapsedTime = 0f;
+
+        while (elapsedTime < rotationDuration)
+        {
+            transform.rotation = Quaternion.Slerp(startRotation, endRotation, elapsedTime / rotationDuration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.rotation = endRotation; // Ensure final rotation is set
     }
 }
