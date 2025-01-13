@@ -1,11 +1,24 @@
+using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement Values")]
-    public float speed = 5;
+    public static float Speed = 5;
+    public static float Turnspeed = 850;
+
     [SerializeField]
-    private float _turnspeed = 360;
+    public float speed
+    {
+        get { return Speed; }
+        set { Speed = value; }
+    }
+
+    public float turnspeed
+    {
+        get { return Turnspeed; }
+        set { Turnspeed = value; }
+    }
 
     [Header("References")]
     [SerializeField]
@@ -43,12 +56,12 @@ public class PlayerController : MonoBehaviour
             var relative = (transform.position + _input) - transform.position;
             var rot = Quaternion.LookRotation(relative, Vector3.up);
 
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, rot, _turnspeed * Time.deltaTime);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, rot, Turnspeed * Time.deltaTime);
         }
     }
 
     void Move()
     {
-        _rb. MovePosition(transform.position + (transform.forward * _input.magnitude) * speed * Time.deltaTime);
+        _rb. MovePosition(transform.position + (transform.forward * _input.magnitude) * Speed * Time.deltaTime);
     }
 }

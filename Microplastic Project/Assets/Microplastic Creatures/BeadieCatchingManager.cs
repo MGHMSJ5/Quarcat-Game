@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 public class BeadieCatchingManager : MonoBehaviour
 {
+    [Header("Version ID")]
+    [SerializeField]
+    private int _versionID = 1;
     [Header("References")]
     [SerializeField]
     private GameObject _canvas;
@@ -41,6 +44,11 @@ public class BeadieCatchingManager : MonoBehaviour
         _canvas.SetActive(false);
         _canCatchIndicator.SetActive(false);
         _agent.speed = _normalSpeed;
+
+        if (BeadieStaticManager.GetSlowedSpeed(_versionID - 1) != 0)
+        {
+            _slowedSpeed = BeadieStaticManager.GetSlowedSpeed(_versionID - 1);
+        }
     }
 
     // Update is called once per frame

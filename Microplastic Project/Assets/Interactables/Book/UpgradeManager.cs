@@ -7,6 +7,21 @@ using UnityEngine.UI;
 
 public class UpgradeManager : MonoBehaviour
 {
+    [Header("For Upgrade References")]
+    [SerializeField]
+    private PlayerController _playerController;
+    [SerializeField]
+    private Catching _catching;
+    [Header("Upgrade vairables")]
+    [Tooltip("The order goes by Beadie version. So index 0 = Beadie V1. Index 1 = Beadie V2, etc")]
+    [SerializeField]
+    private List<float> _newBeadieSlowedSpeed = new List<float>();
+    private float _newCatchSpeed = 2f;
+    private float _newSpeed = 8;
+    private float _newTurnSpeed = 1000;
+    private float _newInvulnerabilityTime = 3.5f;
+
+    [Header("Book References")]
     [SerializeField]
     private Color _buttonUpgradedColor; 
     [SerializeField]
@@ -37,6 +52,32 @@ public class UpgradeManager : MonoBehaviour
         }
         CheckPoints();
     }
+    //UPGRADES START
+    public void VacuumPower()
+    {
+        //values to change: catchSpeed in Catching, slowed speed in microplastic prefabs in BeadieCatchingManager
+        _catching.CatchSpeed = _newCatchSpeed;
+        for (int i = 0; i < _newBeadieSlowedSpeed.Count; i++)
+        {
+            BeadieStaticManager.SetSlowedSpeed(i, _newBeadieSlowedSpeed[i]);
+        }
+        
+    }
+
+    public void PlayerSpeed()
+    {
+        //values to change: player speed + turnspeed
+        _playerController.speed = _newSpeed;
+        _playerController.turnspeed = _newTurnSpeed;
+    }
+
+    public void PlayerInvulnerability()
+    {
+        //values to change: variable in Catching script in the Enumerator in the bottom
+        _catching.InvulnerabilityTime = _newInvulnerabilityTime;
+    }
+
+    //UPGRADES END
     //remove/add upgrade points
     public void AddRemoveUpgradePoint(int points)
     {

@@ -29,10 +29,22 @@ public class Catching : MonoBehaviour
     [SerializeField]
     private PlayerController _playerController;
     private float _originalSpeed;
-    [SerializeField]
-    private float _catchSpeed = 0.4f;
     private bool _canCatch = false; 
     private bool _catching = false;
+
+    public static float catchSpeed = 1f;
+    public static float invulnerabilityTime = 2f;
+
+    public float CatchSpeed
+    {
+        get { return catchSpeed; }
+        set { catchSpeed = value; }
+    }
+    public float InvulnerabilityTime
+    {
+        get { return invulnerabilityTime; }
+        set {  invulnerabilityTime = value; }
+    }
 
     public bool IsCatching
     {
@@ -121,7 +133,7 @@ public class Catching : MonoBehaviour
         {
             return;
         }
-        _beadies[0].beadieCatchingManager.catchSpeed = _catchSpeed;
+        _beadies[0].beadieCatchingManager.catchSpeed = catchSpeed;
         _beadies[0].beadieCatchingManager.Catching();
     }
 
@@ -169,7 +181,7 @@ public class Catching : MonoBehaviour
 
     private IEnumerator CheckCatching()
     {//check for catching a little bit after being hit. In case beadie is still in trigger after being hit
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(invulnerabilityTime);
         CatchCheck();
     }
 

@@ -409,6 +409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 882ea3370c1fc1c4c938b0220e001f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _versionID: 2
   _canvas: {fileID: 7994395408075437083}
   _healthImage: {fileID: 7280321645080549485}
   _agent: {fileID: 909319900102519303}
