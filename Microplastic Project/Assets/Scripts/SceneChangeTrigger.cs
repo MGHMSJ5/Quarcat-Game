@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneChangeTrigger : MonoBehaviour
 {
@@ -21,57 +22,74 @@ public class SceneChangeTrigger : MonoBehaviour
     [SerializeField]
     private string _moveTag = "SceneMoved";
 
+    [Header("UI Settings")]
+    [Tooltip("Button prefab to be instantiated.")]
+    [SerializeField] private GameObject buttonPrefab;
+
+    private GameObject instantiatedButton;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(playerTag))
         {
-            // Prevent scene change if dialogue hasn't been played
-            if (!RecyclingDialogueListener.HasDialoguePlayed())
+            // Check if the current scene is "Working_Hallway"
+            if (SceneManager.GetActiveScene().name == "Working_Hallway")
             {
-                Debug.Log("You must first complete the recycling dialogue before changing scenes.");
-                return; // Exit early if the dialogue hasn't been played
+                // Prevent scene change if dialogue hasn't been played
+                if (!RecyclingDialogueListener.HasDialoguePlayed())
+                {
+                    Debug.Log("You must first complete the recycling dialogue before changing scenes.");
+                    return; // Exit early if the dialogue hasn't been played
+                }
             }
 
-            if (!string.IsNullOrEmpty(sceneName))
+            if (buttonPrefab != null && instantiatedButton == null)
             {
-                StartCoroutine(ChangeScene());
+                // Instantiate the button and set it up
+                instantiatedButton = Instantiate(buttonPrefab, transform);
+                instantiatedButton.GetComponentInChildren<Button>().onClick.AddListener(() => StartCoroutine(ChangeScene()));
+                instantiatedButton.SetActive(true);
             }
-            else
-            {
-                Debug.LogError("Invalid scene name!");
-            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag(playerTag) && instantiatedButton != null)
+        {
+            Destroy(instantiatedButton);
         }
     }
 
     IEnumerator ChangeScene()
     {
         _fadeCanvas.StartFadeIn();
-        yield return new WaitForSeconds(_fadeCanvas.defaultDuration + 0.4f); //add tiny delay to scene switching
+        yield return new WaitForSeconds(_fadeCanvas.defaultDuration + 0.4f); // Add tiny delay to scene switching
 
-        //set current scene
+        // Set current scene
         Scene currentScene = SceneManager.GetActiveScene();
 
-        //load the scene asynchronously
+        // Load the scene asynchronously
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
         asyncOperation.allowSceneActivation = false;
 
-        //wait until the scene is fully loaded
+        // Wait until the scene is fully loaded
         while (!asyncOperation.isDone)
         {
             if (asyncOperation.progress >= 0.9f)
             {
-                //allow scene activation when loading is done
+                // Allow scene activation when loading is done
                 asyncOperation.allowSceneActivation = true;
             }
-            yield return null;            
+            yield return null;
         }
-        
+
         playerHead.transform.parent = null;
         playerHead.tag = _moveTag;
         Debug.Log(playerHead);
         SceneManager.MoveGameObjectToScene(playerHead, SceneManager.GetSceneByName(sceneName));
 
-        //unload the current scene
+        // Unload the current scene
         SceneManager.UnloadSceneAsync(currentScene);
     }
 }

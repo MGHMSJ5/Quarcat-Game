@@ -457,6 +457,7 @@ MonoBehaviour:
   _fadeCanvas: {fileID: 670660150}
   playerHead: {fileID: 74991398}
   _moveTag: SceneMoved
+  buttonPrefab: {fileID: 7596106150650445833, guid: bd9a058db12f3114bb948a390c15c7f1, type: 3}
 --- !u!65 &88798823
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -485,7 +486,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88798821}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1800,7 +1801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2431694541273328522, guid: 975b1be5f363c7544bb7a22bc1704e22, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8232270063160101445, guid: 975b1be5f363c7544bb7a22bc1704e22, type: 3}
       propertyPath: fadeOnStart

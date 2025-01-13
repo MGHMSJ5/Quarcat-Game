@@ -2239,6 +2239,7 @@ MonoBehaviour:
   _fadeCanvas: {fileID: 1590589035}
   playerHead: {fileID: 1529920738}
   _moveTag: SceneMoved
+  buttonPrefab: {fileID: 7596106150650445833, guid: bd9a058db12f3114bb948a390c15c7f1, type: 3}
 --- !u!65 &1949141390
 BoxCollider:
   m_ObjectHideFlags: 0
