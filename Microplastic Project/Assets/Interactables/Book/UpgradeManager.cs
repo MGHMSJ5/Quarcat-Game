@@ -67,7 +67,7 @@ public class UpgradeManager : MonoBehaviour
     public void PlayerSpeed()
     {
         //values to change: player speed + turnspeed
-        _playerController.speed = _newSpeed;
+        _catching.originalSpeed = _newSpeed;
         _playerController.turnspeed = _newTurnSpeed;
     }
 

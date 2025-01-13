@@ -28,7 +28,7 @@ public class Catching : MonoBehaviour
     [Header("")]
     [SerializeField]
     private PlayerController _playerController;
-    private float _originalSpeed;
+    public float originalSpeed;
     private bool _canCatch = false; 
     private bool _catching = false;
 
@@ -60,7 +60,7 @@ public class Catching : MonoBehaviour
     private void Start()
     {
         CatchCheck();
-        _originalSpeed = _playerController.speed;
+        originalSpeed = _playerController.speed;
     }
 
     private void Update()
@@ -88,9 +88,9 @@ public class Catching : MonoBehaviour
         }
         else
         {
-            if (_playerController.speed != _originalSpeed)
+            if (_playerController.speed != originalSpeed)
             {
-                _playerController.speed = _originalSpeed;
+                _playerController.speed = originalSpeed;
             }
         }
     }
