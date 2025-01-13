@@ -290,7 +290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _progressSlider: {fileID: 5255259905055009391}
   _animator: {fileID: 6015526351450735080}
-  _totalSourcesOnFloor: 5
+  _totalSourcesOnFloor: 7
 --- !u!1 &7429420949575991078
 GameObject:
   m_ObjectHideFlags: 0
