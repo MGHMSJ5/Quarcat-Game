@@ -3070,7 +3070,7 @@ PrefabInstance:
       objectReference: {fileID: 1613511500989441104}
     - target: {fileID: 8047955995799481420, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
       propertyPath: recycledObjects.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8047955995799481420, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
       propertyPath: recycledObjects.Array.data[0]
@@ -4972,10 +4972,10 @@ MonoBehaviour:
   sceneName: LivingRoom
   playerTag: Player
   _fadeCanvas: {fileID: 1461934018}
-  playerHead: {fileID: 0}
+  playerHead: {fileID: 904590299}
   _moveTag: SceneMoved
-  rotationAmount: {x: 0, y: 0, z: 0}
-  rotationDuration: 1
+  rotationAmount: {x: 0, y: 0, z: 15}
+  rotationDuration: 0.5
   buttonPrefab: {fileID: 0}
 --- !u!33 &6917087486275205127
 MeshFilter:
