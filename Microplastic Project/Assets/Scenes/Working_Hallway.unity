@@ -848,7 +848,7 @@ GameObject:
   - component: {fileID: 549421520}
   - component: {fileID: 549421521}
   m_Layer: 0
-  m_Name: DoorFinal (1)
+  m_Name: KitchenDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4868,8 +4868,9 @@ GameObject:
   - component: {fileID: 5097491200003810785}
   - component: {fileID: 4312284904557684709}
   - component: {fileID: 5000268862082900351}
+  - component: {fileID: 5097491200003810786}
   m_Layer: 0
-  m_Name: DoorFinal
+  m_Name: LivingRoomDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4956,6 +4957,26 @@ Transform:
   - {fileID: 4898938661961642606}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
+--- !u!114 &5097491200003810786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4218591539750798094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ad2845be04dd54fb3a7d7c1d2e0a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: LivingRoom
+  playerTag: Player
+  _fadeCanvas: {fileID: 1461934018}
+  playerHead: {fileID: 0}
+  _moveTag: SceneMoved
+  rotationAmount: {x: 0, y: 0, z: 0}
+  rotationDuration: 1
+  buttonPrefab: {fileID: 0}
 --- !u!33 &6917087486275205127
 MeshFilter:
   m_ObjectHideFlags: 0
