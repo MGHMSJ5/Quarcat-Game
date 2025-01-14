@@ -4976,7 +4976,7 @@ MonoBehaviour:
   _moveTag: SceneMoved
   rotationAmount: {x: 0, y: 0, z: 15}
   rotationDuration: 0.5
-  buttonPrefab: {fileID: 0}
+  buttonPrefab: {fileID: 7596106150650445833, guid: bd9a058db12f3114bb948a390c15c7f1, type: 3}
 --- !u!33 &6917087486275205127
 MeshFilter:
   m_ObjectHideFlags: 0
