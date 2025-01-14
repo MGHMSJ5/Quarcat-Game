@@ -24,9 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LivingRoom.unity
     guid: 46bd4dbe1790eae438521391d05111f8
   - enabled: 0
-    path: Assets/Scenes/GrayBoxKitchen.unity
+    path: Assets/Scenes/GrayboxScenes/GrayBoxKitchen.unity
     guid: f3b6ecf1c215f8c408cf0f88186f74c8
   - enabled: 0
-    path: Assets/Scenes/GrayBoxLiving.unity
+    path: Assets/Scenes/GrayboxScenes/GrayBoxLiving.unity
     guid: 1bf5aa2f34efa1a4c9466be0b7b24884
   m_configObjects: {}

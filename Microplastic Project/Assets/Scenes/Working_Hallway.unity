@@ -937,8 +937,8 @@ MonoBehaviour:
   _fadeCanvas: {fileID: 1461934018}
   playerHead: {fileID: 904590299}
   _moveTag: SceneMoved
-  rotationAmount: {x: 0, y: 0, z: 90}
-  rotationDuration: 1
+  rotationAmount: {x: 0, y: 0, z: 15}
+  rotationDuration: 0.5
   buttonPrefab: {fileID: 7596106150650445833, guid: bd9a058db12f3114bb948a390c15c7f1, type: 3}
 --- !u!65 &549421521
 BoxCollider:
