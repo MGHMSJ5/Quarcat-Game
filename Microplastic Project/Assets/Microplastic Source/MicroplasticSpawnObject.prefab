@@ -48,7 +48,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -74,7 +74,7 @@ MonoBehaviour:
   _replaceButton: {fileID: 0}
   _textForReplacing: Replace with X
   _popUpCanvas: {fileID: 5000444692368056478}
-  _animationWaitAnimation: 6
+  _popUpWait: 6
   _respawnSeconds: 10
   identity: 0
 --- !u!1 &1852773681663381744
