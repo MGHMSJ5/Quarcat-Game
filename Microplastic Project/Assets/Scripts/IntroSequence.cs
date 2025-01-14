@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement; 
 using UnityEngine.UI;
@@ -10,6 +11,9 @@ public class IntroSequence : MonoBehaviour
     [Header("Audio")]
     public AudioSource audioSource; // An AudioSource to play sounds
     public AudioClip[] panelSounds; // Sound clips for each panel
+
+    [Header("Fade")]
+    public FadeCanvas FadeCanvas;
 
     private int currentPanelIndex = 0;
 
@@ -43,8 +47,7 @@ public class IntroSequence : MonoBehaviour
         }
         else
         {
-            // After last panel, load scene
-            SceneManager.LoadScene(2);
+            SkipCutscene();
         }
     
     }
@@ -53,7 +56,17 @@ public class IntroSequence : MonoBehaviour
     public void SkipCutscene()
     {
         // Immediately go to next scene
-        SceneManager.LoadScene(2); 
+        FadeCanvas.StartFadeIn();
+        StartCoroutine(WaitForFade());
+    }
+
+    private IEnumerator WaitForFade()
+    {
+        print("Begin");
+        yield return new WaitForSeconds(FadeCanvas.defaultDuration + 0.4f);
+        print("After");
+
+        SceneManager.LoadScene(2);
     }
 
     private void PlayPanelSound(int panelIndex)
