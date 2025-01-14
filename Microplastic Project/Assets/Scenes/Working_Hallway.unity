@@ -322,7 +322,7 @@ MonoBehaviour:
   recyclingBin: {fileID: 1494958680}
   dialogueManager: {fileID: 1700653286}
   recyclingDialogue:
-  - ok works!
+  - Last part of hallway tutorial script goes here
 --- !u!1 &189821546
 GameObject:
   m_ObjectHideFlags: 0
@@ -4950,7 +4950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 1700653286}
   spawnDialogue:
-  - hellooo
+  - I must now recycle this in the recycling bin!
 --- !u!1 &2102288955
 GameObject:
   m_ObjectHideFlags: 0
