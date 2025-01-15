@@ -66,17 +66,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56884472c1e3c33459f59a706a9302a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawningGameObject: {fileID: 8058486806937685699, guid: ed6340e99fa813b4ca8fb1785a002215, type: 3}
+  _spawningGameObject: {fileID: 8058486806937685699, guid: 5854d99e48d0bf840ae9410c3ae90c1c, type: 3}
   _spawnNumber: 4
   _spawnedMicroplastics: []
+  _spawnBreakMax: 2
+  _spawnBreakMin: 1
   _originalGameObjectParent: {fileID: 6788546798992970145}
   _replacngGameObjectParent: {fileID: 4720036579891260784}
   _replaceButton: {fileID: 0}
-  _textForReplacing: Replace with X
+  _textForReplacing: Replace with wooden blocks
   _popUpCanvas: {fileID: 1099995862543613520}
   _popUpWait: 6
   _respawnSeconds: 10
-  identity: 0
+  identity: 6
 --- !u!1 &2964591173208848234
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,6 +251,11 @@ PrefabInstance:
     - target: {fileID: 4980459124350626872, guid: 33b28014f136c83499237a947fb48454, type: 3}
       propertyPath: m_Name
       value: PopUp_Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5739619518021621477, guid: 33b28014f136c83499237a947fb48454, type: 3}
+      propertyPath: m_text
+      value: Regularly playing with plastic toys like plastic bricks that fit together
+        can create small plastic scuffs.
       objectReference: {fileID: 0}
     - target: {fileID: 6615390242678268469, guid: 33b28014f136c83499237a947fb48454, type: 3}
       propertyPath: m_Pivot.x

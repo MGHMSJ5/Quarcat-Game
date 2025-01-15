@@ -16,7 +16,9 @@ public class SpawningManager : MonoBehaviour
     //keep track of the spawned microplastics
     private List<GameObject> _spawnedMicroplastics = new List<GameObject>();
 
+    [SerializeField]
     private float _spawnBreakMax = 2f;
+    [SerializeField]
     private float _spawnBreakMin = 1f;
 
     private bool _canSpawn = true; //added bool so that spawning only happens once

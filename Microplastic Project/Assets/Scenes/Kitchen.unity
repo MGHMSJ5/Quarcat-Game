@@ -2449,6 +2449,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1056743226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3000557636196948275, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
+  m_PrefabInstance: {fileID: 1610706040}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1083681043
 GameObject:
   m_ObjectHideFlags: 0
@@ -4236,6 +4241,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MicroplasticSpawnObject_CutBoard
       objectReference: {fileID: 0}
+    - target: {fileID: 8058451422935261399, guid: 9d52d535aa022c547b97026e31bab92b, type: 3}
+      propertyPath: _replaceButton
+      value: 
+      objectReference: {fileID: 1056743226}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4311,6 +4320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MicroplasticSpawnObject_Container
       objectReference: {fileID: 0}
+    - target: {fileID: 8133151617218798068, guid: a6facee9e832b9844b174fa119e7aa9c, type: 3}
+      propertyPath: _replaceButton
+      value: 
+      objectReference: {fileID: 1056743226}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4400,6 +4413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MicroplasticSpawnObject_Bottle
       objectReference: {fileID: 0}
+    - target: {fileID: 6753387452046878903, guid: e85b0679b1209194c989643d00098dd5, type: 3}
+      propertyPath: _replaceButton
+      value: 
+      objectReference: {fileID: 1056743226}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

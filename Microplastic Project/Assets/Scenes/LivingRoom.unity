@@ -1036,6 +1036,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &632725335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3000557636196948275, guid: 3adf5f9de76a986468be37a824109a26, type: 3}
+  m_PrefabInstance: {fileID: 875370132}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &642698126 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 025bc740811a93a4ea2d8c8c90707cbc, type: 3}
@@ -2890,6 +2895,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1612322678029895631, guid: e784e5ed8e9687e4cbdfa0f85cb07c6b, type: 3}
+      propertyPath: _replaceButton
+      value: 
+      objectReference: {fileID: 632725335}
     - target: {fileID: 4646699031890992618, guid: e784e5ed8e9687e4cbdfa0f85cb07c6b, type: 3}
       propertyPath: m_Name
       value: MicroplasticSpawnObject_Plant
@@ -3804,6 +3813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MicroplasticSpawnObject_Blanket
       objectReference: {fileID: 0}
+    - target: {fileID: 4290180483928623366, guid: 37454441d62fb624aa3d3f5046c08005, type: 3}
+      propertyPath: _replaceButton
+      value: 
+      objectReference: {fileID: 632725335}
     - target: {fileID: 8523979524276860518, guid: 37454441d62fb624aa3d3f5046c08005, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.12
@@ -4283,6 +4296,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1454961340453389676, guid: 842e52616f0af6c44b88b9da5d89b451, type: 3}
+      propertyPath: _replaceButton
+      value: 
+      objectReference: {fileID: 632725335}
     - target: {fileID: 2964591173208848234, guid: 842e52616f0af6c44b88b9da5d89b451, type: 3}
       propertyPath: m_Name
       value: MicroplasticSpawnObject_Toys

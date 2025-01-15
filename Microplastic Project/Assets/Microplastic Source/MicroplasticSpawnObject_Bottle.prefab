@@ -48,7 +48,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -66,17 +66,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56884472c1e3c33459f59a706a9302a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawningGameObject: {fileID: 8058486806937685699, guid: ed6340e99fa813b4ca8fb1785a002215, type: 3}
+  _spawningGameObject: {fileID: 8058486806937685699, guid: 6c357813342632e41ad6c9cc520cf765, type: 3}
   _spawnNumber: 4
   _spawnedMicroplastics: []
+  _spawnBreakMax: 2
+  _spawnBreakMin: 1
   _originalGameObjectParent: {fileID: 8014736454144932774}
   _replacngGameObjectParent: {fileID: 4935559299457667512}
   _replaceButton: {fileID: 0}
-  _textForReplacing: Replace with X
+  _textForReplacing: Replace with metal bottle
   _popUpCanvas: {fileID: 3052145101751982530}
   _popUpWait: 6
   _respawnSeconds: 10
-  identity: 0
+  identity: 3
 --- !u!1 &4935559299457667512
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +346,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PopUp_Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5739619518021621477, guid: 33b28014f136c83499237a947fb48454, type: 3}
+      propertyPath: m_text
+      value: Plastic aging releases microplastic, for example, reusable plastic bottles
+        spreading 8 times more microplastics than single-use ones.
+      objectReference: {fileID: 0}
     - target: {fileID: 6615390242678268469, guid: 33b28014f136c83499237a947fb48454, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -423,6 +430,14 @@ PrefabInstance:
     - target: {fileID: 6615390242678268469, guid: 33b28014f136c83499237a947fb48454, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109885478702852753, guid: 33b28014f136c83499237a947fb48454, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 163.199
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109885478702852753, guid: 33b28014f136c83499237a947fb48454, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 286.9397
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
