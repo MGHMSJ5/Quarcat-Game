@@ -44,6 +44,8 @@ public class IntroSequence : MonoBehaviour
         if (currentPanelIndex < panels.Length)
         {
             panels[currentPanelIndex].SetActive(true);
+            // Play the new panel's sound
+            PlayPanelSound(currentPanelIndex);
         }
         else
         {
