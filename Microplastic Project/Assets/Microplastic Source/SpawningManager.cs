@@ -52,7 +52,7 @@ public class SpawningManager : MonoBehaviour
         SpawnBoolManager.AddToList(identity, false, false);
 
         _replacing = _replaceButton.GetComponent<Replacing>();
-        _replacingText = _replaceButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        _replacingText = _replaceButton.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
 
         if (SpawnBoolManager.GetHasReplaced(identity))
         {
