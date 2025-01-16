@@ -33,7 +33,10 @@ public class Catching : MonoBehaviour
     private bool _catching = false;
 
     [SerializeField]
-    private Animator _animator; 
+    private Animator _animator;
+
+    [SerializeField]
+    private GameObject _vacuuming;
 
     public static float catchSpeed = 1f;
     public static float invulnerabilityTime = 2f;
@@ -89,6 +92,7 @@ public class Catching : MonoBehaviour
             {
                 _playerController.speed = slowedSpeed;
             }
+            _vacuuming.SetActive(true);
         }
         else
         {
@@ -96,6 +100,7 @@ public class Catching : MonoBehaviour
             {
                 _playerController.speed = originalSpeed;
             }
+            _vacuuming.SetActive(false);
         }
     }
 
@@ -139,7 +144,7 @@ public class Catching : MonoBehaviour
         }
         _beadies[0].beadieCatchingManager.catchSpeed = catchSpeed;
         _beadies[0].beadieCatchingManager.Catching();
-        _animator.SetBool("isCatching", true); 
+        _animator.SetBool("isCatching", true);
     }
 
     public void ReleaseMicroplastic()
