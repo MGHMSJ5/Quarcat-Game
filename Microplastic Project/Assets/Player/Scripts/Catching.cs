@@ -29,8 +29,11 @@ public class Catching : MonoBehaviour
     [SerializeField]
     private PlayerController _playerController;
     public float originalSpeed;
-    private bool _canCatch = false; 
+    private bool _canCatch = false;
     private bool _catching = false;
+
+    [SerializeField]
+    private Animator _animator; 
 
     public static float catchSpeed = 1f;
     public static float invulnerabilityTime = 2f;
@@ -43,7 +46,7 @@ public class Catching : MonoBehaviour
     public float InvulnerabilityTime
     {
         get { return invulnerabilityTime; }
-        set {  invulnerabilityTime = value; }
+        set { invulnerabilityTime = value; }
     }
 
     public bool IsCatching
@@ -66,7 +69,8 @@ public class Catching : MonoBehaviour
     private void Update()
     {
         if (_beadies.Count > 0)
-        {//remove any rows where Beadie has been deleted
+        {
+            // Remove any rows where Beadie has been deleted
             for (int i = 0; i < _beadies.Count; i++)
             {
                 if (_beadies[i].catchObject == null)
@@ -77,7 +81,7 @@ public class Catching : MonoBehaviour
             }
         }
 
-        //change the speed of the player to be the slowed speed of the Beadie
+        // Change the speed of the player to be the slowed speed of the Beadie
         if (_catching)
         {
             float slowedSpeed = _beadies[0].beadieCatchingManager.SlowedSpeed;
@@ -99,7 +103,7 @@ public class Catching : MonoBehaviour
     {
         if (other.gameObject.tag == "MP1")
         {
-            //add to list so that it can handle multiple microplastics
+            // Add to list so that it can handle multiple microplastics
             Beadies toAdd = new Beadies()
             {
                 catchObject = other.gameObject,
@@ -135,6 +139,7 @@ public class Catching : MonoBehaviour
         }
         _beadies[0].beadieCatchingManager.catchSpeed = catchSpeed;
         _beadies[0].beadieCatchingManager.Catching();
+        _animator.SetBool("isCatching", true); 
     }
 
     public void ReleaseMicroplastic()
@@ -144,8 +149,8 @@ public class Catching : MonoBehaviour
         {
             _beadies[0].beadieCatchingManager.StoppedCatching();
         }
+        _animator.SetBool("isCatching", false); 
     }
-
 
     private void CatchCheck()
     {
@@ -155,7 +160,7 @@ public class Catching : MonoBehaviour
         }
         else
         {
-            //run method of beadie first in the list
+            // Run method of beadie first in the list
             _beadies[0].beadieCatchingManager.InRangeToCatch();
             CanCatch(true);
         }
@@ -180,7 +185,8 @@ public class Catching : MonoBehaviour
     }
 
     private IEnumerator CheckCatching()
-    {//check for catching a little bit after being hit. In case beadie is still in trigger after being hit
+    {
+        // Check for catching a little bit after being hit. In case beadie is still in trigger after being hit
         yield return new WaitForSeconds(invulnerabilityTime);
         CatchCheck();
     }
@@ -189,7 +195,6 @@ public class Catching : MonoBehaviour
     {
         _beadies[beadieIndex].beadieCatchingManager.OutOfRangeToCatch();
         _beadies.RemoveAt(beadieIndex);
-
         CatchCheck();
     }
 }

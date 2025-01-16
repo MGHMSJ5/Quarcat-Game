@@ -133,7 +133,8 @@ MonoBehaviour:
   _canUseColor: {r: 1, g: 1, b: 1, a: 1}
   _cantUseColor: {r: 0.50980395, g: 0.50980395, b: 0.50980395, a: 1}
   _playerController: {fileID: 0}
-  _catchSpeed: 0.4
+  originalSpeed: 0
+  _animator: {fileID: 0}
 --- !u!1 &5247708341711173027
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,9 +355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb772932559083447a11bc6b5d12d599, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  _turnspeed: 850
   _joystick: {fileID: 0}
+  _animator: {fileID: 1513994574448169421}
 --- !u!114 &7540543261869769790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1961
+  m_VersionIndex: 1979
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -746,7 +746,8 @@ MonoBehaviour:
   _canUseColor: {r: 1, g: 1, b: 1, a: 1}
   _cantUseColor: {r: 0.50980395, g: 0.50980395, b: 0.50980395, a: 1}
   _playerController: {fileID: 8405189355621167231}
-  _catchSpeed: 1
+  originalSpeed: 0
+  _animator: {fileID: 1513994574448169421}
 --- !u!1 &8365364239532804801
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,7 +933,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f08b6e1403f2d88418699d668798bee2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 438181475713609742}
+      addedObject: {fileID: 1513994574448169421}
   m_SourcePrefab: {fileID: 100100000, guid: f08b6e1403f2d88418699d668798bee2, type: 3}
 --- !u!4 &1326326582456874650 stripped
 Transform:
@@ -944,7 +945,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f08b6e1403f2d88418699d668798bee2, type: 3}
   m_PrefabInstance: {fileID: 3308551293282799962}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &438181475713609742
+--- !u!95 &1513994574448169421
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0

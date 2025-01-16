@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
     private Rigidbody _rb;
     private Vector3 _input;
 
+    [SerializeField]
+    private Animator _animator; 
+
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
@@ -36,6 +39,7 @@ public class PlayerController : MonoBehaviour
     {
         GatherInput();
         Look();
+        _animator.SetBool("isWalking", _input.magnitude > 0.1f); 
     }
 
     private void FixedUpdate()
@@ -52,16 +56,14 @@ public class PlayerController : MonoBehaviour
     {
         if (_input != Vector3.zero)
         {
-
             var relative = (transform.position + _input) - transform.position;
             var rot = Quaternion.LookRotation(relative, Vector3.up);
-
             transform.rotation = Quaternion.RotateTowards(transform.rotation, rot, Turnspeed * Time.deltaTime);
         }
     }
 
     void Move()
     {
-        _rb. MovePosition(transform.position + (transform.forward * _input.magnitude) * Speed * Time.deltaTime);
+        _rb.MovePosition(transform.position + (transform.forward * _input.magnitude) * Speed * Time.deltaTime);
     }
 }
