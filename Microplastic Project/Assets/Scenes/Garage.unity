@@ -5520,6 +5520,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: MicroplasticSpawnObject_Bucket
       objectReference: {fileID: 0}
+    - target: {fileID: 8800211815251919086, guid: fb9c9d962803b454c9d90fdca9485877, type: 3}
+      propertyPath: m_Size.x
+      value: 4.7483373
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800211815251919086, guid: fb9c9d962803b454c9d90fdca9485877, type: 3}
+      propertyPath: m_Size.z
+      value: 3.6675565
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800211815251919086, guid: fb9c9d962803b454c9d90fdca9485877, type: 3}
+      propertyPath: m_Center.x
+      value: -0.16072604
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800211815251919086, guid: fb9c9d962803b454c9d90fdca9485877, type: 3}
+      propertyPath: m_Center.z
+      value: -0.3007944
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
