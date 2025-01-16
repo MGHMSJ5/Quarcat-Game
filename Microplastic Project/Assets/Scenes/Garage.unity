@@ -2522,7 +2522,7 @@ MonoBehaviour:
   player: {fileID: 74991399}
   offset: {x: 0, y: 25, z: -25}
   smoothSpeed: 0.125
-  framingOffset: {x: 0, y: 0, z: 0}
+  framingOffset: {x: 0, y: 5, z: 0}
 --- !u!81 &979943682
 AudioListener:
   m_ObjectHideFlags: 0
