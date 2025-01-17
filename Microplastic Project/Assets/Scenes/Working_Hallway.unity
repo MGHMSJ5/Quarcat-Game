@@ -1896,6 +1896,10 @@ PrefabInstance:
       propertyPath: _catchButton
       value: 
       objectReference: {fileID: 8184865873618508652}
+    - target: {fileID: 5247708341711173027, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6210671447167294375, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
       propertyPath: m_Name
       value: Player
