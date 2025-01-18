@@ -1904,6 +1904,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6467114918792046445, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 867895388}
+    - target: {fileID: 7303199650443771167, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 867895388}
     - target: {fileID: 7540543261869769790, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
       propertyPath: _interactButton
       value: 
@@ -1916,6 +1924,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 867895388}
+    - target: {fileID: 9195477530827905742, guid: 329762ce25164d746acd03aad0e684c6, type: 3}
+      propertyPath: m_VersionIndex
+      value: 1991
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2382,6 +2394,7 @@ Transform:
   m_Children:
   - {fileID: 2090648334}
   - {fileID: 181116835}
+  - {fileID: 1672760005}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1041493431 stripped
@@ -3612,6 +3625,93 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.021210264, y: 0.019999998, z: 0.019999994}
   m_Center: {x: 4.0745363e-10, y: -4.656613e-10, z: 0.0000000037252903}
+--- !u!1 &1672760004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1672760005}
+  - component: {fileID: 1672760007}
+  - component: {fileID: 1672760006}
+  m_Layer: 0
+  m_Name: WinConditionTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1672760005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672760004}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1386.48, y: -640.56, z: -9.17}
+  m_LocalScale: {x: 1.3188365, y: 2.4626546, z: 6.3954973}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1014757869}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1672760006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672760004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 326e9a32a0c90224bb10f5ed26b39ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recyclingBin: {fileID: 1494958680}
+  dialogueManager: {fileID: 1700653286}
+  cooldownDuration: 2
+  winCondition0Dialogue:
+  - <color=#F06C6C>(You have recycled 0/5 plastic items required to progress to the
+    next floor!)</color>
+  winCondition1Dialogue:
+  - <color=#F06C6C>(You have recycled 1/5 plastic items required to progress to the
+    next floor!)</color>
+  winCondition2Dialogue:
+  - <color=#F06C6C>(You have recycled 2/5 plastic items required to progress to the
+    next floor!)</color>
+  winCondition3Dialogue:
+  - <color=#F06C6C>(You have recycled 3/5 plastic items required to progress to the
+    next floor!)</color>
+  winCondition4Dialogue:
+  - <color=#F06C6C>(You have recycled 4/5 plastic items required to progress to the
+    next floor!)</color>
+  winConditionCompletedDialogue:
+  - <color=#F06C6C>(You have recycled the 5/5 plastic items required to progress
+    to the next floor!)</color>
+--- !u!65 &1672760007
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672760004}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1700653284
 GameObject:
   m_ObjectHideFlags: 0
