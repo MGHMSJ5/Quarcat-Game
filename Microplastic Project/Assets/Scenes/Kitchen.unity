@@ -274,6 +274,22 @@ PrefabInstance:
       value: Got rid of the kettle last week, because the plastic lining it had was
         starting to slowly melt and that can spread microplastics into the water!
       objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Size.x
+      value: 4.5743065
+      objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Size.z
+      value: 4.9786596
+      objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Center.x
+      value: -1.0371532
+      objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Center.z
+      value: 0.77466404
+      objectReference: {fileID: 0}
     - target: {fileID: 3744405781828723543, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.81
@@ -1257,6 +1273,22 @@ PrefabInstance:
       propertyPath: m_text
       value: A dishwasher normally uses hot water which damages plastic items inside
         and gets microplastics into our water supply and oceans!
+      objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Size.x
+      value: 4.5740576
+      objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Size.z
+      value: 4.6236897
+      objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Center.x
+      value: 0.64127016
+      objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Center.z
+      value: 0.49120426
       objectReference: {fileID: 0}
     - target: {fileID: 3744405781828723543, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
       propertyPath: m_LocalPosition.x

@@ -301,6 +301,26 @@ PrefabInstance:
       value: I should really clean the dust off the top of the cupboard, before I
         start getting coughing fits from that pile of microplastics!
       objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Size.x
+      value: 3.1184313
+      objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Size.y
+      value: 2.5000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Size.z
+      value: 3.1298482
+      objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Center.x
+      value: 0.30921397
+      objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Center.z
+      value: -0.31492338
+      objectReference: {fileID: 0}
     - target: {fileID: 3744405781828723543, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7867
@@ -2581,6 +2601,22 @@ PrefabInstance:
       propertyPath: m_text
       value: Opening up a window can help with getting rid of all those microplastics
         floating around in your home!
+      objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Size.x
+      value: 2.5000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Size.y
+      value: 2.5000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Size.z
+      value: 4.8300095
+      objectReference: {fileID: 0}
+    - target: {fileID: 457892737660385621, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
+      propertyPath: m_Center.z
+      value: 1.1650021
       objectReference: {fileID: 0}
     - target: {fileID: 3744405781828723543, guid: 2f3da122d3c5a074ca6905761dfb9866, type: 3}
       propertyPath: m_LocalScale.x
