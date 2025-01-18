@@ -3597,7 +3597,7 @@ PrefabInstance:
       objectReference: {fileID: 1613511500989441104}
     - target: {fileID: 8047955995799481420, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
       propertyPath: recycledObjects.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8047955995799481420, guid: 518e2aa09abda0e40a3cc37548e3571e, type: 3}
       propertyPath: recycledObjects.Array.data[0]
