@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class WinConditionTrigger : MonoBehaviour
@@ -9,6 +10,8 @@ public class WinConditionTrigger : MonoBehaviour
     [Header("References")]
     public RecyclingBin recyclingBin;
     public DialogueManager dialogueManager;
+    [SerializeField]
+    private FadeCanvas fadeCanvas;
 
     [Header("Cooldown Timer")]
     public float cooldownDuration = 2f;
@@ -62,11 +65,24 @@ public class WinConditionTrigger : MonoBehaviour
             {
                 dialogueManager.StartDialogue(winCondition4Dialogue);
             }
-            if (recyclePoints == 5)
+            StartCoroutine(Cooldown());
+            if (recyclePoints >= 5)
             {
                 dialogueManager.StartDialogue(winConditionCompletedDialogue);
+                {
+                    fadeCanvas.StartFadeIn();
+                    SceneManager.LoadScene(6);
+                    //StartCoroutine(WaitForFade());
+                }
             }
-            StartCoroutine(Cooldown());
         }
     }
+    //private IEnumerator WaitForFade()
+    //{
+        //print("Begin");
+       // yield return new WaitForSeconds(fadeCanvas.defaultDuration + 0.4f);
+       // print("After");
+
+        //SceneManager.LoadScene(6);
+    //}
 }

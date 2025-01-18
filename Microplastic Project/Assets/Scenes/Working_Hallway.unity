@@ -3672,6 +3672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recyclingBin: {fileID: 1494958680}
   dialogueManager: {fileID: 1700653286}
+  fadeCanvas: {fileID: 1461934018}
   cooldownDuration: 2
   winCondition0Dialogue:
   - <color=#F06C6C>(You have recycled 0/5 plastic items required to progress to the
@@ -3689,8 +3690,8 @@ MonoBehaviour:
   - <color=#F06C6C>(You have recycled 4/5 plastic items required to progress to the
     next floor!)</color>
   winConditionCompletedDialogue:
-  - <color=#F06C6C>(You have recycled the 5/5 plastic items required to progress
-    to the next floor!)</color>
+  - <color=#F06C6C>(You have recycled the necessary amount of plastic items required
+    to progress to the next floor!)</color>
 --- !u!65 &1672760007
 BoxCollider:
   m_ObjectHideFlags: 0
