@@ -6162,10 +6162,9 @@ MonoBehaviour:
   dialogueManager: {fileID: 83307670}
   respawnDialogue:
   - Alrighty, got those suckers! But these were definitely not the last of them.
-  - <color=#F06C6C>(After vacuuming up all of the <b>Beadies</b> that belong to a
-    plastic item, make sure to replace that item within a few seconds by using the
-    <b>replace button</b> that appears when close to the item, or the <b>Beadies</b>
-    will respawn).</color>
+  - <color=#F06C6C>(After vacuuming up all of the <b>Beadies</b> from a plastic item,
+    replace that item within a few seconds by using the <b>replace button</b> that
+    appears when close to the item, or the <b>Beadies</b> will respawn).</color>
 --- !u!1 &2100413926
 GameObject:
   m_ObjectHideFlags: 0
