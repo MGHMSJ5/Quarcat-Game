@@ -3,7 +3,17 @@ guid: d60239584a7a6af45bb23e4f3bd3e181
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_BlueBeady
+    second: {fileID: 2100000, guid: 105930a4f5c0a8b46b6c6c9de5276157, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Eyes
+    second: {fileID: 2100000, guid: c09a683446bdade40a70881768d853b4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
