@@ -4095,8 +4095,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 83307670}
   replacementDialogue:
-  - I think some of those little rascals got through the door over there, let's go
-    after them!
+  - This room is clear of Beadies, but some got through the door over there!
+  - Let's go after them!
   objectToActivate: {fileID: 88798821}
 --- !u!1 &1289620168
 GameObject:
@@ -5737,8 +5737,9 @@ MonoBehaviour:
   respawnDialogue:
   - Alrighty, got those suckers! But these were definitely not the last of them.
   - <color=#F06C6C>(After vacuuming up all of the <b>Beadies</b> that belong to a
-    plastic item, make sure to replace the item within a few seconds using the interact
-    button on screen).</color>
+    plastic item, make sure to replace that item within a few seconds by using the
+    <b>replace button</b> that appears when close to the item, or the <b>Beadies</b>
+    will respawn).</color>
 --- !u!1 &2100413926
 GameObject:
   m_ObjectHideFlags: 0
@@ -5785,7 +5786,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 83307670}
   spawnDialogue:
-  - "What the\u2014These are the microplastic <b>Beadies</b>!?"
+  - These have to be the microplastic <b>Beadies</b> my parents warned me about!?
+  - <color=#F06C6C>(Getting near a microplastic source, spawns in microplastic <b>Beadies</b>
+    that you will have to defeat).</color>
+  - <color=#F06C6C>(To defeat <b>Beadies</b>, get up close to them and <b>hold</b>
+    down the <b>vacuum button</b> at the bottom right side of your screen).</color>
 --- !u!65 &2109202408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5853,9 +5858,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 83307670}
   spawnDialogue:
-  - There should be something around here that can help me get rid of those microplastics
-    around here.
-  - <color=#F06C6C>(To move around, use the joystick in the bottom left side of your
+  - There <b>should</b> be something around here that can help me get rid of those
+    microplastics around here.
+  - <color=#F06C6C>(To move around, use the joystick at the bottom left side of your
     screen).</color>
 --- !u!1001 &2146391234
 PrefabInstance:

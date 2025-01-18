@@ -322,9 +322,9 @@ MonoBehaviour:
   recyclingBin: {fileID: 1494958680}
   dialogueManager: {fileID: 1700653286}
   recyclingDialogue:
-  - <color=#F06C6C>(Recycling plastic items grants you <b>Plastic Points</b>, which
-    you can use to increase your power at the catalogue to the right side of the
-    recycle box.)</color>
+  - <color=#F06C6C>(Recycling plastic items grants you <b>Recycle Points</b>, which
+    you can use to increase your power at the book to the right of this recycle box.)</color>
+  - <color=#F06C6C>(You are now free to explore the house).</color>
   - Alright, let's get rid of those pesky <b>Beadies</b>!
 --- !u!1 &189821546
 GameObject:
@@ -2825,7 +2825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[0].z
-      value: -5.13884
+      value: -2.7055101
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[1].x
@@ -2833,11 +2833,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[1].y
-      value: 0.33346418
+      value: 0.39232934
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[1].z
-      value: -5.514578
+      value: -3.428866
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[2].x
@@ -2845,11 +2845,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[2].y
-      value: 0.26353937
+      value: -0.103183106
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[2].z
-      value: -5.890315
+      value: -4.1522217
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[3].x
@@ -2857,11 +2857,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[3].y
-      value: 0.26262024
+      value: -0.36337912
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[3].z
-      value: -6.266052
+      value: -4.8755774
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[4].x
@@ -2869,11 +2869,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[4].y
-      value: 0.33070675
+      value: -0.3882588
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[4].z
-      value: -6.641789
+      value: -5.598933
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[5].x
@@ -2881,11 +2881,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[5].y
-      value: 0.46779883
+      value: -0.17782217
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[5].z
-      value: -7.0175257
+      value: -6.3222885
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[6].x
@@ -2893,7 +2893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[6].z
-      value: -7.393263
+      value: -7.0456443
       objectReference: {fileID: 0}
     - target: {fileID: 5094463131756993842, guid: bdcd6f104a61ca04f836062d90127d4f, type: 3}
       propertyPath: m_Positions.Array.data[7].x
@@ -5333,7 +5333,7 @@ MonoBehaviour:
   - Before I go after those <b>Beadies</b> again, I should recycle this bucket to
     prevent them spreading from it in here.
   - <color=#F06C6C>(After picking up plastic items, you can recycle them at the recycle
-    box that is located here in the hallway.)</color>
+    box that is located here in the hallway).</color>
 --- !u!1 &2102288955
 GameObject:
   m_ObjectHideFlags: 0
