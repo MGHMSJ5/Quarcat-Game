@@ -3232,7 +3232,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1238708, y: 3.3019524}
+  m_AnchoredPosition: {x: -0.000030517578, y: 0.0000038146973}
   m_SizeDelta: {x: 1218.7861, y: 198.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1043253034
@@ -6163,8 +6163,9 @@ MonoBehaviour:
   respawnDialogue:
   - Alrighty, got those suckers! But these were definitely not the last of them.
   - <color=#F06C6C>(After vacuuming up all of the <b>Beadies</b> from a plastic item,
-    replace that item within a few seconds by using the <b>replace button</b> that
-    appears when close to the item, or the <b>Beadies</b> will respawn).</color>
+    replace that item within a few seconds).</color>
+  - <color=#F06C6C>(You do this by using the <b>replace button</b> that appears when
+    close to the item; not replacing the item will cause the <b>Beadies</b> to respawn).</color>
 --- !u!1 &2100413926
 GameObject:
   m_ObjectHideFlags: 0
