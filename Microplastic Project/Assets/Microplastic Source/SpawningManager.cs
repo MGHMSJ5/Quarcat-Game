@@ -40,6 +40,19 @@ public class SpawningManager : MonoBehaviour
     [SerializeField]
     private float _popUpWait = 6f;
 
+    [Header("Audio Feedback")]
+    [Tooltip("AudioSource to play spawn and death sounds")]
+    [SerializeField]
+    private AudioSource audioSource;
+
+    [Tooltip("Sound for objects popping in")]
+    [SerializeField]
+    private AudioClip spawnSound;
+
+    [Tooltip("Sound for objects dying")]
+    [SerializeField]
+    private AudioClip deathSound;
+
     [Header("Respawn")]
     [SerializeField]
     private float _respawnSeconds = 10f;
@@ -128,11 +141,20 @@ public class SpawningManager : MonoBehaviour
     {//wait for end of frame to let microplastic spawn (fixes 'Missing Object' problem)
         yield return new WaitForEndOfFrame();
         SpawnBoolManager.SetIsSpawning(identity, true);
+
         for (int i = 0; i < _spawnNumber; i++)
         {
+            // Play spawn sound at spawner position
+            if (spawnSound != null)
+            {
+                AudioSource.PlayClipAtPoint(spawnSound, transform.position);
+            }
+
+
             GameObject microplastic = Instantiate(_spawningGameObject, transform.position, Quaternion.identity);
             _spawnedMicroplastics.Add(microplastic);
             yield return new WaitForSeconds(GetRandomTime(_spawnBreakMax, _spawnBreakMin));
+
         }
     }
 
@@ -176,6 +198,7 @@ public class SpawningManager : MonoBehaviour
         }
         return true;
     }
+
 
     private IEnumerator PopUpAnimation(float waitSeconds)
     {

@@ -18,6 +18,13 @@ public class RecyclingBin : MonoBehaviour
     [SerializeField]
     private UpgradeManager _upgradeManager;
 
+    [Header("Audio Feedback")]
+    [Tooltip("Assign the AudioSource named 'aud_Recycle' here")]
+    public AudioSource audioSource; // Drag aud_Recycle here in the Inspector
+
+    [Tooltip("Optional: Assign the specific sound clip to play")]
+    public AudioClip replaceSound;
+
     private float _offset = 0f;
 
     public static int recyclePoints = 0;
@@ -83,6 +90,12 @@ public class RecyclingBin : MonoBehaviour
         {
             return;
         }
+
+        if (audioSource != null && replaceSound != null)
+        {
+            audioSource.PlayOneShot(replaceSound);
+        }
+
         _progressManager.AddToProgress(recycledObjectsCount);
 
         for (int i = 0; i < recycledObjectsCount; i++)
