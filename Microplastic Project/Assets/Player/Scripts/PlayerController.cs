@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement Values")]
-    public static float Speed = 5;
+    public static float Speed = 5.5f;
     public static float Turnspeed = 850;
 
     [SerializeField]
