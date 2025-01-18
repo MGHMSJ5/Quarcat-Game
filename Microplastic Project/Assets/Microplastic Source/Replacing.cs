@@ -14,18 +14,35 @@ public class Replacing : MonoBehaviour
         "The script is in the trigger")]
     public RecyclingBin recyclingScript;
 
+    [Header("Audio Feedback")]
+    [Tooltip("Assign the AudioSource named 'aud_Recycle' here")]
+    public AudioSource audioSource; // Drag aud_Recycle here in the Inspector
+
+    [Tooltip("Optional: Assign the specific sound clip to play")]
+    public AudioClip replaceSound;
+
     public void ReplaceItem()
-    {   //gameobject & script reference will be assigned through SpawningManager script
-        originalGameObject.SetActive(false);
-        replaceGameObject.SetActive(true);
-        SpawnBoolManager.SetHasReplaced(spawnId, true);
+    {
+        // Ensure the audio source and clip are valid before playing
+        if (audioSource != null)
+        {
+            if (replaceSound != null)
+            {
+                audioSource.PlayOneShot(replaceSound);
+            }
+        }
 
-        recyclingScript.GrabRecycleObject(originalGameObject);
+            {   //gameobject & script reference will be assigned through SpawningManager script
+            originalGameObject.SetActive(false);
+            replaceGameObject.SetActive(true);
+            SpawnBoolManager.SetHasReplaced(spawnId, true);
 
-        ResetVariables();
-        gameObject.SetActive(false);
+            recyclingScript.GrabRecycleObject(originalGameObject);
+
+            ResetVariables();
+            gameObject.SetActive(false);
+        }
     }
-
     public void ResetVariables()
     {
         originalGameObject = null;
@@ -33,3 +50,5 @@ public class Replacing : MonoBehaviour
         spawnId = -1;
     }
 }
+
+
