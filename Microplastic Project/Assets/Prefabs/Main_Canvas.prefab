@@ -226,6 +226,8 @@ MonoBehaviour:
   replaceGameObject: {fileID: 0}
   spawnId: 0
   recyclingScript: {fileID: 0}
+  audioSource: {fileID: 0}
+  replaceSound: {fileID: 0}
 --- !u!1 &3148280713503835482
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,7 +673,7 @@ RectTransform:
   m_GameObject: {fileID: 5659368830436901442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.42, y: 1.42, z: 1.42}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3602499577103258846}
@@ -679,7 +681,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 230, y: 230}
+  m_AnchoredPosition: {x: 335, y: 265}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3963533187234678495
