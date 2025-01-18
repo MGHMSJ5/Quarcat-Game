@@ -32,6 +32,17 @@ public class WinConditionTrigger : MonoBehaviour
 
     private int recyclePoints;
     private bool canTrigger = true;
+    private bool lastDialogueAppear = false;
+
+    private void Update()
+    {
+        //look for it time is normal, and the last dialogue has appeared
+        if (Time.timeScale == 1 && lastDialogueAppear)
+        {
+            StartCoroutine(WaitForFade());
+            lastDialogueAppear = false; //make it false so that this won't loop
+        }
+    }
 
     private IEnumerator Cooldown()
     {
@@ -70,19 +81,18 @@ public class WinConditionTrigger : MonoBehaviour
             {
                 dialogueManager.StartDialogue(winConditionCompletedDialogue);
                 {
-                    fadeCanvas.StartFadeIn();
-                    SceneManager.LoadScene(6);
-                    //StartCoroutine(WaitForFade());
+                    lastDialogueAppear = true;
                 }
             }
         }
     }
-    //private IEnumerator WaitForFade()
-    //{
-        //print("Begin");
-       // yield return new WaitForSeconds(fadeCanvas.defaultDuration + 0.4f);
-       // print("After");
+    private IEnumerator WaitForFade()
+    {
+        fadeCanvas.StartFadeIn();
+        print("Begin");
+        yield return new WaitForSeconds(fadeCanvas.defaultDuration + 0.4f);
+        print("After");
 
-        //SceneManager.LoadScene(6);
-    //}
+        SceneManager.LoadScene(6);
+    }
 }
