@@ -77,7 +77,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BrightnessObject: 2
+    - _BrightnessObject: 0.34
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -91,11 +91,11 @@ Material:
     - _Parallax: 0.02
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _ShadowStrength: 0.5
+    - _ShadowStrength: 1.06
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Steps: 3
+    - _Steps: 7.79
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
