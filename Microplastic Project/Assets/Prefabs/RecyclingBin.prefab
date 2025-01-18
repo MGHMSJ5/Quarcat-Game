@@ -171,6 +171,8 @@ MonoBehaviour:
   recycledObjects: []
   playerHead: {fileID: 0}
   recycleButton: {fileID: 7677902730866613924}
+  _progressManager: {fileID: 0}
+  _upgradeManager: {fileID: 0}
 --- !u!1 &4234730625218866606
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,16 +198,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4234730625218866606}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8.773943, y: 8.773943, z: 8.773943}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 629161770532446291}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.000091552734, y: 0.000045776367}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4915704777922759751
@@ -245,8 +247,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -428,7 +430,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &629161770532446291
 RectTransform:
   m_ObjectHideFlags: 0
@@ -438,7 +440,7 @@ RectTransform:
   m_GameObject: {fileID: 7677902730866613924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -26}
-  m_LocalScale: {x: 14.915703, y: 14.915705, z: 14.915703}
+  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8995545659178795302}
@@ -447,7 +449,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 10}
-  m_SizeDelta: {x: 74.739685, y: 40}
+  m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9170912001439909330
 CanvasRenderer:
@@ -470,14 +472,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.6792453, b: 0.1400365, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c942ea83b6d66534c800e753225d76d2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b3e8361e5a46bdf4baa76a437ad0b58a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
