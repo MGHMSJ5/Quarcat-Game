@@ -109,7 +109,7 @@ MonoBehaviour:
   _textForReplacing: Replace with metal bucket
   _popUpCanvas: {fileID: 7154733911138839964}
   _popUpWait: 6
-  _respawnSeconds: 10
+  _respawnSeconds: 15
   identity: 1
 --- !u!1 &6493197033462308305
 GameObject:

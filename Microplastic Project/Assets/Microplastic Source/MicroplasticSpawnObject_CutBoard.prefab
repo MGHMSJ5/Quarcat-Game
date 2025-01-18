@@ -141,7 +141,7 @@ MonoBehaviour:
   _textForReplacing: Replace with wooden cutting board
   _popUpCanvas: {fileID: 6523846041526543303}
   _popUpWait: 6
-  _respawnSeconds: 10
+  _respawnSeconds: 15
   identity: 2
 --- !u!1 &5983946654440094158
 GameObject:

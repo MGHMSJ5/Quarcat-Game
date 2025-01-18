@@ -77,7 +77,7 @@ MonoBehaviour:
   _textForReplacing: Replace with wooden blocks
   _popUpCanvas: {fileID: 1099995862543613520}
   _popUpWait: 6
-  _respawnSeconds: 10
+  _respawnSeconds: 15
   identity: 6
 --- !u!1 &2964591173208848234
 GameObject:
