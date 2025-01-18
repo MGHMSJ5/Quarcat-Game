@@ -45,6 +45,7 @@ public class DragEffect : MonoBehaviour
         {
             //clamp opsition to MaxDistance if it exceeds the limit
             Vector3 clampedPosition = _vacuumNozzle.position - directionToVacuum.normalized * _maxDistance;
+            clampedPosition.y = transform.position.y;
             transform.position = clampedPosition;
         }       
     }
