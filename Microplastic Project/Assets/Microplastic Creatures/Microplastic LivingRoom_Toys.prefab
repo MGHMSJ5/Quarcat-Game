@@ -332,6 +332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Microplastic Beadie
       objectReference: {fileID: 0}
+    - target: {fileID: 1808665389145734371, guid: 23a35250e25864c4983f650229654a9a, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 592e46915320f0641bf4d0d507717f58, type: 2}
     - target: {fileID: 3231562104160356658, guid: 23a35250e25864c4983f650229654a9a, type: 3}
       propertyPath: waypoints.Array.size
       value: 8
@@ -368,6 +372,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[7]
       value: 
       objectReference: {fileID: 5429675691315275572}
+    - target: {fileID: 3390934079721866084, guid: 23a35250e25864c4983f650229654a9a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9039452978675535810, guid: 23a35250e25864c4983f650229654a9a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

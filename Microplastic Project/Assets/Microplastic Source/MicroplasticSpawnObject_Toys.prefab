@@ -69,7 +69,7 @@ MonoBehaviour:
   _spawningGameObject: {fileID: 8058486806937685699, guid: 5854d99e48d0bf840ae9410c3ae90c1c, type: 3}
   _spawnNumber: 4
   _spawnedMicroplastics: []
-  _spawnBreakMax: 2
+  _spawnBreakMax: 3
   _spawnBreakMin: 1
   _originalGameObjectParent: {fileID: 6788546798992970145}
   _replacngGameObjectParent: {fileID: 4720036579891260784}

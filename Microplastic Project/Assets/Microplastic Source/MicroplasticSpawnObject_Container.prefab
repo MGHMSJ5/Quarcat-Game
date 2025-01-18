@@ -131,9 +131,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawningGameObject: {fileID: 8058486806937685699, guid: 137085db1483c7e4f904dccb65feb1ea, type: 3}
-  _spawnNumber: 4
+  _spawnNumber: 2
   _spawnedMicroplastics: []
-  _spawnBreakMax: 2
+  _spawnBreakMax: 3
   _spawnBreakMin: 1
   _originalGameObjectParent: {fileID: 3528592438449333429}
   _replacngGameObjectParent: {fileID: 5010587445623036220}
