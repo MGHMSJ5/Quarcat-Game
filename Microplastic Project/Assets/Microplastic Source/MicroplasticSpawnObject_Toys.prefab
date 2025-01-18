@@ -76,7 +76,7 @@ MonoBehaviour:
   _replaceButton: {fileID: 0}
   _textForReplacing: Replace with wooden blocks
   _popUpCanvas: {fileID: 1099995862543613520}
-  _popUpWait: 6
+  _popUpWait: 15
   _respawnSeconds: 15
   identity: 6
 --- !u!1 &2964591173208848234

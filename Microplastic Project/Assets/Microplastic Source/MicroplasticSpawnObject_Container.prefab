@@ -140,7 +140,7 @@ MonoBehaviour:
   _replaceButton: {fileID: 0}
   _textForReplacing: Replace with glass container
   _popUpCanvas: {fileID: 5331450535199650816}
-  _popUpWait: 6
+  _popUpWait: 15
   _respawnSeconds: 15
   identity: 4
 --- !u!1 &7412073936973523499

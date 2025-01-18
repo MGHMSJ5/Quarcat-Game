@@ -140,7 +140,7 @@ MonoBehaviour:
   _replaceButton: {fileID: 0}
   _textForReplacing: Replace with organic plant
   _popUpCanvas: {fileID: 385924310084987758}
-  _popUpWait: 6
+  _popUpWait: 15
   _respawnSeconds: 15
   identity: 7
 --- !u!1 &4646699031890992618

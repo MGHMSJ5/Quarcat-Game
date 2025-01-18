@@ -76,7 +76,7 @@ MonoBehaviour:
   _replaceButton: {fileID: 0}
   _textForReplacing: Replace with metal bottle
   _popUpCanvas: {fileID: 3052145101751982530}
-  _popUpWait: 6
+  _popUpWait: 15
   _respawnSeconds: 15
   identity: 3
 --- !u!1 &4935559299457667512

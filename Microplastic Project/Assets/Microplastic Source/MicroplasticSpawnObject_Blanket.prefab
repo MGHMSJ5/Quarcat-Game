@@ -76,7 +76,7 @@ MonoBehaviour:
   _replaceButton: {fileID: 0}
   _textForReplacing: Replace with wool blanket
   _popUpCanvas: {fileID: 6015175691046879788}
-  _popUpWait: 6
+  _popUpWait: 15
   _respawnSeconds: 15
   identity: 5
 --- !u!1 &4274960573378330263

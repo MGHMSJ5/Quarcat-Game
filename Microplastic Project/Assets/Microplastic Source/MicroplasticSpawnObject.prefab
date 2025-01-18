@@ -69,13 +69,15 @@ MonoBehaviour:
   _spawningGameObject: {fileID: 8058486806937685699, guid: ed6340e99fa813b4ca8fb1785a002215, type: 3}
   _spawnNumber: 4
   _spawnedMicroplastics: []
+  _spawnBreakMax: 2
+  _spawnBreakMin: 1
   _originalGameObjectParent: {fileID: 1852773681663381744}
   _replacngGameObjectParent: {fileID: 8709408711229152523}
   _replaceButton: {fileID: 0}
   _textForReplacing: Replace with X
   _popUpCanvas: {fileID: 5000444692368056478}
-  _animationWaitAnimation: 6
-  _respawnSeconds: 10
+  _popUpWait: 15
+  _respawnSeconds: 15
   identity: 0
 --- !u!1 &1852773681663381744
 GameObject:
