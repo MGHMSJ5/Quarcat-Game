@@ -49,10 +49,6 @@ public class SpawningManager : MonoBehaviour
     [SerializeField]
     private AudioClip spawnSound;
 
-    [Tooltip("Sound for objects dying")]
-    [SerializeField]
-    private AudioClip deathSound;
-
     [Header("Respawn")]
     [SerializeField]
     private float _respawnSeconds = 10f;
@@ -147,7 +143,7 @@ public class SpawningManager : MonoBehaviour
             // Play spawn sound at spawner position
             if (spawnSound != null)
             {
-                AudioSource.PlayClipAtPoint(spawnSound, transform.position);
+                audioSource.PlayOneShot(spawnSound);
             }
 
 

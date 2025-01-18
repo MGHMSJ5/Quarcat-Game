@@ -33,6 +33,11 @@ public class BeadieCatchingManager : MonoBehaviour
 
     private bool _isCatching = false;
 
+    [Header("Defeat Audio clip")]
+    [SerializeField]
+    private AudioClip _deathSound;
+    private AudioSource _audioSource;
+
     public float SlowedSpeed
     {
         get { return _slowedSpeed; }
@@ -49,6 +54,8 @@ public class BeadieCatchingManager : MonoBehaviour
         {
             _slowedSpeed = BeadieStaticManager.GetSlowedSpeed(_versionID - 1);
         }
+
+        _audioSource = GameObject.Find("aud_BeadieDefeat").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -69,6 +76,7 @@ public class BeadieCatchingManager : MonoBehaviour
 
         if (healthbar.localScale.x <= 0)
         {
+            _audioSource.PlayOneShot(_deathSound);
             Destroy(transform.parent.parent.gameObject);
         }
     }

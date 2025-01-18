@@ -419,6 +419,7 @@ MonoBehaviour:
   _normalSpeed: 5
   _slowedSpeed: 2
   catchSpeed: 0.1
+  _deathSound: {fileID: 8300000, guid: 2157f20f9ffcbcd4dbe01723ff734bee, type: 3}
 --- !u!1 &4658223406407956295
 GameObject:
   m_ObjectHideFlags: 0
