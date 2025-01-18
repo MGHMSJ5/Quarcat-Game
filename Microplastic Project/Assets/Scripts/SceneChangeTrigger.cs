@@ -29,12 +29,17 @@ public class SceneChangeTrigger : MonoBehaviour
     [Header("UI Settings")]
     [SerializeField] private GameObject buttonPrefab;
 
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip doorAudio;
+
     private GameObject instantiatedButton;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(playerTag))
         {
+            
             // Check if the current scene is "Working_Hallway"
             if (SceneManager.GetActiveScene().name == "Working_Hallway")
             {
@@ -101,6 +106,7 @@ public class SceneChangeTrigger : MonoBehaviour
 
     IEnumerator RotateObject()
     {
+        audioSource.PlayOneShot(doorAudio);
         Quaternion startRotation = transform.rotation;
         Quaternion endRotation = startRotation * Quaternion.Euler(rotationAmount);
         float elapsedTime = 0f;
