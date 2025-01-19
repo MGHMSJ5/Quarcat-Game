@@ -4953,6 +4953,14 @@ PrefabInstance:
       value: MicroplasticSpawnObject_Blanket
       objectReference: {fileID: 0}
     - target: {fileID: 4290180483928623366, guid: 37454441d62fb624aa3d3f5046c08005, type: 3}
+      propertyPath: spawnSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a57f404e3127f8242904ef02c4cb02da, type: 3}
+    - target: {fileID: 4290180483928623366, guid: 37454441d62fb624aa3d3f5046c08005, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 739047496}
+    - target: {fileID: 4290180483928623366, guid: 37454441d62fb624aa3d3f5046c08005, type: 3}
       propertyPath: _replaceButton
       value: 
       objectReference: {fileID: 632725335}
@@ -5435,6 +5443,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1454961340453389676, guid: 842e52616f0af6c44b88b9da5d89b451, type: 3}
+      propertyPath: spawnSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a57f404e3127f8242904ef02c4cb02da, type: 3}
+    - target: {fileID: 1454961340453389676, guid: 842e52616f0af6c44b88b9da5d89b451, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 739047496}
     - target: {fileID: 1454961340453389676, guid: 842e52616f0af6c44b88b9da5d89b451, type: 3}
       propertyPath: _replaceButton
       value: 

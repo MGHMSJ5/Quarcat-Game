@@ -5495,6 +5495,14 @@ PrefabInstance:
       value: MicroplasticSpawnObject_CutBoard
       objectReference: {fileID: 0}
     - target: {fileID: 8058451422935261399, guid: 9d52d535aa022c547b97026e31bab92b, type: 3}
+      propertyPath: spawnSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a57f404e3127f8242904ef02c4cb02da, type: 3}
+    - target: {fileID: 8058451422935261399, guid: 9d52d535aa022c547b97026e31bab92b, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2054865436}
+    - target: {fileID: 8058451422935261399, guid: 9d52d535aa022c547b97026e31bab92b, type: 3}
       propertyPath: _replaceButton
       value: 
       objectReference: {fileID: 1056743226}
@@ -5573,6 +5581,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MicroplasticSpawnObject_Container
       objectReference: {fileID: 0}
+    - target: {fileID: 8133151617218798068, guid: a6facee9e832b9844b174fa119e7aa9c, type: 3}
+      propertyPath: spawnSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a57f404e3127f8242904ef02c4cb02da, type: 3}
+    - target: {fileID: 8133151617218798068, guid: a6facee9e832b9844b174fa119e7aa9c, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2054865436}
     - target: {fileID: 8133151617218798068, guid: a6facee9e832b9844b174fa119e7aa9c, type: 3}
       propertyPath: _replaceButton
       value: 
@@ -5666,6 +5682,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MicroplasticSpawnObject_Bottle
       objectReference: {fileID: 0}
+    - target: {fileID: 6753387452046878903, guid: e85b0679b1209194c989643d00098dd5, type: 3}
+      propertyPath: spawnSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a57f404e3127f8242904ef02c4cb02da, type: 3}
+    - target: {fileID: 6753387452046878903, guid: e85b0679b1209194c989643d00098dd5, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2054865436}
     - target: {fileID: 6753387452046878903, guid: e85b0679b1209194c989643d00098dd5, type: 3}
       propertyPath: _replaceButton
       value: 

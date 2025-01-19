@@ -7054,6 +7054,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5029935644497139305, guid: fb9c9d962803b454c9d90fdca9485877, type: 3}
+      propertyPath: spawnSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a57f404e3127f8242904ef02c4cb02da, type: 3}
+    - target: {fileID: 5029935644497139305, guid: fb9c9d962803b454c9d90fdca9485877, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 4803524}
+    - target: {fileID: 5029935644497139305, guid: fb9c9d962803b454c9d90fdca9485877, type: 3}
       propertyPath: _replaceButton
       value: 
       objectReference: {fileID: 376347681}
