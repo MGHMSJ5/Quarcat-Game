@@ -2279,6 +2279,7 @@ MonoBehaviour:
   buttonPrefab: {fileID: 7596106150650445833, guid: bd9a058db12f3114bb948a390c15c7f1, type: 3}
   audioSource: {fileID: 1582038644}
   doorAudio: {fileID: 8300000, guid: ac2e0ad6fb18ace4985460113e68bee8, type: 3}
+  _spawningManager: {fileID: 1529964303}
 --- !u!23 &1255360536
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3009,6 +3010,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1529964303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 568319839327658700, guid: 37454441d62fb624aa3d3f5046c08005, type: 3}
+  m_PrefabInstance: {fileID: 1639490015859828551}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1540977463
 GameObject:
   m_ObjectHideFlags: 0

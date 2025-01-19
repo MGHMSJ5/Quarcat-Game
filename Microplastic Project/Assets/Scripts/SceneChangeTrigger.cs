@@ -33,6 +33,10 @@ public class SceneChangeTrigger : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip doorAudio;
 
+    [Header("Blanket Fix")]
+    [Tooltip("Place 'SpawnArea' of the Blanket Source here to fix the weird Beadie issue")]
+    [SerializeField] private GameObject _spawningManager;
+
     private GameObject instantiatedButton;
 
     private void OnTriggerEnter(Collider other)
@@ -74,6 +78,10 @@ public class SceneChangeTrigger : MonoBehaviour
         // Perform rotation
         yield return StartCoroutine(RotateObject());
 
+        if (_spawningManager)
+        {
+            _spawningManager.SetActive(false);
+        }
         // Fade and transition scene
         _fadeCanvas.StartFadeIn();
         yield return new WaitForSeconds(_fadeCanvas.defaultDuration + 0.4f); // Add tiny delay to scene switching
