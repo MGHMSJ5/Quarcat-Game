@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56884472c1e3c33459f59a706a9302a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawningGameObject: {fileID: 8058486806937685699, guid: ed6340e99fa813b4ca8fb1785a002215, type: 3}
+  _spawningGameObject: {fileID: 8058486806937685699, guid: 66f9a2e9269346e43a13d439c08b6027, type: 3}
   _spawnNumber: 4
   _spawnedMicroplastics: []
   _spawnBreakMax: 2
@@ -77,6 +77,8 @@ MonoBehaviour:
   _textForReplacing: Replace with X
   _popUpCanvas: {fileID: 5000444692368056478}
   _popUpWait: 15
+  audioSource: {fileID: 0}
+  spawnSound: {fileID: 0}
   _respawnSeconds: 15
   identity: 0
 --- !u!1 &1852773681663381744
