@@ -8,8 +8,8 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 052da104f47fa814c960ad87fb0c334f
+  m_OcclusionCullingData: {fileID: 36300000, guid: abeaddc2a78996447b49b07539c67c75, type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -602,6 +602,7 @@ MonoBehaviour:
   buttonPrefab: {fileID: 7596106150650445833, guid: bd9a058db12f3114bb948a390c15c7f1, type: 3}
   audioSource: {fileID: 0}
   doorAudio: {fileID: 0}
+  _spawningManager: {fileID: 0}
 --- !u!65 &306784982
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1034,6 +1035,7 @@ MonoBehaviour:
   buttonPrefab: {fileID: 7596106150650445833, guid: bd9a058db12f3114bb948a390c15c7f1, type: 3}
   audioSource: {fileID: 1192791896}
   doorAudio: {fileID: 8300000, guid: ac2e0ad6fb18ace4985460113e68bee8, type: 3}
+  _spawningManager: {fileID: 0}
 --- !u!65 &549421521
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1238,6 +1240,7 @@ MonoBehaviour:
   buttonPrefab: {fileID: 7596106150650445833, guid: bd9a058db12f3114bb948a390c15c7f1, type: 3}
   audioSource: {fileID: 0}
   doorAudio: {fileID: 0}
+  _spawningManager: {fileID: 0}
 --- !u!65 &704334836
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4808,6 +4811,7 @@ MonoBehaviour:
   buttonPrefab: {fileID: 7596106150650445833, guid: bd9a058db12f3114bb948a390c15c7f1, type: 3}
   audioSource: {fileID: 1192791896}
   doorAudio: {fileID: 8300000, guid: ac2e0ad6fb18ace4985460113e68bee8, type: 3}
+  _spawningManager: {fileID: 0}
 --- !u!23 &1868196079
 MeshRenderer:
   m_ObjectHideFlags: 0
