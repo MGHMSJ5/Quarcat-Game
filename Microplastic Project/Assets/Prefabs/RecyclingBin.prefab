@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4488085911989662379}
   - component: {fileID: 8953841920207256587}
   - component: {fileID: 961257886885767327}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas_WorldSpace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,6 +173,8 @@ MonoBehaviour:
   recycleButton: {fileID: 7677902730866613924}
   _progressManager: {fileID: 0}
   _upgradeManager: {fileID: 0}
+  audioSource: {fileID: 0}
+  replaceSound: {fileID: 0}
 --- !u!1 &4234730625218866606
 GameObject:
   m_ObjectHideFlags: 0
