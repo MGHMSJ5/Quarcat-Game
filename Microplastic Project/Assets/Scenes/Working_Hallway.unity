@@ -324,7 +324,7 @@ MonoBehaviour:
   recyclingDialogue:
   - <color=#F06C6C>(Recycling plastic items grants you <b>Recycle Points</b>, which
     you can use to increase your power at the book to the right of this recycle box.)</color>
-  - <color=#F06C6C>(You are now free to explore the house).</color>
+  - <color=#F06C6C>(You are now free to explore the house.)</color>
   - Alright, let's get rid of those pesky <b>Beadies</b>!
 --- !u!1 &189821546
 GameObject:
@@ -6334,7 +6334,7 @@ MonoBehaviour:
   - Before I go after those <b>Beadies</b> again, I should recycle this bucket to
     prevent them spreading from it in here.
   - <color=#F06C6C>(After picking up plastic items, you can recycle them at the recycle
-    box that is located here in the hallway).</color>
+    box that is located here in the hallway.)</color>
 --- !u!1 &2102288955
 GameObject:
   m_ObjectHideFlags: 0

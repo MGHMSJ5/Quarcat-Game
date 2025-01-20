@@ -6740,9 +6740,9 @@ MonoBehaviour:
   respawnDialogue:
   - Alrighty, got those suckers! But these were definitely not the last of them.
   - <color=#F06C6C>(After vacuuming up all of the <b>Beadies</b> from a plastic item,
-    replace that item within a few seconds).</color>
+    replace that item within a few seconds.)</color>
   - <color=#F06C6C>(You do this by using the <b>replace button</b> that appears when
-    close to the item; not replacing the item will cause the <b>Beadies</b> to respawn).</color>
+    close to the item; not replacing the item will cause the <b>Beadies</b> to respawn.)</color>
 --- !u!1 &2100413926
 GameObject:
   m_ObjectHideFlags: 0
@@ -6791,9 +6791,9 @@ MonoBehaviour:
   spawnDialogue:
   - These have to be the microplastic <b>Beadies</b> my parents warned me about!?
   - <color=#F06C6C>(Getting near a microplastic source, spawns in microplastic <b>Beadies</b>
-    that you will have to defeat).</color>
+    that you will have to defeat.)</color>
   - <color=#F06C6C>(To defeat <b>Beadies</b>, get up close to them and <b>hold</b>
-    down the <b>vacuum button</b> at the bottom right side of your screen).</color>
+    down the <b>vacuum button</b> at the bottom right side of your screen.)</color>
 --- !u!65 &2109202408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6864,7 +6864,7 @@ MonoBehaviour:
   - There <b>should</b> be something around here that can help me get rid of those
     microplastics around here.
   - <color=#F06C6C>(To move around, use the joystick at the bottom left side of your
-    screen).</color>
+    screen.)</color>
 --- !u!1001 &2146391234
 PrefabInstance:
   m_ObjectHideFlags: 0
