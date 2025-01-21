@@ -175,9 +175,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2192546693244625798}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -227.7807}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 185, y: 13.0614}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1488377538576009784
@@ -235,8 +235,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.61
-  m_fontSizeBase: 8.61
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 17.07342, z: 0, w: -19.800888}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -329,8 +329,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1938869360281668261}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.23740372}
-  m_AnchorMax: {x: 1, y: 0.7930162}
+  m_AnchorMin: {x: 0, y: 0.32483104}
+  m_AnchorMax: {x: 1, y: 0.81674564}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -404,8 +404,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6377441530854856600}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.7081686}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0.00012207031}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -513,7 +513,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Wooden Toys
+  m_text: Plastic Toys
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
   m_sharedMaterial: {fileID: -3493825135285680870, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
@@ -540,8 +540,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -579,7 +579,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &4818431460134278721
@@ -844,9 +844,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 4640123312632493090}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 105, y: -0.14455414}
   m_SizeDelta: {x: 200, y: 30.3863}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &4820649949808717756
@@ -1173,9 +1173,9 @@ RectTransform:
   - {fileID: 8248196611722245014}
   m_Father: {fileID: 8233289934378306624}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 88, y: -85}
   m_SizeDelta: {x: 165, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6867975160662349718
@@ -1373,7 +1373,7 @@ MonoBehaviour:
   m_text: Entry 9
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -3493825135285680870, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1494,7 +1494,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -201.95021}
+  m_AnchoredPosition: {x: 50, y: -221.95021}
   m_SizeDelta: {x: 185, y: 8.394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2748450420591401095
@@ -1588,7 +1588,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 17.666552, z: 0, w: -18.944109}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 1
@@ -1651,8 +1651,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0, y: 93.23343}
-  m_SizeDelta: {x: 100, y: 393.3648}
+  m_AnchoredPosition: {x: -0, y: 0.000022888184}
+  m_SizeDelta: {x: 100, y: 459.3648}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &3078245791733804304
 MonoBehaviour:
@@ -1686,7 +1686,7 @@ MonoBehaviour:
     m_Top: 5
     m_Bottom: 0
   m_ChildAlignment: 1
-  m_Spacing: 5
+  m_Spacing: 38
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -1732,7 +1732,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -0, y: -0.000015258789}
-  m_SizeDelta: {x: 100, y: 331.3712}
+  m_SizeDelta: {x: 100, y: 362.97717}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &4768861972582932762
 MonoBehaviour:
@@ -1945,7 +1945,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8264993298557742673
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2431,8 +2431,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1207483431897806152}
   m_HandleRect: {fileID: 4114114177293357039}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.5556125
+  m_Value: 0.6393237
+  m_Size: 0.49191463
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2985,8 +2985,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1842363347415058846}
   m_HandleRect: {fileID: 4954302210173166563}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.38216686
+  m_Value: 0.99999994
+  m_Size: 0.3738426
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3047,9 +3047,9 @@ RectTransform:
   - {fileID: 8233289934378306624}
   m_Father: {fileID: 5707343001531298739}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 93.7625, y: -78.18}
   m_SizeDelta: {x: 175.0949, y: 155.6543}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6784922043701159843
@@ -3249,8 +3249,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 3957931835184725049}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.32666826}
-  m_AnchorMax: {x: 1, y: 0.7629849}
+  m_AnchorMin: {x: 0, y: 0.62637186}
+  m_AnchorMax: {x: 1, y: 0.99999994}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3452,7 +3452,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8266001751894015626}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.37736893}
+  m_AnchorMin: {x: 0, y: 0.48866713}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -3533,7 +3533,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -0, y: 0}
-  m_SizeDelta: {x: 100, y: 449.1012}
+  m_SizeDelta: {x: 100, y: 459.1012}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &4058730130089437136
 MonoBehaviour:
@@ -3567,7 +3567,7 @@ MonoBehaviour:
     m_Top: 5
     m_Bottom: 0
   m_ChildAlignment: 1
-  m_Spacing: 5
+  m_Spacing: 10
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -3610,7 +3610,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -110.10962}
+  m_AnchoredPosition: {x: 50, y: -110.1096}
   m_SizeDelta: {x: 185, y: 210.2192}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4170911631097308171
@@ -3641,16 +3641,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Plastic buckets and other plastic containers mainly used for holding liquids
-    endure the degradation factors related to these liquids: thermal and mechanical
-    degradation. Thermal degradation relates to changes in temperature that affect
-    the plastic; a common example of this is rinsing out a plastic container with
-    hot water to reuse later. Using the plastic bucket as an example, filling it
-    up with hot, soapy water to clean windows or floors can cause the plastic bucket
-    to degrade slowly and have microplastics leak into the water. While using the
-    soapy water for cleaning, you spread the microplastics on the surfaces you clean,
-    but by emptying the bucket into the sink, you spread microplastics into the sewer
-    system and most likely the ocean.'
+  m_text: "\u25CF <b>Plastic buckets</b> and other plastic containers mainly used
+    for holding liquids endure the <b>degradation factors</b> related to these liquids:
+    <b>thermal</b> and <b>mechanical degradation</b>.\r\n\r\n\u25CF <b>Thermal degradation</b>
+    relates to changes in <b>temperature</b> that affect the plastic; a common example
+    of this is <b>rinsing out</b> a <b>plastic container</b> with <b>hot water</b>
+    to reuse later.\r\n\r\n\u25CF Using the <b>plastic bucket</b> as an example,
+    filling it up with <b>hot, soapy water</b> to clean windows or floors can cause
+    the plastic bucket to <b>degrade</b> slowly and have <b>microplastics</b> leak
+    into the water.\r\n\r\n\u25CF While using the <b>soapy water</b> for cleaning,
+    you <b>spread the microplastics</b> on the <b>surfaces</b> you clean, but by
+    emptying the bucket into the <b>sink</b>, you <b>spread microplastics</b> into
+    the <b>sewer system</b> and most likely the <b>ocean</b>."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
@@ -3677,8 +3679,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.61
-  m_fontSizeBase: 8.61
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3883,7 +3885,7 @@ MonoBehaviour:
   m_text: Entry 11
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -3493825135285680870, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4004,8 +4006,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -224.4162}
-  m_SizeDelta: {x: 185, y: 8.394}
+  m_AnchoredPosition: {x: 50, y: -240.2192}
+  m_SizeDelta: {x: 185, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2420648824856886461
 CanvasRenderer:
@@ -4070,7 +4072,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4098,7 +4100,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 15.2696295, z: 0, w: -3.151989}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4365,9 +4367,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8371996113450971217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 4.1500244, y: -15}
   m_SizeDelta: {x: 108.28, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &2278263359973959640
@@ -4597,7 +4599,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Wool Blanket
+  m_text: Polyester Blanket
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
   m_sharedMaterial: {fileID: -3493825135285680870, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
@@ -4624,8 +4626,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 19
+  m_fontSizeBase: 19
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4663,7 +4665,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &3024255743926034446
@@ -4876,7 +4878,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -68.263954}
+  m_AnchoredPosition: {x: 50, y: -68.26395}
   m_SizeDelta: {x: 185, y: 126.5279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1628700430836180165
@@ -4907,12 +4909,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A lot of plastic plants are unrecyclable due to them containing multiple
-    kinds of plastic, which means they end up being thrown away and have to decompose,
-    which can take upwards of multiple centuries. Through studies, it has also been
-    shown that real plants have a positive effect on your mental health by improving
-    your scheduling and reducing stress levels. Plants can also absorb microplastics,
-    with this being the case because of contaminated soil.
+  m_text: "\u25CF A lot of <b>artificial plants</b> are <b>unrecyclable</b> due to
+    them containing <b>multiple kinds of plastic</b>, which means they end up being
+    thrown away and have to <b>decompose</b>, which can take upwards of <b>multiple
+    centuries</b>.\r\n\r\n\u25CF Through studies, it has also been shown that <b>organic
+    plants</b> have a <b>positive effect</b> on your <b>mental health</b> by improving
+    your <b>scheduling</b> and reducing <b>stress levels</b>.\r\n\r\n\u25CF <b>Plants</b>
+    can also <b>absorb microplastics</b>, with this happening because of <b>contaminated
+    soil</b>."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
@@ -4978,7 +4982,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &77942867484890699
@@ -5122,8 +5126,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2919716015487215911}
   m_HandleRect: {fileID: 8415299091952780332}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.6945361
+  m_Value: 0.99999976
+  m_Size: 0.61053455
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5269,8 +5273,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1754017910185101836}
   m_HandleRect: {fileID: 4506493212408137977}
   m_Direction: 2
-  m_Value: 1.0000001
-  m_Size: 0.5179436
+  m_Value: 1
+  m_Size: 0.472844
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5441,7 +5445,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000007987, y: 8.9291}
-  m_SizeDelta: {x: 210.06, y: 158.7093}
+  m_SizeDelta: {x: 200, y: 158.7093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9028577568752225524
 CanvasRenderer:
@@ -5474,7 +5478,7 @@ MonoBehaviour:
   m_text: Explore the house and find sticky notes to unlock this entry!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5736,7 +5740,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -314.8848}
+  m_AnchoredPosition: {x: 50, y: -380.88483}
   m_SizeDelta: {x: 185, y: 156.96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4051273667826255974
@@ -5898,7 +5902,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 105, y: -121.09388}
-  m_SizeDelta: {x: 210.0602, y: 176.0108}
+  m_SizeDelta: {x: 200, y: 176.0108}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6070140613227866135
 CanvasRenderer:
@@ -5963,7 +5967,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -140.7249}
+  m_AnchoredPosition: {x: 50, y: -163.7249}
   m_SizeDelta: {x: 185, y: 8.394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5056526160012490078
@@ -6057,10 +6061,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 13.467009, z: 0, w: -17.723948}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &6287572480765200168
@@ -6115,8 +6119,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 842078435330795715}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.45839006}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6335,9 +6339,9 @@ RectTransform:
   - {fileID: 6214166737321288516}
   m_Father: {fileID: 4859767510646903526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88, y: -525}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 165, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2533789465591344709
@@ -6574,9 +6578,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6932064560904168295}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 105, y: -0.8069763}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 30.3863}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &4231634375787741653
@@ -6762,7 +6766,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Wooden Cutting Board
+  m_text: Plastic Cutting Board
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
   m_sharedMaterial: {fileID: -3493825135285680870, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
@@ -6828,7 +6832,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &2417711709536949852
@@ -6947,7 +6951,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5961033193399382938}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.070139885}
+  m_AnchorMin: {x: 0, y: 0.2556459}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -7091,7 +7095,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -271.5203}
+  m_AnchoredPosition: {x: 50, y: -337.52032}
   m_SizeDelta: {x: 185, y: 42.197}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8346180732222028308
@@ -7438,7 +7442,7 @@ MonoBehaviour:
   m_text: Entry 8
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -3493825135285680870, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7559,7 +7563,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -98.87657}
+  m_AnchoredPosition: {x: 50, y: -98.8766}
   m_SizeDelta: {x: 185, y: 187.7532}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3154547815383098510
@@ -7590,15 +7594,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Plastic bottles, just like plastic containers and other plastic items that
-    frequently get reused, age over time. While mechanical and thermal degradation
-    also play a part in reusable plastic bottles releasing microplastics, it is the
-    factor of age that is key to them releasing microplastics. Reusable plastic bottles,
-    according to studies, spread around 8 times as much microplastics as single-use
-    ones and 10 times as much as drink cartons. Recycled plastic bottles and other
-    recycled plastic items spread more microplastics than single-use items as well.
-    Although recycled plastic is more sustainable and creates less waste than single-use
-    plastic.
+  m_text: "\u25CF <b>Plastic bottles</b>, just like plastic containers and other
+    plastic items that <b>frequently</b> get reused, age over time. While <b>mechanical</b>
+    and <b>thermal degradation</b> also play a part in <b>reusable plastic bottles</b>
+    releasing microplastics, it is the <b>factor of age</b> that is key to them releasing
+    microplastics.\r\n\r\n\u25CF <b>Reusable plastic bottles</b>, according to studies,
+    <b>spread</b> around <b>8 times as much microplastics</b> as <b>single-use</b>
+    ones and <b>10 times</b> as much as <b>drink cartons</b>.\r\n\r\n\u25CF <b>Recycled
+    plastic bottles</b> and other recycled plastic items <b>spread more microplastics</b>
+    than <b>single-use</b> items as well. Although recycled plastic is <b>more sustainable</b>
+    and creates <b>less waste</b> than single-use plastic."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
@@ -7664,7 +7669,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &4006974379366212382
@@ -7722,7 +7727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -349.90845}
+  m_AnchoredPosition: {x: 50, y: -359.90857}
   m_SizeDelta: {x: 185, y: 138.1485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2500855482506759397
@@ -7785,8 +7790,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.61
-  m_fontSizeBase: 8.61
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8016,9 +8021,9 @@ RectTransform:
   - {fileID: 7981527112113636231}
   m_Father: {fileID: 4859767510646903526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88, y: -195}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 165, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9191889175311409001
@@ -8180,9 +8185,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1655334334362606790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 105, y: -16.093876}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 30.3863}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1450390862727949716
@@ -8335,9 +8340,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2192546693244625798}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -278.1014}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 185, y: 77.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8514951723341407009
@@ -8398,8 +8403,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.61
-  m_fontSizeBase: 8.61
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8759,9 +8764,9 @@ RectTransform:
   - {fileID: 4899996442025286133}
   m_Father: {fileID: 4859767510646903526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88, y: -140}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 165, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4568511057821305715
@@ -9003,7 +9008,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -0, y: -0.000015258789}
-  m_SizeDelta: {x: 100, y: 292.6188}
+  m_SizeDelta: {x: 100, y: 358.6188}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2722477525896326848
 MonoBehaviour:
@@ -9037,7 +9042,7 @@ MonoBehaviour:
     m_Top: 5
     m_Bottom: 0
   m_ChildAlignment: 1
-  m_Spacing: 5
+  m_Spacing: 38
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -9079,9 +9084,9 @@ RectTransform:
   - {fileID: 2458338294210518930}
   m_Father: {fileID: 5707343001531298739}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 193.74005, y: -78.18}
   m_SizeDelta: {x: 20, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5889432568973493465
@@ -9384,7 +9389,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -241.22481}
+  m_AnchoredPosition: {x: 50, y: -274.2248}
   m_SizeDelta: {x: 185, y: 8.394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7780034030937775612
@@ -9478,7 +9483,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 22.944838, z: 0, w: -30.314426}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 1
@@ -9625,7 +9630,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 176, y: 605}
+  m_SizeDelta: {x: 176, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &7668977840061958311
 MonoBehaviour:
@@ -9806,7 +9811,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000007987, y: 8.9291}
-  m_SizeDelta: {x: 210.06, y: 158.7093}
+  m_SizeDelta: {x: 200, y: 158.7093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1024220875864680105
 CanvasRenderer:
@@ -9839,7 +9844,7 @@ MonoBehaviour:
   m_text: Explore the house and find sticky notes to unlock this entry!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9940,9 +9945,9 @@ RectTransform:
   - {fileID: 4102002151996543965}
   m_Father: {fileID: 4859767510646903526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88, y: -250}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 165, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3562610477150562009
@@ -10468,7 +10473,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -282.4922}
+  m_AnchoredPosition: {x: 50, y: -314.09818}
   m_SizeDelta: {x: 185, y: 97.758}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6968271628468388280
@@ -10802,7 +10807,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -0, y: 63.93837}
-  m_SizeDelta: {x: 100, y: 308.9052}
+  m_SizeDelta: {x: 100, y: 348.9052}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &6996005270121321410
 MonoBehaviour:
@@ -10836,7 +10841,7 @@ MonoBehaviour:
     m_Top: 5
     m_Bottom: 0
   m_ChildAlignment: 1
-  m_Spacing: 5
+  m_Spacing: 25
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -10879,9 +10884,9 @@ RectTransform:
   - {fileID: 3529443827105765909}
   m_Father: {fileID: 4859767510646903526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88, y: -415}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 165, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6270664377064672403
@@ -11079,7 +11084,7 @@ MonoBehaviour:
   m_text: Entry 10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -3493825135285680870, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11546,7 +11551,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 3609902603760310092}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.40963873
+  m_Size: 0.40008968
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -11748,7 +11753,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000007987, y: 8.9291}
-  m_SizeDelta: {x: 210.06, y: 158.7093}
+  m_SizeDelta: {x: 200, y: 158.7093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6970863219322669520
 CanvasRenderer:
@@ -12084,7 +12089,7 @@ MonoBehaviour:
   m_text: Entry 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -3493825135285680870, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12204,9 +12209,9 @@ RectTransform:
   - {fileID: 4582127155978584709}
   m_Father: {fileID: 6361289623044461649}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 105, y: -105.193146}
   m_SizeDelta: {x: 210.0602, y: 140.8502}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2933821681053141530
@@ -12306,7 +12311,7 @@ MonoBehaviour:
   m_text: Entry 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -3493825135285680870, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12491,9 +12496,9 @@ RectTransform:
   - {fileID: 3295466421354565670}
   m_Father: {fileID: 4640123312632493090}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 105, y: -42.013153}
   m_SizeDelta: {x: 162.2983, y: 22.3864}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4102625604035252617
@@ -12948,7 +12953,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 105, y: -121.09388}
-  m_SizeDelta: {x: 210.0602, y: 176.0108}
+  m_SizeDelta: {x: 200, y: 176.0108}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6044627106038870861
 CanvasRenderer:
@@ -13013,7 +13018,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -254.7614}
+  m_AnchoredPosition: {x: 50, y: -314.7614}
   m_SizeDelta: {x: 185, y: 41.788}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &104891653150902342
@@ -13784,9 +13789,9 @@ RectTransform:
   - {fileID: 6377441530854856600}
   m_Father: {fileID: 6931775037685131953}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 193.74005, y: -88.1929}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &558888154358980835
@@ -13984,7 +13989,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -343.721}
+  m_AnchoredPosition: {x: 50, y: -373.721}
   m_SizeDelta: {x: 185, y: 224.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &125189528392030305
@@ -14053,8 +14058,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.61
-  m_fontSizeBase: 8.61
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -14612,7 +14617,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -227.20781}
+  m_AnchoredPosition: {x: 50, y: -260.2078}
   m_SizeDelta: {x: 185, y: 8.394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1703136410874362678
@@ -14706,7 +14711,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 31.538086, z: 0, w: -41.512558}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 1
@@ -14902,7 +14907,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000007987, y: 8.9291}
-  m_SizeDelta: {x: 210.06, y: 158.7093}
+  m_SizeDelta: {x: 200, y: 158.7093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4379186826813779379
 CanvasRenderer:
@@ -15235,7 +15240,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -0, y: 0}
-  m_SizeDelta: {x: 100, y: 316.8915}
+  m_SizeDelta: {x: 100, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &6854890575960763156
 MonoBehaviour:
@@ -15269,7 +15274,7 @@ MonoBehaviour:
     m_Top: 5
     m_Bottom: 0
   m_ChildAlignment: 1
-  m_Spacing: 5
+  m_Spacing: 20
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -15665,7 +15670,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -79.42099}
+  m_AnchoredPosition: {x: 50, y: -79.42095}
   m_SizeDelta: {x: 185, y: 148.8419}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6596262578196574773
@@ -15696,13 +15701,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Thermal degradation is not only related to heating up plastic items; plastic
-    also degrades under very cold temperatures. Heating up plastic containers in
-    the microwave or putting them in the freezer can cause them to expose the contents
-    within to more microplastics than if they were kept at room temperature or in
-    a refrigerator. For example, freezing in a plastic container of leftovers for
-    later consumption or purchasing frozen pizzas that are wrapped in plastic are
-    ways of microplastics ending up on your plate.
+  m_text: "\u25CF <b>Thermal degradation</b> is not only related to <b>heating up</b>
+    plastic items; plastic <b>also</b> degrades under <b>very cold temperatures</b>.
+    <b>Heating up</b> plastic containers in the <b>microwave</b> or putting them
+    in the <b>freezer</b> can cause them to expose the contents <b>within</b> to
+    <b>more microplastics</b> than if they were kept at <b>room temperature</b> or
+    in a <b>refrigerator</b>.\r\n\r\n\u25CF For example, <b>freezing</b> in a <b>plastic
+    container</b> of <b>leftovers</b> for later consumption or purchasing <b>frozen
+    pizzas</b> that are <b>wrapped in plastic</b> are ways of <b>microplastics ending
+    up on your plate</b>."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
@@ -15768,7 +15775,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &4417205390225327904
@@ -16036,7 +16043,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 105, y: -121.09388}
-  m_SizeDelta: {x: 210.0602, y: 176.0108}
+  m_SizeDelta: {x: 200, y: 176.0108}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &645676163511589717
 CanvasRenderer:
@@ -16176,7 +16183,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -268.0383}
+  m_AnchoredPosition: {x: 50, y: -273.0383}
   m_SizeDelta: {x: 185, y: 15.592}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &523330167283227727
@@ -16234,8 +16241,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.61
-  m_fontSizeBase: 8.61
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -16362,18 +16369,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ventilation plays an important role in the amount of microplastics found
-    inside of a home. An indoor environment has a higher concentration of microplastics
-    compared to an outdoor one of a building or a home. More well-insulated homes
-    have an increased concentration of microplastics, with them being sealed tight
-    and accumulating microplastics through human activity and microplastic sources
-    inside. Indoor microplastics float around through the given space and are more
-    closely packed together than outdoor microplastics that are able to spread out
-    over a far larger environment. Indoor ventilation, especially long and periodic
-    ventilation, can decrease the concentration of microplastics inside of an indoor
-    space, like a home. Opening a window or multiple windows can already aid in lowering
-    the concentration of microplastics in a home; however, the microplastics will
-    still exist but now in a much lower concentration outdoors.
+  m_text: "\u25CF <b>Ventilation</b> plays an important role in the amount of <b>microplastics</b>
+    found inside of a home. An <b>indoor</b> environment has a <b>higher concentration</b>
+    of <b>microplastics</b> compared to an <b>outdoor</b> one of a building or a
+    home.\n\n\u25CF More <b>well-insulated homes</b> have an <b>increased concentration</b>
+    of <b>microplastics</b>, with them being sealed tight and accumulating <b>microplastics</b>
+    through <b>human activity</b> and microplastic sources inside. <b>Indoor microplastics</b>
+    float around through the given space and are more <b>closely packed</b> together
+    than <b>outdoor</b> <b>microplastics</b> that are able to <b>spread out</b> over
+    a <b>far larger environment</b>.\n\n\u25CF <b>Indoor ventilation</b>, especially
+    <b>long</b> and <b>periodic</b> ventilation, can <b>decrease</b> the concentration
+    of <b>microplastics</b> inside of an indoor space, like a home. <b>Opening a
+    window</b> or multiple windows can already aid in <b>lowering</b> the concentration
+    of <b>microplastics</b> in a home; however, the <b>microplastics</b> will still
+    <b>exist</b> but now in a much lower concentration <b>outdoors</b>."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
@@ -16400,8 +16409,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.61
-  m_fontSizeBase: 8.61
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -16633,9 +16642,9 @@ RectTransform:
   - {fileID: 1847697250698117964}
   m_Father: {fileID: 8233289934378306624}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 88, y: -140}
   m_SizeDelta: {x: 165, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2592783101466157104
@@ -16989,8 +16998,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9147638773281957467}
   m_HandleRect: {fileID: 2522624792777346383}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.43631664
+  m_Value: 0.99999994
+  m_Size: 0.37362808
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -17050,9 +17059,9 @@ RectTransform:
   - {fileID: 7263380101408639972}
   m_Father: {fileID: 6932064560904168295}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 105, y: -121.00013}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 209.9551, y: 176.3858}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2542796134313641600
@@ -17144,7 +17153,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000007987, y: 8.9291}
-  m_SizeDelta: {x: 210.06, y: 158.7093}
+  m_SizeDelta: {x: 200, y: 158.7093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4795903381885267817
 CanvasRenderer:
@@ -17177,7 +17186,7 @@ MonoBehaviour:
   m_text: Explore the house and replace microplastic sources to unlock this entry!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17259,7 +17268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1655334334362606790
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17345,7 +17354,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -0, y: 0}
-  m_SizeDelta: {x: 100, y: 247.1169}
+  m_SizeDelta: {x: 100, y: 281.11688}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &940325249691558060
 MonoBehaviour:
@@ -17379,7 +17388,7 @@ MonoBehaviour:
     m_Top: 5
     m_Bottom: 0
   m_ChildAlignment: 1
-  m_Spacing: 5
+  m_Spacing: 22
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -17419,7 +17428,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 922600122194752424}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.48205638}
+  m_AnchorMin: {x: 0, y: 0.527156}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -17528,7 +17537,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Metal Bucket
+  m_text: Plastic Bucket
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
   m_sharedMaterial: {fileID: -3493825135285680870, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
@@ -17555,8 +17564,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -17784,9 +17793,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6361289623044461649}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 105, y: -16.65373}
   m_SizeDelta: {x: 200, y: 30.3863}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5862651935846028135
@@ -17942,9 +17951,9 @@ RectTransform:
   - {fileID: 4859767510646903526}
   m_Father: {fileID: 6931775037685131953}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 93.7625, y: -88.1929}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 175.0949, y: 176.558}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3955238338280037367
@@ -18083,7 +18092,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -224.67041}
+  m_AnchoredPosition: {x: 50, y: -254.67041}
   m_SizeDelta: {x: 185, y: 8.394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7511847216315113065
@@ -18177,7 +18186,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 25.259079, z: 0, w: -31.210464}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 1
@@ -18238,7 +18247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -260.0262}
+  m_AnchoredPosition: {x: 50, y: -300.0262}
   m_SizeDelta: {x: 185, y: 97.758}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2759276989114720121
@@ -18631,7 +18640,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Metal Bottle
+  m_text: Plastic Bottle
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
   m_sharedMaterial: {fileID: -3493825135285680870, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
@@ -18658,8 +18667,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -18697,7 +18706,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &8329241265142124444
@@ -18786,16 +18795,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The kitchen has many tools, utensils, and appliances that can spread microplastics.
-    One of the more common food preparation techniques that spreads microplastics
-    is cutting/chopping on a plastic cutting board. Prolonged usage of these plastic
-    cutting boards can result in mechanical degradation in the form of scratches
-    and grooves that remain on the boards. When cutting on these damaged cutting
-    boards, you spread microplastics into the food that you are preparing on them.
-    The more the cutting boards get worn out, the more microplastics leak on and
-    into the food being prepared on them. It is advised to get rid of old plastic
-    cutting boards and replace them often based on their wear or to completely switch
-    the plastic cutting boards with wooden or even silicone cutting boards.
+  m_text: "\u25CF The <b>kitchen</b> has many <b>tools</b>, utensils, and appliances
+    that can <b>spread microplastics</b>. One of the more common food preparation
+    techniques that spreads microplastics is <b>cutting/chopping</b> on a <b>plastic
+    cutting board</b>.\r\n\r\n\u25CF <b>Prolonged usage</b> of these plastic cutting
+    boards can result in <b>mechanical degradation</b> in the form of <b>scratches</b>
+    and <b>grooves</b> that remain on the boards. When cutting on these damaged cutting
+    boards, you <b>spread microplastics</b> into the <b>food</b> that you are preparing
+    on them. The more the cutting boards get <b>worn out</b>, the more <b>microplastics</b>
+    leak on and into the <b>food being prepared on them</b>.\r\n\r\n\u25CF It is
+    advised to get rid of <b>old plastic cutting boards</b> and <b>replace</b> them
+    <b>often</b> based on their wear or to completely <b>switch</b> the plastic cutting
+    boards with <b>wooden</b> or even <b>silicone cutting boards</b>."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
@@ -18861,7 +18872,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &7598786535451794858
@@ -18919,9 +18930,9 @@ RectTransform:
   - {fileID: 3992390535543829303}
   m_Father: {fileID: 4859767510646903526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88, y: -360}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 165, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &45830726062646195
@@ -19524,8 +19535,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5784795279557140657}
   m_HandleRect: {fileID: 4030417210493833472}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.6226311
+  m_Value: 0.9999999
+  m_Size: 0.5113327
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -19585,9 +19596,9 @@ RectTransform:
   - {fileID: 7111664571506762345}
   m_Father: {fileID: 5584201716095297788}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 122.64113, y: -119.57695}
   m_SizeDelta: {x: 210, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5517265525289490949
@@ -20063,7 +20074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -163.03891}
+  m_AnchoredPosition: {x: 50, y: -180.03891}
   m_SizeDelta: {x: 185, y: 8.394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5625264512693909149
@@ -20157,7 +20168,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 10.931303, z: 0, w: -13.663048}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 1
@@ -20221,7 +20232,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -0, y: 0.0000076293945}
-  m_SizeDelta: {x: 100, y: 275.6554}
+  m_SizeDelta: {x: 100, y: 335.6554}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &8854475546889559764
 MonoBehaviour:
@@ -20255,7 +20266,7 @@ MonoBehaviour:
     m_Top: 5
     m_Bottom: 0
   m_ChildAlignment: 1
-  m_Spacing: 5
+  m_Spacing: 35
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -20384,8 +20395,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7837935282372832503}
   m_HandleRect: {fileID: 838730444631677736}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.9298601
+  m_Value: 1.0000001
+  m_Size: 0.74435407
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -20988,7 +20999,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -0, y: 0}
-  m_SizeDelta: {x: 100, y: 456.116}
+  m_SizeDelta: {x: 100, y: 486.11603}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1294428665229460402
 MonoBehaviour:
@@ -21022,7 +21033,7 @@ MonoBehaviour:
     m_Top: 5
     m_Bottom: 0
   m_ChildAlignment: 1
-  m_Spacing: 5
+  m_Spacing: 20
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -21131,9 +21142,9 @@ RectTransform:
   - {fileID: 842078435330795715}
   m_Father: {fileID: 4930308876384861920}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 10.657551, y: -88.0054}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7923088506590107718
@@ -21217,8 +21228,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2996929691340724758}
   m_HandleRect: {fileID: 5379056480405633145}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.54160994
+  m_Value: 0.9999999
+  m_Size: 0.49477032
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -21278,7 +21289,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000007987, y: 8.9291}
-  m_SizeDelta: {x: 210.06, y: 158.7093}
+  m_SizeDelta: {x: 200, y: 158.7093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6062847032355127325
 CanvasRenderer:
@@ -21311,7 +21322,7 @@ MonoBehaviour:
   m_text: Explore the house and find sticky notes to unlock this entry!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21641,7 +21652,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 5785294662632649811}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.37628937
+  m_Size: 0.35306713
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -21701,9 +21712,9 @@ RectTransform:
   - {fileID: 6967641221938973524}
   m_Father: {fileID: 4859767510646903526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88, y: -30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 165, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1953520337430132636
@@ -21870,7 +21881,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -0, y: 0}
-  m_SizeDelta: {x: 100, y: 418.98282}
+  m_SizeDelta: {x: 100, y: 428.98282}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &6535288788703994944
 MonoBehaviour:
@@ -21904,7 +21915,7 @@ MonoBehaviour:
     m_Top: 5
     m_Bottom: 0
   m_ChildAlignment: 1
-  m_Spacing: 5
+  m_Spacing: 10
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -21997,7 +22008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &114828526591074947
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22061,58 +22072,58 @@ MonoBehaviour:
   - id: 1
     information: {fileID: 5371929302777998946}
     buttonText: {fileID: 3062630907823311034}
-    name: Metal Bucket
-    size: 20
+    name: Plastic Bucket
+    size: 18
   - id: 2
     information: {fileID: 8586772097902829963}
     buttonText: {fileID: 1122258179687761208}
-    name: Wooden Cutting Board
+    name: Plastic Cutting Board
     size: 18
   - id: 3
     information: {fileID: 2937277218455902698}
     buttonText: {fileID: 8523568041351672628}
-    name: Metal Bottle
-    size: 20
+    name: Plastic Bottle
+    size: 18
   - id: 4
     information: {fileID: 3990626614924090276}
     buttonText: {fileID: 3723430427880462134}
-    name: Glass Container
-    size: 20
+    name: Plastic Container
+    size: 18
   - id: 5
     information: {fileID: 2218353822365165753}
     buttonText: {fileID: 3509783200962238025}
-    name: Wool Blanket
-    size: 20
+    name: Polyester Blanket
+    size: 18
   - id: 6
     information: {fileID: 728758081483194610}
     buttonText: {fileID: 2213895159267999958}
-    name: Wooden Toys
-    size: 20
+    name: Plastic Toys
+    size: 18
   - id: 7
     information: {fileID: 3279164467285957427}
     buttonText: {fileID: 5551205761812986791}
-    name: Real Plant
-    size: 20
+    name: Artificial Plant
+    size: 18
   - id: 100
     information: {fileID: 867969241731000242}
     buttonText: {fileID: 55654055995575854}
     name: Cupboard Note
-    size: 20
+    size: 18
   - id: 101
     information: {fileID: 3852102016432712287}
     buttonText: {fileID: 8027773458972247010}
     name: Window Note
-    size: 20
+    size: 18
   - id: 102
     information: {fileID: 9104196381289057689}
     buttonText: {fileID: 5204937639805248052}
     name: Dishwasher Note
-    size: 20
+    size: 18
   - id: 103
     information: {fileID: 4674605654298929495}
     buttonText: {fileID: 6152883147154384194}
     name: Kettle Note
-    size: 20
+    size: 18
 --- !u!114 &223422464594249612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22321,9 +22332,9 @@ RectTransform:
   - {fileID: 6090734928758218113}
   m_Father: {fileID: 4859767510646903526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88, y: -85}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 165, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4140732658755960213
@@ -22871,7 +22882,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 6925265576973328406}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.5865364
+  m_Size: 0.4785906
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -23311,7 +23322,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -209.67639}
+  m_AnchoredPosition: {x: 50, y: -243.67639}
   m_SizeDelta: {x: 185, y: 74.881}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8078892068320345975
@@ -23576,7 +23587,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -0, y: 0}
-  m_SizeDelta: {x: 100, y: 184.57788}
+  m_SizeDelta: {x: 100, y: 230.57788}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2939158123433333294
 MonoBehaviour:
@@ -23610,7 +23621,7 @@ MonoBehaviour:
     m_Top: 5
     m_Bottom: 0
   m_ChildAlignment: 1
-  m_Spacing: 5
+  m_Spacing: 28
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -23650,8 +23661,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 9162722785059413770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.3054639}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0.3894654}
+  m_AnchorMax: {x: 1, y: 0.9999999}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -23759,16 +23770,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: When it comes to plastic toys, mechanical degradation is the main degradation
-    factor at play. Mechanical degradation is mainly caused by physical stress, frequent
-    use, and scuffing through friction. Children playing with plastic toys can have
-    the toys endure a lot of wear and tear, resulting in macro- and also microplastics.
-    Some toys, like the plastic blocks/bricks that interlock, are also able to create
-    plastic scuffs through regular use. This damage can release microplastics that
-    create the risk of potential ingestion through children putting the toys or even
-    their microplastic-covered hands in their mouths/faces, according to research.
-    Supervision is heavily advised for when children play with plastic toys because
-    of this possible ingestion risk.
+  m_text: "\u25CF When it comes to <b>plastic toys</b>, <b>mechanical degradation</b>
+    is the main degradation factor at play. Mechanical degradation is mainly caused
+    by <b>physical stress</b>, <b>frequent use</b>, and <b>scuffing</b> through <b>friction</b>.
+    Children playing with plastic toys can have the toys endure a lot of wear and
+    tear, resulting in <b>macro-</b> and also <b>microplastics</b>.\r\n\r\n\u25CF
+    Some toys, like the <b>plastic blocks/bricks</b> that <b>interlock</b>, are also
+    able to create <b>plastic scuffs</b> through regular use. This damage can release
+    <b>microplastics</b> that <b>create</b> the risk of potential <b>ingestion</b>
+    through children putting the toys or even their microplastic-covered hands in
+    their mouths/faces, <b>according to research</b>.\r\n\r\n\u25CF <b>Supervision</b>
+    is heavily <b>advised</b> for when <b>children</b> play with <b>plastic toys</b>
+    because of this possible <b>ingestion risk</b>."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
@@ -23834,7 +23847,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &2897107865425175999
@@ -23926,9 +23939,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2192546693244625798}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -110.625}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 185, y: 211.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7477374563996656406
@@ -23959,16 +23972,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Plastic kettles are a common kitchen appliance that spreads microplastics.
-    Boiling water inside of a kettle can spread a large amount of microplastics into
-    the water through the plastic materials found in them starting to melt and wear
-    out. Something to note is that boiling deionized water spreads significantly
-    more microplastics into the water than non-deionized water over time. This is
-    because the calcium, sodium, iron, and copper ions from the soil the water came
-    from create a metal oxide film on the plastic in the kettle. So, kettles that
-    boil non-deionized water have an opposite effect to other kitchen appliances,
-    with the microplastics spreading less into the water after prolonged use; however,
-    with deionized water, this does not go into effect.
+  m_text: "\u25CF <b>Plastic kettles</b> are a common kitchen appliance that spreads
+    microplastics. <b>Boiling water</b> inside of a kettle can <b>spread</b> a large
+    amount of <b>microplastics</b> into the water through the plastic materials found
+    in them starting to <b>melt</b> and <b>wear out</b>.\r\n\r\n\u25CF Something
+    to note is that <b>boiling deionized water spreads</b> significantly <b>more
+    microplastics</b> into the water than <b>non-deionized water</b> over time. This
+    is because the <b>calcium, sodium, iron,</b> and <b>copper ions</b> from the
+    soil the water came from create a <b>metal oxide film</b> on the plastic in the
+    kettle.\r\n\r\n\u25CF So, kettles that <b>boil non-deionized water</b> have an
+    <b>opposite effect</b> to other kitchen appliances, with the <b>microplastics
+    spreading less</b> into the water after <b>prolonged use</b>; however, with <b>deionized
+    water</b>, this does not go into <b>effect</b>."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
@@ -23995,8 +24010,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.61
-  m_fontSizeBase: 8.61
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -24089,8 +24104,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2458338294210518930}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.05664048}
+  m_AnchorMax: {x: 1, y: 0.9999997}
   m_AnchoredPosition: {x: 0, y: 0.00012207031}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -24303,9 +24318,9 @@ RectTransform:
   - {fileID: 4031516707760888084}
   m_Father: {fileID: 8233289934378306624}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 88, y: -30}
   m_SizeDelta: {x: 165, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8781711152438676159
@@ -24500,15 +24515,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Microplastics in different forms can be found in the dust that is present
-    in homes globally and, in some instances, can be found in high concentrations
-    within homes. According to research, 90% of the microplastics floating in homes
-    mainly come from synthetic textiles that are easily torn and scattered around,
-    for example, curtains, clothing items, and carpets. Inhaling and in turn ingesting
-    dust is a prevalent way of microplastics being exposed to humans and especially
-    younger children. Infants, for example, ingest way more dust and through this
-    also get exposed to way more microplastics. By ventilating and vacuuming often,
-    you can reduce the concentration of microplastics in your home.
+  m_text: "\u25CF <b>Microplastics</b> in different forms can be found in the dust
+    that is present in <b>homes globally</b> and, in some instances, can be found
+    in <b>high concentrations</b> within homes.\n\n\u25CF According to research,
+    <b>90%</b> of the <b>microplastics</b> floating in homes mainly come from <b>synthetic
+    textiles</b> that are easily torn and scattered around, for example, curtains,
+    clothing items, and carpets.\n\n\u25CF <b>Inhaling</b> and in turn <b>ingesting</b>
+    dust is a prevalent way of <b>microplastics</b> being exposed to humans and especially
+    younger <b>children</b>. Infants, for example, ingest way more dust and through
+    this also get exposed to way more <b>microplastics</b>.\n\n\u25CF By <b>ventilating</b>
+    and <b>vacuuming</b> often, you can <b>reduce</b> the concentration of <b>microplastics</b>
+    in your home."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
@@ -24535,8 +24552,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.61
-  m_fontSizeBase: 8.61
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -24632,7 +24649,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -373.00125}
+  m_AnchoredPosition: {x: 50, y: -383.00125}
   m_SizeDelta: {x: 185, y: 152.1999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7708542616810791161
@@ -24696,8 +24713,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.61
-  m_fontSizeBase: 8.61
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -24793,9 +24810,9 @@ RectTransform:
   - {fileID: 1010856034870381091}
   m_Father: {fileID: 4859767510646903526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88, y: -580}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 165, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7918848448651229628
@@ -24959,9 +24976,9 @@ RectTransform:
   - {fileID: 1344653262913892107}
   m_Father: {fileID: 4640123312632493090}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 105, y: -131.67546}
   m_SizeDelta: {x: 209.9551, y: 156.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6816967475222841953
@@ -25084,7 +25101,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Real Plant
+  m_text: Artificial Plant
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
   m_sharedMaterial: {fileID: -3493825135285680870, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
@@ -25111,8 +25128,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -25150,7 +25167,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &6336952350301115517
@@ -25209,7 +25226,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 105, y: -121.09388}
-  m_SizeDelta: {x: 210.0602, y: 176.0108}
+  m_SizeDelta: {x: 200, y: 176.0108}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8356191908145303016
 CanvasRenderer:
@@ -25274,9 +25291,9 @@ RectTransform:
   - {fileID: 961126393615608576}
   m_Father: {fileID: 4859767510646903526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88, y: -305}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 165, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4126765351597711106
@@ -25479,7 +25496,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0.000030517578}
-  m_SizeDelta: {x: 176, y: 0}
+  m_SizeDelta: {x: 176, y: 165}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &422051267935984105
 MonoBehaviour:
@@ -25589,7 +25606,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 4777324578209517001}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.4134636}
+  m_AnchorMin: {x: 0, y: 0.5214094}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -25728,7 +25745,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 7736102354696382011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.59036124}
+  m_AnchorMin: {x: 0, y: 0.5999103}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -25903,17 +25920,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "It\_is shown that the amount of microplastics found in wastewater from
-    a home is noticeably increased after a washing cycle of a dishwasher. There is
-    a difference, however, in what program you use, with an intensive program releasing
-    more microplastics. The hot water the dishwasher uses in an intensive program
-    wears out and melts the plastic of plastic utensils, cups, the plastic that is
-    found within the dishwasher itself, and more. A shorter and less intense program
-    still contaminates the wastewater with microplastic, but way less than an intensive
-    program. Not only do the plastic items and the dishwasher itself spread microplastic
-    into the water supply and the ocean, but dishwasher tablets and detergents can
-    also contain microplastics, which they release onto your other kitchen utensils
-    and tools, but these microplastics also end up in the wastewater from your home."
+  m_text: "\u25CF It is shown that the amount of <b>microplastics</b> found in <b>wastewater</b>
+    from a home is noticeably <b>increased</b> after a <b>washing cycle</b> of a
+    dishwasher. There is a difference, however, in what program you use, with an
+    <b>intensive program</b> releasing <b>more microplastics</b>.\r\n\r\n\u25CF The
+    <b>hot water</b> the dishwasher uses in an intensive program <b>wears out and
+    melts the plastic</b> of plastic utensils, cups, the plastic that is found within
+    the dishwasher itself, and more. A <b>shorter and less intense program</b> still
+    contaminates the wastewater with <b>microplastic</b>, but way <b>less</b> than
+    an intensive program.\r\n\r\n\u25CF Not only do the plastic items and the dishwasher
+    itself spread microplastic into the water supply and the ocean, but <b>dishwasher
+    tablets and detergents</b> can also <b>contain microplastics</b>, which they
+    release onto your other kitchen utensils and tools, but these microplastics also
+    <b>end up</b> in the <b>wastewater</b> from your home."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
@@ -25940,8 +25959,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.61
-  m_fontSizeBase: 8.61
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -26068,7 +26087,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Glass Container
+  m_text: Plastic Container
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
   m_sharedMaterial: {fileID: -3493825135285680870, guid: bf57ef90990208647a1ecf298d4d3931, type: 2}
@@ -26095,8 +26114,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -26134,7 +26153,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &4493259991491677608
@@ -26190,9 +26209,9 @@ RectTransform:
   - {fileID: 6932064560904168295}
   m_Father: {fileID: 114828526591074947}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 347.9234, y: -119.57695}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 210, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5998557591090729973
@@ -26258,7 +26277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -286.97552}
+  m_AnchoredPosition: {x: 50, y: -291.97552}
   m_SizeDelta: {x: 185, y: 9.8516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1451540689376168071
@@ -26316,8 +26335,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.61
-  m_fontSizeBase: 8.61
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -26477,7 +26496,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -111.505394}
+  m_AnchoredPosition: {x: 50, y: -111.5054}
   m_SizeDelta: {x: 185, y: 213.0108}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5656720124516900481
@@ -26508,16 +26527,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A major source of microplastic pollution is microfibers from textiles.
-    The production, wearing, and mainly washing of these textiles spreads these microfibers
-    into our environment. These synthetic textiles are quickly worn out and contribute
-    a lot to microfibre pollution, especially fast fashion, because they contain
-    a lot of synthetic fibers. Besides washing, microfibers also spread through the
-    air, going into the ocean or drains and sewers, then transported to wastewater
-    treatment plants from which the sewage sludge is used as fertilizer on fields.
-    Textiles are the fifth largest source of microplastic pollution in the Netherlands
-    alone, with around 35% of microplastics released to oceans globally originating
-    from washing synthetic textiles.
+  m_text: "\u25CF A major source of <b>microplastic pollution</b> is <b>microfibers</b>
+    from <b>textiles</b>. The production, wearing, and mainly washing of these textiles
+    <b>spreads</b> these microfibers into our environment. These <b>synthetic textiles</b>
+    are quickly worn out and <b>contribute</b> a lot to <b>microfiber pollution</b>,
+    especially <b>fast fashion</b>, because they contain a lot of <b>synthetic fibers</b>.\r\n\r\n\u25CF
+    Besides washing, <b>microfibers</b> also spread through the <b>air</b>, going
+    into the <b>ocean</b> or <b>drains</b> and <b>sewers</b>, then transported to
+    <b>wastewater treatment plants</b> from which the <b>sewage sludge</b> is used
+    as <b>fertilizer</b> on fields.\r\n\r\n\u25CF <b>Textiles</b> are the fifth largest
+    source of <b>microplastic pollution</b> in the <b>Netherlands</b> alone, with
+    around <b>35% of microplastics</b> released to <b>oceans globally</b> originating
+    from <b>washing synthetic textiles</b>."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
@@ -26583,7 +26604,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &9067423390890764965
@@ -26886,7 +26907,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000007987, y: 8.9291}
-  m_SizeDelta: {x: 210.06, y: 158.7093}
+  m_SizeDelta: {x: 200, y: 158.7093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4981192997571672505
 CanvasRenderer:
@@ -26919,7 +26940,7 @@ MonoBehaviour:
   m_text: Explore the house and find sticky notes to unlock this entry!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -27018,9 +27039,9 @@ RectTransform:
   - {fileID: 4640123312632493090}
   m_Father: {fileID: 5584201716095297788}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 347.9234, y: -119.57695}
   m_SizeDelta: {x: 210, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7079996363062640278
@@ -27150,7 +27171,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000007987, y: 8.9291}
-  m_SizeDelta: {x: 210.06, y: 158.7093}
+  m_SizeDelta: {x: 200, y: 158.7093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6899505744153667601
 CanvasRenderer:
@@ -27419,9 +27440,9 @@ RectTransform:
   - {fileID: 3499772746925187883}
   m_Father: {fileID: 1655334334362606790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 105, y: -121.09388}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 210.0602, y: 176.0108}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2899955650235473580
@@ -27626,7 +27647,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -167.2499}
+  m_AnchoredPosition: {x: 50, y: -213.2499}
   m_SizeDelta: {x: 185, y: 34.656}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4511320622838050088
@@ -27847,9 +27868,9 @@ RectTransform:
   - {fileID: 2192546693244625798}
   m_Father: {fileID: 4930308876384861920}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 115.687645, y: -88.0054}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 187.43, y: 171.6316}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4878675611250003703
@@ -27988,9 +28009,9 @@ RectTransform:
   - {fileID: 8238483187889065676}
   m_Father: {fileID: 4859767510646903526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88, y: -470}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 165, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6511205012202741861
@@ -28451,7 +28472,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -218.283}
+  m_AnchoredPosition: {x: 50, y: -233.283}
   m_SizeDelta: {x: 185, y: 16.086}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5027204642561965875
@@ -28509,8 +28530,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.61
-  m_fontSizeBase: 8.61
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -28545,7 +28566,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 15.034651, z: 0, w: -16.99903}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -29111,9 +29132,9 @@ RectTransform:
   - {fileID: 1655334334362606790}
   m_Father: {fileID: 114828526591074947}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 122.64113, y: -119.57695}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 210, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4838962697017343536
@@ -29176,7 +29197,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1809198076607559440}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.61783314}
+  m_AnchorMin: {x: 0, y: 0.6261574}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -29422,7 +29443,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000007987, y: 8.9291}
-  m_SizeDelta: {x: 210.06, y: 158.7093}
+  m_SizeDelta: {x: 200, y: 158.7093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6647797675112760006
 CanvasRenderer:
@@ -29455,7 +29476,7 @@ MonoBehaviour:
   m_text: Explore the house and replace microplastic sources to unlock this entry!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -5656421906643996205, guid: 6a6e56b0e0fb92440ae0247e1fdc82d8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -29617,9 +29638,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8371996113450971217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 130.73007, y: -15}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &2869628173804867674
@@ -29695,7 +29716,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000007987, y: 8.9291}
-  m_SizeDelta: {x: 210.06, y: 158.7093}
+  m_SizeDelta: {x: 200, y: 158.7093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5147280160703342468
 CanvasRenderer:
@@ -29826,7 +29847,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 3334789103521067234}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.62371063}
+  m_AnchorMin: {x: 0, y: 0.64693284}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -29887,7 +29908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5584201716095297788
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30020,7 +30041,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000007987, y: 8.9291}
-  m_SizeDelta: {x: 210.06, y: 158.7093}
+  m_SizeDelta: {x: 200, y: 158.7093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7971333681774460878
 CanvasRenderer:
@@ -30155,9 +30176,9 @@ RectTransform:
   - {fileID: 6659338713824116336}
   m_Father: {fileID: 6361289623044461649}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 105, y: -193.53941}
   m_SizeDelta: {x: 134.8801, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3984334014963178101
