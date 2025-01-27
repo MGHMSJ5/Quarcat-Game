@@ -162,7 +162,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.MicroplasticProject
+    Android: com.Quarcat.AhPlasticAttack
     Standalone: com.DefaultCompany.Microplastic-Project
   buildNumber:
     Standalone: 0
