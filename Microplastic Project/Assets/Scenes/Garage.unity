@@ -2494,6 +2494,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 130178641527568034, guid: 975b1be5f363c7544bb7a22bc1704e22, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 975642696102810076, guid: 975b1be5f363c7544bb7a22bc1704e22, type: 3}
       propertyPath: m_SortingOrder
       value: 6
@@ -6766,6 +6770,7 @@ MonoBehaviour:
     replace that item within a few seconds.)</color>
   - <color=#F06C6C>(You do this by using the <b>replace button</b> that appears when
     close to the item; not replacing the item will cause the <b>Beadies</b> to respawn.)</color>
+  _audioSourceVacuum: {fileID: 1289620169}
 --- !u!1 &2100413926
 GameObject:
   m_ObjectHideFlags: 0
