@@ -12,6 +12,10 @@ public class EnemyRespawnDialogueTrigger : MonoBehaviour
     private bool _hasTriggeredRespawnDialogue = false; // dialogue triggers only once
     private bool _hasStartedRespawn = false;
 
+    [Header("Audio fix")]
+    [SerializeField]
+    private AudioSource _audioSourceVacuum;
+
     void Start()
     {
         spawningManager = FindObjectOfType<SpawningManager>();
@@ -33,6 +37,8 @@ public class EnemyRespawnDialogueTrigger : MonoBehaviour
                 if (dialogueManager != null && respawnDialogue.Length > 0 && !_hasTriggeredRespawnDialogue)
                 {
                     Debug.Log("Triggering respawn dialogue!");
+                    _audioSourceVacuum.volume = 0;
+                    _audioSourceVacuum.Stop();
                     dialogueManager.StartDialogue(respawnDialogue);
                     _hasTriggeredRespawnDialogue = true;
                 }
