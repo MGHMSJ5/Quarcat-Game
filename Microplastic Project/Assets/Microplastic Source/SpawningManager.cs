@@ -53,6 +53,8 @@ public class SpawningManager : MonoBehaviour
     [SerializeField]
     private float _respawnSeconds = 10f;
     private bool _isCoroutineRunning = false;
+    [SerializeField]
+    private ParticleSystem _canReplaceParticleSystem;
 
     public int identity;
 
@@ -72,6 +74,11 @@ public class SpawningManager : MonoBehaviour
         //get animator from canvas's child
         _popUpAnimator = _popUpCanvas.transform.GetChild(0).GetComponent<Animator>();
         _popUpCanvas.SetActive(false);
+
+        if (_canReplaceParticleSystem == null)
+        {
+            Debug.LogError("Did not assign particle system (visual for player to see that the item can be replaced");
+        }
     }
 
     private void Update()
@@ -159,6 +166,7 @@ public class SpawningManager : MonoBehaviour
         if (ready)
         {
             _replacing.originalGameObject = _originalGameObjectParent;
+            _replacing.particleSystem = _canReplaceParticleSystem;
             _replacing.replaceGameObject = _replacngGameObjectParent;
             _replacingText.text = _textForReplacing;
             _replacing.spawnId = identity;
@@ -173,6 +181,8 @@ public class SpawningManager : MonoBehaviour
 
     private IEnumerator RespawnCounter(float time)
     {
+        // Start particle that visualizes that item can be replaced
+        _canReplaceParticleSystem.Play();
         _isCoroutineRunning = true;
         yield return new WaitForSeconds(time);
         _spawnedMicroplastics.Clear(); //reset the list
@@ -182,6 +192,8 @@ public class SpawningManager : MonoBehaviour
             StartCoroutine(SpawnMicroplastics());
         }
         _isCoroutineRunning = false;
+        // Stop that particle that showcases that the item can be replaced
+        _canReplaceParticleSystem.Stop();
     }
     public bool CheckIfAllCatched()
     {
